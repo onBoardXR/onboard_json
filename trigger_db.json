@@ -1,0 +1,196 @@
+{
+  "listCue": [
+    {
+      "name": "Animation TEST",
+      "type": "animation",
+      "role": "debug",
+      "url":  "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/glTF-Binary/Avocado.glb",
+      "animtype": "position",
+      "start": {"pos": {"x": 0.1, "y":0.1, "z":0.1}, "rot": {"x": 0.1, "y":0.1, "z":0.1}, "scale": {"x": 1, "y":1, "z":1}},
+      "begin": {"x":0.1, "y":0.1, "z":0.1},
+      "end": {"x":10.1, "y":0.1, "z":0.1},
+      "isLooping": false,
+      "duration": 1000
+    },
+    {     
+      "name": "Jettison Curtains",
+      "type": "animation",
+      "role": "debug",
+      "url":"https://xrtheater-assets.xrtheater.live/files/6f48857e-82c3-4096-91e7-0da58162317b.glb",
+      "animtype": "position",
+      "start": {"pos": {"x": 2.5, "y":7, "z":2.5}, "rot": {"x": 0, "y":0, "z":0}, "scale": {"x": 20, "y":9, "z":10}},
+      "begin": {"x": 2.5, "y":7, "z":2.5},
+      "end": {"x": 2.5, "y":1, "z":2.5},
+      "isLooping": false,
+      "duration": 18000
+    },      
+    {
+       "name": "Jettison Light 1",
+      "type": "animation",
+      "role": "debug",
+      "url":  "https://xrtheater-assets.xrtheater.live/files/2acc1a73-429b-4895-b766-b28c954a39b2.glb",
+      "animtype": "position",
+      "start": {"pos": {"x": 6.5, "y":7.5, "z":2.5}, "rot": {"x": 0, "y":201, "z":0}, "scale": {"x": 0.05, "y":0.05, "z":0.05}},
+      "begin": {"x": 6.2, "y":5, "z":2.5},
+      "end": {"x": 6.2, "y":4, "z":2.5},
+      "isLooping": false,
+      "duration": 2000
+   },
+       {
+       "name": "Jettison Light 2",
+      "type": "animation",
+      "role": "debug",
+      "url":  "https://xrtheater-assets.xrtheater.live/files/2acc1a73-429b-4895-b766-b28c954a39b2.glb",
+      "animtype": "position",
+      "start": {"pos": {"x": 5, "y":7.5, "z":2.5}, "rot": {"x": 0, "y":201, "z":0}, "scale": {"x": 0.05, "y":0.05, "z":0.05}},
+      "begin": {"x": 4.9, "y":5, "z":2.5},
+      "end": {"x": 4.9, "y":4, "z":2.5},
+      "isLooping": false,
+      "duration": 2000
+   },
+    {
+      "name": "Waypoint 1",
+      "type":"waypoint",
+      "role":"debug",
+      "url":"#tst1"
+    },
+    {
+      "name": "Waypoint 2",
+      "type":"waypoint",
+      "role":"debug",
+      "url":"#tst2"
+    },
+    {
+      "name": "Ryan Waypoint",
+      "type":"waypoint",
+      "role":"jettison-ryan",
+      "url":"#ryan"
+    },
+   {
+      "name": "Ezra Waypoint",
+      "type":"waypoint",
+      "role":"jettison-ezra",
+      "url":"#ezra"
+    },
+    {
+      "name": "Charlie Waypoint",
+      "type":"waypoint",
+      "role":"jettison-chaz",
+      "url":"#chaz"
+    },
+    {
+      "name": "Bunny Waypoint",
+      "type":"waypoint",
+      "role":"jettison-bunny",
+      "url":"#buny"
+    }, 
+       {
+      "name": "Jettison Camera Waypoint",
+      "type":"waypoint",
+      "role":"jettison-camr",
+      "url":"#camr"
+    }, 
+           {
+      "name": "Jettison Ezra Voice Waypoint",
+      "type":"waypoint",
+      "role":"jettison-nican",
+      "url":"#ezra-voice"
+    }, 
+    { 
+      "name":"Clem Waypoint",
+      "type":"waypoint",
+      "role":"strings-clem",
+      "url":"#clem"
+    },
+    {
+      "name": "Scene 1",
+      "type":"scene",
+      "role":"debug",
+      "url":"https://chat-mirror-us-assets.chatmirror.com/files/76f7a72b-467b-4bf4-aca6-1a9b604d44ec.bin"
+    },
+    {
+      "name": "Avatar 1",
+      "type":"avatar",
+      "role":"debug",
+      "url":"https://github.com/romamile/virtualtheatre/raw/main/avatar_1.glb"
+    },
+    {
+      "name": "Avatar 2",
+      "type":"avatar",
+      "role":"debug",
+      "url":"https://github.com/romamile/virtualtheatre/raw/main/avatar_2.glb"
+    },
+        {
+      "name": "Ryan Avatar",
+      "type":"avatar",
+      "role":"jettison-ryan",
+      "url":"https://xrtheater.live/avatars/ps8PVuK"
+    },
+        {
+      "name": "Charlie Avatar",
+      "type":"avatar",
+      "role":"jettison-chaz",
+      "url":"https://xrtheater.live/avatars/ZatzdFs"
+    },
+   {
+      "name": "Ezra Avatar",
+      "type":"avatar",
+      "role":"jettison-ezra",
+      "url":"https://xrtheater.live/avatars/EomhndE"
+    },
+       {
+      "name": "Bunny Avatar",
+      "type":"avatar",
+      "role":"jettison-bunny",
+      "url":"https://xrtheater.live/avatars/b9441oD"
+    },
+    { "name": "Audience Avatar",
+      "type":"avatar",
+      "role":"audience",
+      "url":"https://drive.google.com/file/d/1H82liSFaku4NIHoasC-hWcD8Smxi-ldd/view?usp=sharing"
+    },
+    { 
+      "name":"Jettison Light 1",
+      "type":"props",
+      "role":"stagemanager",
+      "url":  "https://xrtheater-assets.xrtheater.live/files/2acc1a73-429b-4895-b766-b28c954a39b2.glb"
+    },
+        { 
+      "name":"Jettison Light 2",
+      "type":"props",
+      "role":"stagemanager",
+      "url":  "https://xrtheater-assets.xrtheater.live/files/2acc1a73-429b-4895-b766-b28c954a39b2.glb"
+    },
+    { 
+      "name":"Kraken Disc",
+      "type":"props",
+      "role":"stagemanager",
+      "url":"https://xrtheater-assets.xrtheater.live/files/f62e0f5b-99cb-4efe-9913-2b2c89842f24.glb"
+    },
+ { 
+      "name":"Kraken No-disc",
+      "type":"props",
+      "role":"stagemanager",
+    "url":"https://xrtheater-assets.xrtheater.live/files/97b42fdf-e72c-47aa-bba1-5ab18b2453dd.glb"
+  },
+    { 
+      "name":"Tentacle Anim",
+      "type":"props",
+      "role":"stagemanager",
+      "url":"https://xrtheater-assets.xrtheater.live/files/38b6087d-4cfb-4267-8b09-e621b4f0079d.glb"
+    },
+    { 
+      "name":"Tentacle Still",
+      "type":"props",
+      "role":"stagemanager",
+      "url":"https://xrtheater-assets.xrtheater.live/files/87687a7b-165d-4086-afb5-c05be8a6e62b.glb"
+    },
+    
+    {
+      "name": "Props 1",
+      "type":"props",
+      "role":"debug",
+      "url":"https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/glTF-Binary/Avocado.glb"
+    }
+  ]
+}
