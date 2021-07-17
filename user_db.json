@@ -20,5 +20,5 @@
    "pat":{"name":"Patrick","role":"bikini-pat"},
   "narr":{"name":"Narrator","role":"bikini-narr"},
   "jell":{"name":"Jelly","role":"bikini-jelly"},
-   "aud": {"name": "Audience"}
+   "aud": {"name": "Audience","role":"guest"}
  }
