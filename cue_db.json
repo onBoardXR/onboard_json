@@ -121,6 +121,62 @@
                  "object_name":"testPersonalCode"},
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "Strings_run",
+      "role": "strings-clem",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "function_name":"run",
+                 "object_name":"stringsFloormat"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Strings_stop",
+      "role": "strings-clem",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "function_name":"stop",
+                 "object_name":"stringsFloormat"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "SHSetupSS",
+      "role": "smarthome",
+      "target": { },
+      "action": {"type": "call_global_function",
+                 "function_name":"smartHomeSetupSS"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "SHSetup",
+      "role": "smarthome",
+      "target": { },
+      "action": {"type": "call_global_function",
+                 "function_name":"smartHomeSetup"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "SHCue2",
+      "role": "smarthome",
+      "target": { },
+      "action": {"type": "call_global_function",
+                 "function_name":"smartHomeCue2"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "SHCue3",
+      "role": "smarthome",
+      "target": { },
+      "action": {"type": "call_global_function",
+                 "function_name":"smartHomeCue3"},
+      "trig": {"type": "button",
+               "time": 0}
     }
   ]
 }
