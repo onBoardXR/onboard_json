@@ -121,7 +121,7 @@
                  "object_name":"testPersonalCode"},
       "trig": {"type": "button",
                "time": 0}
-    },   
+    },
     {
       "name": "Setup_waypoint",
       "role": "strings-clem",
@@ -166,6 +166,148 @@
                  "function_name":"smartHomeCue3"},
       "trig": {"type": "button",
                "time": 0}
-    }
-  ]
+    },
+    {
+         "name": "H",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/38f17dbc-2ca1-4717-9969-425b694a31cc.glb"},
+         "action": {"type": "spawn_prop",
+                    "rot": {"x": 0, "y":90, "z":0},
+                    "scale": {"x": 0.03, "y":0.03, "z":0.03}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "F1",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/d5481e39-de54-4a7b-8c1a-0da5dadb618b.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": 18.639, "y":-29.549, "z":25.814},
+                    "rot": {"x": 172.904, "y":18.747, "z":-158.827},
+                    "scale": {"x": 7.177, "y":7.177, "z":7.177}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "F2",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/eaff7246-22ed-4002-ba4a-a3e4810f4d59.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": 18.30, "y":-30.592, "z":25.196},
+                    "rot": {"x": 0, "y":0, "z":0},
+                    "scale": {"x": 6.72, "y":6.72, "z":6.72}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "F3",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/641078b1-2a0f-4c81-9c48-f1f6257e3b6c.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": 18.698, "y":-30.394, "z":25.202},
+                    "rot": {"x": -180.00, "y":40.00, "z":-180.00},
+                    "scale": {"x": 5.049, "y":5.049, "z":5.049}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "P1",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/d8e7881b-a5f1-4bf0-97ad-c199495bba61.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": 7.00, "y":0.0, "z":8.00},
+                    "rot": {"x": 0, "y":1.57, "z":0},
+                    "scale": {"x": 1.00, "y":1.00, "z":1.00}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "M1",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/cb4d1511-0843-4f61-b99c-9221460d850e.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": -50.00, "y":-29.50, "z":28.00},
+                    "rot": {"x": 0, "y":0, "z":0},
+                    "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "F4",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/560c5d92-6977-4f12-9b30-38653a57e9bc.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": -57.543, "y":-32.478, "z":36.9722},
+                    "rot": {"x": -157.487, "y":39.352, "z":175.597},
+                    "scale": {"x": 0.1, "y":0.1, "z":0.1}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+        "name": "M2",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/00b19395-34fc-42f3-b924-71374ae3a122.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": -23.50, "y":-10.50, "z":19.50},
+                    "rot": {"x": -180.00, "y":70.00, "z":-180.00},
+                    "scale": {"x": 10.00, "y":3.50, "z":1.00}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "M3",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/5029dab2-b1c5-4ca7-a21f-e896640b1a86.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": -27.50, "y":-29.50, "z":16.50},
+                    "rot": {"x": 0, "y":-90.00, "z":0},
+                    "scale": {"x": 0.05, "y":0.05, "z":0.05}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "P2",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/eb166cf8-9c6d-486a-9cfe-b6d985316555.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": -39.50, "y":-29.00, "z":12.00},
+                    "rot": {"x": 0, "y":1.57, "z":0},
+                    "scale": {"x": 4.60, "y":4.60, "z":4.60}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "F5",
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/b0872c70-e93f-456e-9882-62f11128e073.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": -36.90, "y":-25.40, "z":6.50},
+                    "rot": {"x": 0, "y":0, "z":0},
+                    "scale": {"x": 0.2, "y":0.2, "z":0.2}},
+         "trig": {"type": "button",
+                  "time": 0}
+       }
+      ]
 }
