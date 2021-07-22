@@ -308,15 +308,6 @@
                     "scale": {"x": 0.2, "y":0.2, "z":0.2}},
          "trig": {"type": "button",
                   "time": 0}
-       },
-       {
-        "name": "Test_scene_SM",
-        "role":"sm",
-        "target": { },
-        "action": {"type": "change_scene",
-                   "link":"https://xrtheater-assets.xrtheater.live/files/79359fe5-9984-4641-91ac-57b4ad10834e.bin"},
-        "trig": {"type": "button",
-                 "time": 0}
-      }
+       }
       ]
 }
