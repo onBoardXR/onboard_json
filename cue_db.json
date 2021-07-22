@@ -317,6 +317,6 @@
                    "link":"https://xrtheater.live/scenes/T8SMf3U"},
         "trig": {"type": "button",
                  "time": 0}
-      },
+      }
       ]
 }
