@@ -314,7 +314,7 @@
         "role":"sm",
         "target": { },
         "action": {"type": "change_scene",
-                   "link":"https://xrtheater.live/scenes/T8SMf3U"},
+                   "link":"https://xrtheater-assets.xrtheater.live/files/79359fe5-9984-4641-91ac-57b4ad10834e.bin"},
         "trig": {"type": "button",
                  "time": 0}
       }
