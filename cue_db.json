@@ -121,24 +121,13 @@
                  "object_name":"testPersonalCode"},
       "trig": {"type": "button",
                "time": 0}
-    },
+    },   
     {
-      "name": "Strings_run",
+      "name": "Setup_waypoint",
       "role": "strings-clem",
       "target": { },
-      "action": {"type": "call_method_from_object",
-                 "function_name":"run",
-                 "object_name":"stringsFloormat"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "Strings_stop",
-      "role": "strings-clem",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "function_name":"stop",
-                 "object_name":"stringsFloormat"},
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"clemsetup"},
       "trig": {"type": "button",
                "time": 0}
     },
