@@ -1,6 +1,7 @@
 {
   "romamile": {"name": "Roman", "role": "debug"}, 
   "testUser": {"name": "testUser", "role": "test"}, 
+  "stephen": {"name": "SM", "role":"sm"},
   "clem": {"name":"---","role":"strings-clem"},
   "mike": {"name":"Smart-Home","role":"smarthome"},
   "azerty":  {"name": "Crew0", "role": "stagemanager"},
