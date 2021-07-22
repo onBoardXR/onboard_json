@@ -127,7 +127,7 @@
       "role": "strings-clem",
       "target": { },
       "action": {"type": "jump_to_waypoint",
-                 "anchor":"clemsetup"},
+                 "anchor":"#clemsetup"},
       "trig": {"type": "button",
                "time": 0}
     },
