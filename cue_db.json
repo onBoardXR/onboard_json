@@ -225,9 +225,9 @@
                      "dest": "url",
                      "src":  "https://xrtheater-assets.xrtheater.live/files/d8e7881b-a5f1-4bf0-97ad-c199495bba61.glb"},
          "action": {"type": "spawn_item",
-                    "pos": {"x": 7.00, "y":0.0, "z":8.00},
+                    "pos": {"x": 56.447, "y":-224.537, "z":6.72},
                     "rot": {"x": 0, "y":1.57, "z":0},
-                    "scale": {"x": 1.00, "y":1.00, "z":1.00}},
+                    "scale": {"x": 0.07, "y":0.07, "z":0.07}},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -241,19 +241,6 @@
                     "pos": {"x": -50.00, "y":-29.50, "z":28.00},
                     "rot": {"x": 0, "y":0, "z":0},
                     "scale": {"x": 1.2, "y":1.2, "z":1.2}},
-         "trig": {"type": "button",
-                  "time": 0}
-       },
-       {
-         "name": "F4",
-         "role": "ari",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://xrtheater-assets.xrtheater.live/files/560c5d92-6977-4f12-9b30-38653a57e9bc.glb"},
-         "action": {"type": "spawn_item",
-                    "pos": {"x": -57.543, "y":-32.478, "z":36.9722},
-                    "rot": {"x": -157.487, "y":39.352, "z":175.597},
-                    "scale": {"x": 0.1, "y":0.1, "z":0.1}},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -290,7 +277,7 @@
                   "dest": "local",
                   "src": "M3"},
       "action": {"type": "move",
-                 "duration": 400,
+                 "duration": 4000,
                  "loop": false,
                  "pos": {"x": -25.00, "y":-26.00, "z":15},
                  "rot": {"x": 0, "y":90, "z":0},
@@ -318,19 +305,6 @@
                     "pos": {"x": -39.50, "y":-29.00, "z":12.00},
                     "rot": {"x": 0, "y":1.57, "z":0},
                     "scale": {"x": 4.60, "y":4.60, "z":4.60}},
-         "trig": {"type": "button",
-                  "time": 0}
-       },
-       {
-         "name": "F5",
-         "role": "ari",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://xrtheater-assets.xrtheater.live/files/b0872c70-e93f-456e-9882-62f11128e073.glb"},
-         "action": {"type": "spawn_item",
-                    "pos": {"x": -36.90, "y":-25.40, "z":6.50},
-                    "rot": {"x": 0, "y":0, "z":0},
-                    "scale": {"x": 0.2, "y":0.2, "z":0.2}},
          "trig": {"type": "button",
                   "time": 0}
        }
