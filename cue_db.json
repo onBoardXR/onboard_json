@@ -177,7 +177,7 @@
                "time": 0}
     },
     {
-         "name": "H",
+         "name": "H1",
          "role": "ari",
          "target": { "type": "glb",
                      "dest": "url",
@@ -185,6 +185,19 @@
          "action": {"type": "spawn_prop",
                     "rot": {"x": 0, "y":90, "z":0},
                     "scale": {"x": 0.03, "y":0.03, "z":0.03}},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+      {
+         "name": "H2,
+         "role": "ari",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://xrtheater-assets.xrtheater.live/files/7f16a534-3026-4c18-b661-8a53a4e92755.glb"},
+         "action": {"type": "spawn_item",
+                    "pos": {"x": 5.10, "y":-27.10, "z":51.50},
+                    "rot": {"x": 0, "y":-90.00, "z":0},
+                    "scale": {"x": 0.461, "y":0.461, "z":0.461}},
          "trig": {"type": "button",
                   "time": 0}
        },
