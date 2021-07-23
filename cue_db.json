@@ -180,45 +180,6 @@
                   "time": 0}
        },
        {
-         "name": "F1",
-         "role": "ari",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://xrtheater-assets.xrtheater.live/files/d5481e39-de54-4a7b-8c1a-0da5dadb618b.glb"},
-         "action": {"type": "spawn_item",
-                    "pos": {"x": 18.639, "y":-29.549, "z":25.814},
-                    "rot": {"x": 172.904, "y":18.747, "z":-158.827},
-                    "scale": {"x": 7.177, "y":7.177, "z":7.177}},
-         "trig": {"type": "button",
-                  "time": 0}
-       },
-       {
-         "name": "F2",
-         "role": "ari",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://xrtheater-assets.xrtheater.live/files/eaff7246-22ed-4002-ba4a-a3e4810f4d59.glb"},
-         "action": {"type": "spawn_item",
-                    "pos": {"x": 18.30, "y":-30.592, "z":25.196},
-                    "rot": {"x": 0, "y":0, "z":0},
-                    "scale": {"x": 6.72, "y":6.72, "z":6.72}},
-         "trig": {"type": "button",
-                  "time": 0}
-       },
-       {
-         "name": "F3",
-         "role": "ari",
-         "target": { "type": "glb",
-                     "dest": "url",
-                     "src":  "https://xrtheater-assets.xrtheater.live/files/641078b1-2a0f-4c81-9c48-f1f6257e3b6c.glb"},
-         "action": {"type": "spawn_item",
-                    "pos": {"x": 18.698, "y":-30.394, "z":25.202},
-                    "rot": {"x": -180.00, "y":40.00, "z":-180.00},
-                    "scale": {"x": 5.049, "y":5.049, "z":5.049}},
-         "trig": {"type": "button",
-                  "time": 0}
-       },
-       {
          "name": "P1",
          "role": "ari",
          "target": { "type": "glb",
