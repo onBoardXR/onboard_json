@@ -326,7 +326,7 @@
                "time": 0}
     },
   {
-      "name": "Setup_waypoint",
+      "name": "HD_sound_waypoint",
       "role": "strings-clem",
       "target": { },
       "action": {"type": "jump_to_waypoint",
