@@ -223,7 +223,7 @@
          "action": {"type": "spawn_item",
                     "pos": {"x": -50.00, "y":-29.50, "z":28.00},
                     "rot": {"x": 0, "y":0, "z":0},
-                    "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+                    "scale": {"x": 2, "y":2, "z":2}},
          "trig": {"type": "button",
                   "time": 0}
        },
@@ -234,12 +234,37 @@
                      "dest": "url",
                      "src":  "https://xrtheater-assets.xrtheater.live/files/00b19395-34fc-42f3-b924-71374ae3a122.glb"},
          "action": {"type": "spawn_item",
-                    "pos": {"x": -23.50, "y":-10.50, "z":19.50},
-                    "rot": {"x": -180.00, "y":70.00, "z":-180.00},
-                    "scale": {"x": 10.00, "y":3.50, "z":1.00}},
+                    "pos": {"x": -40.60, "y":-28.90, "z":20.00},
+                    "rot": {"x": 0, "y":-900.00, "z":0},
+                    "scale": {"x": 0.24, "y":0.24, "z":0.24}},
          "trig": {"type": "button",
                   "time": 0}
        },
+ {
+      "name": "MA2",
+      "role": "ari",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "M3"},
+      "action": {"type": "move",
+                 "duration": 8000,
+                 "loop": false,
+                 "pos": {"x": -31.00, "y":-14.60, "z":21.10},
+                 "rot": {"x": -180.00, "y":80.00, "z":-180.00},
+                 "scale": {"x": 7.0, "y":3.0, "z":3.0}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+ {
+        "name": "MD2",
+        "role": "ari",
+              "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "M2"},
+              "action": {"type": "delete"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
        {
          "name": "M3",
          "role": "ari",
@@ -254,7 +279,7 @@
                   "time": 0}
        },
       {
-      "name": "MM3",
+      "name": "MA3",
       "role": "ari",
       "target": { "type": "glb",
                   "dest": "local",
@@ -269,7 +294,7 @@
                "time": 0}
     },
     {
-        "name": "DM3",
+        "name": "MD3",
         "role": "ari",
               "target": { "type": "glb",
                   "dest": "local",
