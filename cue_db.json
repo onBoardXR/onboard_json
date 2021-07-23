@@ -167,6 +167,15 @@
       "trig": {"type": "button",
                "time": 0}
     },
+     {
+      "name": "A1",
+      "role": "ari",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#aristart"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
     {
          "name": "H",
          "role": "ari",
@@ -269,5 +278,23 @@
          "trig": {"type": "button",
                   "time": 0}
        }
+      {
+      "name": "Setup_waypoint",
+      "role": "strings-clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#clem1"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+  {
+      "name": "Setup_waypoint",
+      "role": "strings-clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#clem2"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
       ]
 }
