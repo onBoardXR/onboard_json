@@ -195,14 +195,14 @@
                      "dest": "url",
                      "src":  "https://xrtheater-assets.xrtheater.live/files/7f16a534-3026-4c18-b661-8a53a4e92755.glb"},
          "action": {"type": "spawn_prop",
-                    "rot": {"x": 0, "y":-90.00, "z":0},
+                    "rot": {"x": 0, "y":00.00, "z":0},
                     "scale": {"x": 0.461, "y":0.461, "z":0.461}},
          "trig": {"type": "button",
                   "time": 0}
        },
        {
          "name": "P1",
-         "role": "ari",
+         "role": "strings-clem",
          "target": { "type": "glb",
                      "dest": "url",
                      "src":  "https://xrtheater-assets.xrtheater.live/files/d8e7881b-a5f1-4bf0-97ad-c199495bba61.glb"},
@@ -253,7 +253,7 @@
     },
        {
         "name": "M2",
-         "role": "ari",
+         "role": "strings-clem",
          "target": { "type": "glb",
                      "dest": "url",
                      "src":  "https://xrtheater-assets.xrtheater.live/files/00b19395-34fc-42f3-b924-71374ae3a122.glb"},
@@ -266,7 +266,7 @@
        },
  {
       "name": "MA2",
-      "role": "ari",
+      "role": "strings-clem",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "M2"},
@@ -281,7 +281,7 @@
     },
  {
         "name": "MD2",
-        "role": "ari",
+        "role": "strings-clem",
               "target": { "type": "glb",
                   "dest": "local",
                   "src": "M2"},
@@ -291,7 +291,7 @@
     },
        {
          "name": "M3",
-         "role": "ari",
+         "role": "strings-clem",
          "target": { "type": "glb",
                      "dest": "url",
                      "src":  "https://xrtheater-assets.xrtheater.live/files/5029dab2-b1c5-4ca7-a21f-e896640b1a86.glb"},
@@ -304,7 +304,7 @@
        },
       {
       "name": "MA3",
-      "role": "ari",
+      "role": "strings-clem",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "M3"},
@@ -319,7 +319,7 @@
     },
     {
         "name": "MD3",
-        "role": "ari",
+        "role": "strings-clem",
               "target": { "type": "glb",
                   "dest": "local",
                   "src": "M3"},
