@@ -367,5 +367,14 @@
       "trig": {"type": "button",
                "time": 0}
     }
+     {
+      "name": "A3",
+      "role": "ari",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#ari3"},
+      "trig": {"type": "button",
+               "time": 0}
+    }
       ]
 }
