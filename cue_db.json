@@ -90,7 +90,7 @@
       "role":"test",
       "target": { },
       "action": {"type": "change_avatar",
-                 "link":"https://github.com/romamile/virtualtheatre/raw/main/avatar_1.glb"},
+                 "link":"https://onboardxr.github.io/onboard_json/avatar1.glb"},
       "trig": {"type": "button",
                "time": 0}
     },
