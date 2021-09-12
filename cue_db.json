@@ -90,7 +90,7 @@
       "role":"test",
       "target": { },
       "action": {"type": "change_avatar",
-                 "link":"https://onboardxr.github.io/onboard_json/avatar1.glb"},
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/avatar1.glb"},
       "trig": {"type": "button",
                "time": 0}
     },
