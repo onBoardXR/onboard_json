@@ -81,7 +81,7 @@
       "role":"test",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://chat-mirror-us-assets.chatmirror.com/files/76f7a72b-467b-4bf4-aca6-1a9b604d44ec.bin"},
+                 "link":"https://xrtheater.live/scenes/HERkqzS"},
       "trig": {"type": "button",
                "time": 0}
     },
