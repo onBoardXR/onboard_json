@@ -404,7 +404,7 @@
                  "anchor":"TestWaypoint"},
       "trig": {"type": "button",
                 "groupChain" : "NPCchain1",
-                "order": 1,
+                "order": 2,
                "time": 0}
     },
     {
@@ -415,7 +415,7 @@
                  "link":"https://github.com/mikemorran/Test2ndServerA/blob/main/public/Hero_Texture_Update_2.glb"},
       "trig": {"type": "button",
                 "groupChain" : "NPCchain1",
-                "order": 2,
+                "order": 1,
                "time": 0}
     }
       ]
