@@ -377,7 +377,7 @@
                "time": 0}
     },
     {
-      "name": "test_change_to_octopus_avatar",
+      "name": "test_group_change_to_octopus_avatar",
       "role": "test",
       "target": { },
       "action": {"type": "change_avatar",
@@ -387,13 +387,35 @@
                "time": 0}
     },
     {
-      "name": "test_octopus_avatar_starting_position",
+      "name": "test_group_octopus_avatar_starting_position",
       "role": "test",
       "target": { },
       "action": {"type": "jump_to_waypoint",
                  "anchor":"TestWaypoint"},
       "trig": {"type": "button",
                 "groupChain" : "NPCgroup1",
+               "time": 0}
+    },
+    {
+      "name": "test_chain_octopus_avatar_starting_position",
+      "role": "test",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"TestWaypoint"},
+      "trig": {"type": "button",
+                "groupChain" : "NPCchain1",
+                "order": 1,
+               "time": 0}
+    },
+    {
+      "name": "test_group_change_to_octopus_avatar",
+      "role": "test",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://github.com/mikemorran/Test2ndServerA/blob/main/public/Hero_Texture_Update_2.glb"},
+      "trig": {"type": "button",
+                "groupChain" : "NPCchain1",
+                "order": 2,
                "time": 0}
     }
       ]
