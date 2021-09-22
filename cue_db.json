@@ -378,7 +378,7 @@
     },
     {
       "name": "test_change_to_octopus_avatar",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://github.com/mikemorran/Test2ndServerA/blob/main/public/Hero_Texture_Update_2.glb"},
@@ -388,7 +388,7 @@
     },
     {
       "name": "test_octopus_avatar_starting_position",
-      "role": "stagemanager",
+      "role": "test",
       "target": { },
       "action": {"type": "jump_to_waypoint",
                  "anchor":"TestWaypoint"},
