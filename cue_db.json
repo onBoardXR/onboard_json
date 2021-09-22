@@ -375,6 +375,26 @@
                  "anchor":"#ari3"},
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "test_change_to_octopus_avatar",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://github.com/mikemorran/Test2ndServerA/blob/main/public/Hero_Texture_Update_2.glb"},
+      "trig": {"type": "button",
+                "groupChain" : "NPCgroup1",
+               "time": 0}
+    },
+    {
+      "name": "test_octopus_avatar_starting_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"TestWaypoint"},
+      "trig": {"type": "button",
+                "groupChain" : "NPCgroup1",
+               "time": 0}
     }
       ]
 }
