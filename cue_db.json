@@ -408,7 +408,7 @@
                "time": 0}
     },
     {
-      "name": "test_group_change_to_octopus_avatar",
+      "name": "test_chain_change_to_octopus_avatar",
       "role": "test",
       "target": { },
       "action": {"type": "change_avatar",
