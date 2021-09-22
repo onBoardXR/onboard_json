@@ -405,7 +405,7 @@
       "trig": {"type": "button",
                 "groupChain" : "NPCchain1",
                 "order": 2,
-               "time": 0}
+               "time": 5000}
     },
     {
       "name": "test_chain_change_to_octopus_avatar",
@@ -416,7 +416,7 @@
       "trig": {"type": "button",
                 "groupChain" : "NPCchain1",
                 "order": 1,
-               "time": 0}
+               "time": 5000}
     }
       ]
 }
