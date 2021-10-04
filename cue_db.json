@@ -123,6 +123,38 @@
                "time": 0}
     },
     {
+      "name": "Test_shareCamera",
+      "role": "test",
+      "target": { },
+      "action": {"type": "share_screen",
+                  "listpos": [
+                    {
+                      "name": "pos1",
+                      "type": "teleport",
+                      "pos": {"x": 3, "y":1, "z":1},
+                      "rot": {"x": 0, "y":0, "z":0},
+                      "scale": {"x": 2, "y":2, "z":2}
+                    },
+                    {
+                      "name": "pos1",
+                      "type": "move",
+                      "pos": {"x": 3, "y":1, "z":1},
+                      "rot": {"x": 0, "y":0, "z":0},
+                      "scale": {"x": 2, "y":2, "z":2}
+                    },
+                    {
+                      "name": "pos1",
+                      "type": "move",
+                      "pos": {"x": 3, "y":1, "z":1},
+                      "rot": {"x": 0, "y":0, "z":0},
+                      "scale": {"x": 2, "y":2, "z":2}
+                    }
+                  ]
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "Setup_waypoint",
       "role": "strings-clem",
       "target": { },
