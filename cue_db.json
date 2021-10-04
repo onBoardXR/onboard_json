@@ -125,8 +125,11 @@
     {
       "name": "Test_shareCamera",
       "role": "test",
-      "target": { },
-      "action": {"type": "share_screen",
+      "target": { "type": "webcam" },
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 3, "y":1, "z":1},
+                  "rot": {"x": 0, "y":0, "z":0},
+                  "scale": {"x": 2, "y":2, "z":2},
                   "listpos": [
                     {
                       "name": "pos1",
