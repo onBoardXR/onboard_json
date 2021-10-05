@@ -658,6 +658,76 @@
       "trig": {"type": "button",
                 "groupChain": "NPCgroup8Rock",
                "time": 0}
+    },
+    {
+      "name": "Spawn_plank_1",
+      "role": "test",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": -0.5, "y":15.2, "z":19.3},
+                 "rot": {"x":-7.999999999999998, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+                "groupChain": "NPCgroup7Plank",
+               "time": 0}
+    },
+    {
+      "name": "Spawn_plank_2",
+      "role": "test",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 9.5, "y":12.3, "z":18.9},
+                 "rot": {"x":-1.0000000000001052, "y":86.99999999999996, "z":-39.99999999999989},
+                 "scale": {"x": 3.3000000000000007, "y":3.3000000000000007, "z":3.3000000000000007}},
+      "trig": {"type": "button",
+                "groupChain": "NPCgroup7Plank",
+               "time": 0}
+    },
+    {
+      "name": "Spawn_plank_3",
+      "role": "test",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": -5.300000000000001, "y":10.1, "z":15.3},
+                 "rot": {"x":174, "y":-21.000000000000036, "z":-179},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+                "groupChain": "NPCgroup7Plank",
+               "time": 0}
+    },
+    {
+      "name": "Spawn_plank_4",
+      "role": "test",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": -9, "y":12.23, "z":19.5},
+                 "rot": {"x":-4.9999999999999964, "y":-6.000000000000001, "z":28},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+                "groupChain": "NPCgroup7Plank",
+               "time": 0}
+    },
+    {
+      "name": "Spawn_plank_5",
+      "role": "test",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://uploads-prod.reticulum.io/files/23606596-7ab8-42ae-8646-f85659c53e34.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 1, "y":10, "z":16.2},
+                 "rot": {"x":172, "y":-22, "z":-180},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+                "groupChain": "NPCgroup7Plank",
+               "time": 0}
     }
       ]
 }
