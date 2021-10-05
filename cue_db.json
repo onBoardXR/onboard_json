@@ -123,6 +123,51 @@
                "time": 0}
     },
     {
+      "name": "Test_shareCamera",
+      "role": "test",
+      "target": { "type": "webcam" },
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 3, "y":1, "z":1},
+                  "rot": {"x": 0, "y":0, "z":0},
+                  "scale": {"x": 2, "y":2, "z":2}
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "King_avocado",
+      "role": "test",
+      "target": { "type": "glb",
+                  "src":  "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/glTF-Binary/Avocado.glb"},
+      "action": { "type": "item_management",
+                  "listTransform": [
+                    {
+                      "name": "tr1",
+                      "type": "teleport",
+                      "pos": {"x": 3, "y":1, "z":1},
+                      "rot": {"x": 0, "y":0, "z":0},
+                      "scale": {"x": 2, "y":2, "z":2}
+                    },
+                    {
+                      "name": "tr2",
+                      "type": "move",
+                      "pos": {"x": 3, "y":1, "z":1},
+                      "rot": {"x": 0, "y":0, "z":0},
+                      "scale": {"x": 2, "y":2, "z":2}
+                    },
+                    {
+                      "name": "tr3",
+                      "type": "move",
+                      "pos": {"x": 3, "y":1, "z":1},
+                      "rot": {"x": 0, "y":0, "z":0},
+                      "scale": {"x": 2, "y":2, "z":2}
+                    }
+                  ]
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "Setup_waypoint",
       "role": "strings-clem",
       "target": { },
