@@ -942,7 +942,7 @@
                   "action": { "type": "manipulate_avatar",
                     "anime": {
                      "targets": "",
-                     "delay" : 0,
+                     "delay" : 1000,
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInOutSine",
