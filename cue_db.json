@@ -791,7 +791,7 @@
                    "action": { "type": "load_360_image",
                     "src" : "https://xrtheater-assets.xrtheater.live/files/bc549a42-fefd-4ec3-b515-c3e07ef31f04.png",
                     "position" : {"x": 23.486209337511696, "y":-200, "z":-34.45660006785802},
-                    "scale" : {"x": 100, "y": 50, "z": 100}
+                    "scale" : {"x": 10, "y": 5, "z": 10}
                   }
                   }
                 },
@@ -847,14 +847,15 @@
                     "itemMap" : "NPC_61B",
                     "anime": {
                       "targets": "",
-                      "delay" : 1000,
+                      "delay" : 0,
                       "loop": false,
                       "autoplay": false,
                       "easing": "easeInSine",
-                      "duration": 80000
+                      "duration": 12000
                       },
                       "timelines" : [
-                        { "x": 0, "y": 3000, "z": 0 }
+                        { "x": 0, "y": 0, "z": 0 },
+                        { "x": 0, "y": 3000, "z": 0, "duration": 70000}
                       ]
                     }
                 }
@@ -910,11 +911,11 @@
                   "action": { "type": "manipulate_avatar",
                     "anime": {
                      "targets": "",
-                     "delay" : 1000,
+                     "delay" : 0,
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInOutSine",
-                     "duration": 10000
+                     "duration": 35000
                      },
                      "timelines" : [
                        {"x": 150, "y":-150, "z":-34.45660006785802}
@@ -941,7 +942,7 @@
                   "action": { "type": "manipulate_avatar",
                     "anime": {
                      "targets": "",
-                     "delay" : 1000,
+                     "delay" : 0,
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInOutSine",
@@ -971,7 +972,7 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "NPCgroup6Skybox3",
-               "time": 0}
+               "time": 37000}
     },
     {
       "name": "Test_move_Avocado_fm_Test_1",
@@ -987,7 +988,7 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "NPCgroup6Skybox3",
-        "time": 18000
+        "time": 37000
       }
     },
     {
@@ -999,7 +1000,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                   "name": "test_lock_waypoint",
-                  "target": { "role": "general" },
+                  "target": { "role": "stagemanager" },
                   "action": { "type" : "lock_waypoint",
                     "waypoint" : "NPCWaypoint61",
                     "recallAud" : true,
@@ -1029,8 +1030,7 @@
                  }
                 },
       "trig": {"type": "button",
-               "time": 0}
+               "time": 37000}
     }
-    
       ]
 }
