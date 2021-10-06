@@ -770,7 +770,7 @@
                    "action": { "type": "load_360_image",
                     "src" : "https://xrtheater-assets.xrtheater.live/files/cea94280-427d-4acd-89b5-3ea232a6713e.png",
                     "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
-                    "scale" : {"x": 15, "y": 15, "z": 15}
+                    "scale" : {"x": 20, "y": 20, "z": 20}
                   }
                   }
                 },
@@ -790,8 +790,8 @@
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
                     "src" : "https://xrtheater-assets.xrtheater.live/files/bc549a42-fefd-4ec3-b515-c3e07ef31f04.png",
-                    "position" : {"x": 23.486209337511696, "y":-200, "z":-34.45660006785802},
-                    "scale" : {"x": 10, "y": 5, "z": 10}
+                    "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
+                    "scale" : {"x": 4000, "y": 4000, "z": 4000}
                   }
                   }
                 },
@@ -822,7 +822,7 @@
                       "duration": 5000
                       },
                       "timelines" : [
-                        { "x": 4000, "y": 4000, "z": 4000 }
+                        { "x": 4500, "y": 4500, "z": 4500 }
                       ]
                     }
                 }
@@ -1007,7 +1007,7 @@
                     "maxDist" : 0.5,
                     "anime" : {
                      "targets": "",
-                     "delay" : 1000,
+                     "delay" : 37000,
                      "loop": false,
                      "autoplay": true,
                      "easing": "linear",
@@ -1030,7 +1030,74 @@
                  }
                 },
       "trig": {"type": "button",
-               "time": 37000}
+               "time": 0}
+    },
+    {
+      "name": "test_socket_manipulate_skybox_360",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "scale"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "NPC_61B",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInSine",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        {"x": 10, "y":5, "z":10}
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPCgroup52",
+               "time": 0}
+    },
+    {
+      "name": "NPC_51A",
+      "role": "test",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/ad3dcb41-674d-4e9b-a364-f807ccc55e5d.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 321, "y":-100, "z":34.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain" : "NPCgroup51",
+               "time": 0}
+    },
+    {
+      "name": "test_socket_load_360",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_61B",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/bc549a42-fefd-4ec3-b515-c3e07ef31f04.png",
+                    "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
+                    "scale" : {"x": 4000, "y": 4000, "z": 4000}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPCgroup51",
+               "time": 0}
     }
       ]
 }
