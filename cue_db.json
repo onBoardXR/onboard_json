@@ -1007,7 +1007,7 @@
                     "maxDist" : 0.001,
                     "anime" : {
                      "targets": "",
-                     "delay" : 0,
+                     "delay" : 1000,
                      "loop": false,
                      "autoplay": true,
                      "easing": "linear",
