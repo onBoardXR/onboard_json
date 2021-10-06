@@ -9,7 +9,7 @@
   "dave":  {"name": "David", "role": "test"},
   "kevn": {"name": "Kevin", "role": "stagemanager"},
   "alex": {"name": "Alex", "role": "stagemanager"},
-  "brnd": {"name": "Brendan", "role": "stagemanager"},
+  "brnd": {"name": "Brendan", "role": "performer"},
    "ari":{"name":"---","role":"ari"},
   "dash":{"name":"Cap'n Nobeard", "role":"stagemanager"},
   "robt":{"name":"Robot","role":"bikini-robt"},
