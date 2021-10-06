@@ -915,10 +915,11 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInSine",
-                     "duration": 25000
+                     "duration": 7500
                      },
                      "timelines" : [
-                       {"x": 150, "y":-150, "z":-34.45660006785802}
+                       {"x": 150, "y":0, "z":-34.45660006785802},
+                       {"x": 150, "y":-150, "z":-34.45660006785802, "duration": 15000}
                      ]
                    }
                  }
@@ -946,7 +947,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInSine",
-                     "duration": 30000
+                     "duration": 20000
                      },
                      "timelines" : [
                        {"x": 450, "y":150, "z":450}
@@ -972,7 +973,7 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "NPCgroup6Skybox3",
-               "time": 37000}
+               "time": 27000}
     },
     {
       "name": "Test_move_Avocado_fm_Test_1",
@@ -988,7 +989,7 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "NPCgroup6Skybox3",
-        "time": 37000
+        "time": 27000
       }
     },
     {
