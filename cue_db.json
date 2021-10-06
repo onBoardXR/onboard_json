@@ -768,7 +768,7 @@
                    "name": "NPC_61A",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/cea94280-427d-4acd-89b5-3ea232a6713e.png",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/be8aac0d-cef1-464e-9026-2eb76e863062.png",
                     "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
                     "scale" : {"x": 20, "y": 20, "z": 20}
                   }
@@ -789,7 +789,7 @@
                    "name": "NPC_61B",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/bc549a42-fefd-4ec3-b515-c3e07ef31f04.png",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/66a0556d-f87c-4008-a7af-735bbc4edb80.png",
                     "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
                     "scale" : {"x": 4000, "y": 4000, "z": 4000}
                   }
@@ -848,7 +848,7 @@
                     "anime": {
                       "targets": "",
                       "delay" : 0,
-                      "loop": false,
+                      "loop": true,
                       "autoplay": false,
                       "easing": "easeInSine",
                       "duration": 12000
@@ -1004,7 +1004,7 @@
                   "action": { "type" : "lock_waypoint",
                     "waypoint" : "NPCWaypoint61",
                     "recallAud" : true,
-                    "maxDist" : 0.5,
+                    "maxDist" : 0.001,
                     "anime" : {
                      "targets": "",
                      "delay" : 0,
@@ -1030,6 +1030,7 @@
                  }
                 },
       "trig": {"type": "button",
+        "groupChain" : "NPCgroup6Skybox3",
                "time": 0}
     },
     {
@@ -1045,7 +1046,7 @@
                       "aspect": "scale"
                   },
                    "action": { "type": "manipulate_skybox_360",
-                    "itemMap" : "NPC_61B",
+                    "itemMap" : "NPC_51A",
                     "anime": {
                       "targets": "",
                       "delay" : 0,
@@ -1061,21 +1062,7 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "NPCgroup52",
-               "time": 0}
-    },
-    {
-      "name": "NPC_51A",
-      "role": "test",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/ad3dcb41-674d-4e9b-a364-f807ccc55e5d.glb"},
-      "action": {"type": "spawn_item",
-                 "pos": {"x": 321, "y":-100, "z":34.5},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-      "trig": {"type": "button",
-        "groupChain" : "NPCgroup51",
+                "groupChain" : "NPCgroup53",
                "time": 0}
     },
     {
@@ -1089,7 +1076,7 @@
                    "name": "NPC_61B",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/bc549a42-fefd-4ec3-b515-c3e07ef31f04.png",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/0a84f435-d0f4-4b6a-9dbe-79cf507066cb.png",
                     "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
                     "scale" : {"x": 4000, "y": 4000, "z": 4000}
                   }
