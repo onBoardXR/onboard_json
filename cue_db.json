@@ -1077,7 +1077,7 @@
                    "name": "NPC_51A",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/be8aac0d-cef1-464e-9026-2eb76e863062.png",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/d9a7df4a-7638-47f6-b415-036f45e04fbd.png",
                     "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
                     "scale" : {"x": 4020, "y": 4020, "z": 4020}
                   }
