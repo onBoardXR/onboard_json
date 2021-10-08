@@ -1079,7 +1079,7 @@
                    "action": { "type": "load_360_image",
                     "src" : "https://xrtheater-assets.xrtheater.live/files/d9a7df4a-7638-47f6-b415-036f45e04fbd.png",
                     "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
-                    "scale" : {"x": 4020, "y": 4020, "z": 4020}
+                    "scale" : {"x": 4100, "y": 4100, "z": 4100}
                   }
                   }
                 },
@@ -1312,6 +1312,53 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "NPCgroup53",
+               "time": 0}
+    },
+    {
+      "name": "Change_to_UW",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/9rF2nTR"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "music_position",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#musicPos"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "music_rolloff",
+      "role": "demz",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["---"],
+                    "rolloff": 0.3,
+                    "refDistance": 10
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "rusalka_starting_pos",
+      "role": "clem",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#musicPos"},
+      "trig": {"type": "button",
                "time": 0}
     }
       ]
