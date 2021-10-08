@@ -1360,6 +1360,24 @@
                  "anchor":"#clemStartPos"},
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "demz_change_invisible",
+      "role":"demz",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://xrtheater.live/avatars/EjSSaSm"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "clem_change_invisible",
+      "role":"clem",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://xrtheater.live/avatars/EjSSaSm"},
+      "trig": {"type": "button",
+               "time": 0}
     }
       ]
 }
