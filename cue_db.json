@@ -1357,7 +1357,7 @@
       "role": "clem",
       "target": { },
       "action": {"type": "jump_to_waypoint",
-                 "anchor":"#musicPos"},
+                 "anchor":"#clemStartPos"},
       "trig": {"type": "button",
                "time": 0}
     }
