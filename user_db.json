@@ -4,6 +4,7 @@
   "stephen": {"name": "SM", "role":"stagemanager"},
   "clem": {"name":"clem","role":"clem"},
   "demz":{"name":"demz","role":"demz"},
+  "rbca":{"name":"rebecca","role":"rbca"},
   "mike": {"name":"---","role":"stagemanager"},
   "azerty":  {"name": "Crew0", "role": "performer"},
   "crew":  {"name": "Crew1", "role": "performer"},

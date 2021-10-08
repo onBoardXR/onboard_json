@@ -1147,7 +1147,7 @@
         "rot": {"x":0, "y":174, "z":0},
         "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPCgroup52",
+                "groupChain": "NPCgroup43",
                "time": 0}
     },
     {
@@ -1161,7 +1161,7 @@
 "rot": {"x":0, "y":14, "z":0},
 "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPCgroup52",
+                "groupChain": "NPCgroup43",
                "time": 0}
     },
     {
@@ -1175,7 +1175,7 @@
 "rot": {"x":0, "y":0, "z":0},
 "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPCgroup52",
+                "groupChain": "NPCgroup43",
                "time": 0}
     },
     {
@@ -1189,7 +1189,7 @@
 "rot": {"x":0, "y":0, "z":0},
 "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPCgroup52",
+                "groupChain": "NPCgroup43",
                "time": 0}
     },
     {
@@ -1203,7 +1203,7 @@
 "rot": {"x":0, "y":0, "z":0},
 "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPCgroup52",
+                "groupChain": "NPCgroup43",
                "time": 0}
     },
     {
@@ -1217,7 +1217,7 @@
 "rot": {"x":0, "y":0, "z":0},
 "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPCgroup52",
+                "groupChain": "NPCgroup43",
                "time": 0}
     },
     {
@@ -1231,7 +1231,7 @@
         "rot": {"x":0, "y":0, "z":0},
         "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPCgroup52",
+                "groupChain": "NPCgroup43",
                "time": 0}
     },
     {
@@ -1245,7 +1245,7 @@
 "rot": {"x":0, "y":0, "z":0},
 "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain": "NPCgroup52",
+                "groupChain": "NPCgroup43",
                "time": 0}
     },
     {
@@ -1315,6 +1315,57 @@
                "time": 0}
     },
     {
+      "name": "test_socket_manipulate_avatar",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "individual",
+                    "name": "Brendan"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://xrtheater.live/avatars/DNWSTgN"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPCgroup43",
+               "time": 0}
+    },
+    {
+      "name": "test_socket_manipulate_avatar",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "test_manipulate_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Brendan",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 7500
+                     },
+                     "timelines" : [
+                       {"x": 28.5757502221582, "y":2.3540395313003377, "z":-30.867408271571247, "delay": 0, "duration":0}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPCgroup43",
+               "time": 0}
+    },
+    {
       "name": "Change_to_UW",
       "role":"stagemanager",
       "target": { },
@@ -1376,6 +1427,15 @@
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://xrtheater.live/avatars/EjSSaSm"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Change_to_Aquaians",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/9rF2nTR"},
       "trig": {"type": "button",
                "time": 0}
     }
