@@ -1435,7 +1435,88 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/9rF2nTR"},
+                 "link":"NEEDSUPDATE"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_stage_avatar",
+      "role":"rbca",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/AQUhost.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "stage_avatar_starting_position",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"NEEDSUPDATE"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_transparent_avatar",
+      "role":"rbca",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_scientist_avatar",
+      "role":"rbca",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/AQUscientist.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_investor_avatar",
+      "role":"rbca",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/AQUinvestor.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_siren_avatar",
+      "role":"rbca",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/AQUsiren.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_intern_avatar",
+      "role":"rbca",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/AQUintern.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_all_to_flytrap_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"test",
+                  "target": { "role" : "general"},
+                  "action": {"type": "change_avatar",
+                             "link":"NEEDSUPDATE"}
+                }
+                },
       "trig": {"type": "button",
                "time": 0}
     }

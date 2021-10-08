@@ -2,6 +2,8 @@
   "romamile": {"name": "Roman", "role": "test"}, 
   "testUser": {"name": "testUser", "role": "test"}, 
   "stephen": {"name": "SM", "role":"stagemanager"},
+  "guestPart": {"name":"participant","role":"participant"},
+  "guestSpec": {"name":"spectator","role":"spectator"},
   "clem": {"name":"clem","role":"clem"},
   "demz":{"name":"demz","role":"demz"},
   "rbca":{"name":"rebecca","role":"rbca"},
