@@ -1327,7 +1327,7 @@
                   "target": { "role" : "individual",
                     "name": "Brendan"},
                   "action": {"type": "change_avatar",
-                             "link":"https://xrtheater.live/avatars/DNWSTgN"}
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/LGTTBmain.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -1417,7 +1417,7 @@
       "role":"demz",
       "target": { },
       "action": {"type": "change_avatar",
-                 "link":"https://xrtheater.live/avatars/EjSSaSm"},
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -1426,7 +1426,7 @@
       "role":"clem",
       "target": { },
       "action": {"type": "change_avatar",
-                 "link":"https://xrtheater.live/avatars/EjSSaSm"},
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
       "trig": {"type": "button",
                "time": 0}
     },
