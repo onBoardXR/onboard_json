@@ -1343,7 +1343,7 @@
                    "name": "test_change_rolloff",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["---"],
+                    "names": ["demz"],
                     "rolloff": 0.3,
                     "refDistance": 10
                     }
