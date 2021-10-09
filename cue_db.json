@@ -1446,6 +1446,7 @@
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/AQUhost.glb"},
       "trig": {"type": "button",
+              "groupChain" : "groupAQUTopOfShow",
                "time": 0}
     },
     {
@@ -1455,6 +1456,28 @@
       "action": {"type": "jump_to_waypoint",
                  "anchor":"NEEDSUPDATE"},
       "trig": {"type": "button",
+              "groupChain" : "groupAQUTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "WH_god_mic",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "WH_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Rebecca"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupAQUTopOfShow",
                "time": 0}
     },
     {
@@ -1511,10 +1534,652 @@
                  "function_name": "cueSocket",
                  "_cue": {
                   "name": "Test_change_avatar",
-                  "role":"test",
+                  "role":"rbca",
                   "target": { "role" : "general"},
                   "action": {"type": "change_avatar",
                              "link":"NEEDSUPDATE"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_to_female_barnacle_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"NEEDSUPDATE"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_to_male_barnacle_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"NEEDSUPDATE"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_to_shrimp_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"NEEDSUPDATE"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_to_AR_barnacle_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"NEEDSUPDATE"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_avatar_back",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_avatar_change_back",
+                   "target": { "role": "participant" },
+                   "action": { "type": "avatar_change_back"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "rebecca_animate_avatar_size",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_avatar",
+                   "target": { "role" : "individual",
+                     "name": "Rebecca",
+                     "aspect" : "scale" },
+                   "action": { "type": "manipulate_avatar",
+                     "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 10000
+                      },
+                      "timelines" : [
+                        { "x": 20, "y": 20, "z": 20 }
+                      ]
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+              "groupChain": "groupRebeccaAnimateAvatar",
+               "time": 0}
+    },
+    {
+      "name": "rebecca_animate_avatar_position",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_avatar",
+                   "target": { "role" : "individual",
+                     "name": "Rebecca",
+                     "aspect" : "position" },
+                   "action": { "type": "manipulate_avatar",
+                     "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 10000
+                      },
+                      "timelines" : [
+                        { "x": "NEEDSUPDATE", "y": "NEEDSUPDATE", "z": "NEEDSUPDATE" }
+                      ]
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+              "groupChain": "groupRebeccaAnimateAvatar",
+               "time": 0}
+    },
+    {
+      "name": "Change_to_DAS",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"NEEDSUPDATE"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "spawn_caravan",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/31db54a6-e53d-423d-88bb-ff6c83565055.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 7, "y":0, "z":2},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.1, "y":0.1, "z":0.1}},
+      "trig": {"type": "button",
+              "groupChain": "groupChangeToDAS",
+               "time": 0}
+    },
+    {
+      "name": "underwater_panorama",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "underwater_panorama",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "NEEDSUPDATE",
+                    "position" : {"x": 6.5, "y": 17.256, "z": 11},
+                    "rotation" : {"x": 0, "y": -152, "z": 0},
+                    "scale" : {"x": 23.256, "y": 23.256, "z": 23.256}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+              "groupChain": "groupChangeToDAS",
+               "time": 0}
+    },
+    {
+      "name": "DAS_recall_audience",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "DAS_recall_audience",
+                   "target": { "role": "general" },
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "audienceStartWaypoint",
+                    "maxDist" : 10,
+                    "enableMotion" : false}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "load_daisy",
+      "role": "naom",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/2a9735b0-6396-4bcc-87fe-f24afe8a6322.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 9, "y":0.061, "z":5.958},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.03, "y":0.03, "z":0.03}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "naomi_animate_avatar_size",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_avatar",
+                   "target": { "role" : "individual",
+                     "name": "Naomi",
+                     "aspect" : "scale" },
+                   "action": { "type": "manipulate_avatar",
+                     "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 10000
+                      },
+                      "timelines" : [
+                        { "x": 20, "y": 20, "z": 20 }
+                      ]
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+              "groupChain": "groupNaomiInflateAvatar",
+               "time": 0}
+    },
+    {
+      "name": "naomi_animate_avatar_position",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_avatar",
+                   "target": { "role" : "individual",
+                     "name": "Naomi",
+                     "aspect" : "position" },
+                   "action": { "type": "manipulate_avatar",
+                     "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 10000
+                      },
+                      "timelines" : [
+                        { "x": "NEEDSUPDATE", "y": "NEEDSUPDATE", "z": "NEEDSUPDATE" }
+                      ]
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+              "groupChain": "groupNaomiInflateAvatar",
+               "time": 0}
+    },
+    {
+      "name": "DAS_delete_underwater_panorama",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "delete_underwater_panorama",
+                  "role": "stagemanager",
+                  "target": { "type": "glb",
+                              "role": "general",
+                              "src": "underwater_panorama"},
+                  "action": {"type": "delete"}
+                }
+                },
+      "trig": {"type": "button",
+              "groupChain": "changeOutDAS",
+               "time": 0}
+    },
+    {
+      "name": "DAS_delete_daisy",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "delete_daisy",
+                  "role": "stagemanager",
+                  "target": { "type": "glb",
+                              "role": "general",
+                              "src": "load_daisy"},
+                  "action": {"type": "delete"}
+                }
+                },
+      "trig": {"type": "button",
+              "groupChain": "changeOutDAS",
+               "time": 0}
+    },
+    {
+      "name": "Change_to_WH",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"NEEDSUPDATE"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_druid_avatar",
+      "role":"kryn",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/WHdruid.glb"},
+      "trig": {"type": "button",
+        "groupChain": "groupWHTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "WH_god_mic",
+      "role": "kryn",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "WH_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Koryn"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupWHTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "WH_intro_waypoint",
+      "role": "kryn",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#WHIntroWaypoint"},
+      "trig": {"type": "button",
+              "groupChain": "groupWHTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "druid_knot",
+      "role": "kryn",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/avatar/WHdruidKnot.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 0, "y":0, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 10, "y":10, "z":10}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "liver_1",
+      "role": "kryn",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 5, "y":-50, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+              "groupChain" : "groupWHLoadLiver",
+               "time": 0}
+    },
+    {
+      "name": "liver_2",
+      "role": "kryn",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": -5, "y":-50, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+              "groupChain" : "groupWHLoadLiver",
+               "time": 0}
+    },
+    {
+      "name": "liver_3",
+      "role": "kryn",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 0, "y":-50, "z":5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+              "groupChain" : "groupWHLoadLiver",
+               "time": 0}
+    },
+    {
+      "name": "liver_4",
+      "role": "kryn",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 0, "y":-50, "z":-5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+              "groupChain" : "groupWHLoadLiver",
+               "time": 0}
+    },
+    {
+      "name": "Change_to_NEMO",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"NEEDSUPDATE"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "nemo_char_av_1",
+      "role": "dave",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_char_av_1",
+                   "target": { "role": "individual",
+                                "name": "Mrs_Nemo"
+                  },
+                   "action": { "type": "change_avatar",
+                    "link" : "https://onboardxr.github.io/onboard_json/avatar/NEMOav1.glb"}
+                }
+                },
+      "trig": {"type": "button",
+              "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "nemo_voice_av",
+      "role": "dave",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_voice_av",
+                   "target": { "role": "individual",
+                                "name": "Vivian"
+                  },
+                   "action": { "type": "change_avatar",
+                    "link" : "https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"}
+                }
+                },
+      "trig": {"type": "button",
+              "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "nemo_avatar_rolloff",
+      "role": "dave",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_avatar_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Mrs_Nemo"],
+                    "rolloff": 9999999,
+                    "refDistance": 0.00000001
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "nemo_voice_rolloff",
+      "role": "dave",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_voice_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Vivian"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "nemo_actor_starting_place",
+      "role": "dave",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_actor_starting_place",
+                   "target": { "role": "individual",
+                              "name": "Mrs_Nemo"
+                  },
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "nemoStartWaypoint",
+                    "maxDist" : 0.001,
+                    "enableMotion" : false}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "nemo_voice_starting_place",
+      "role": "dave",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_voice_starting_place",
+                   "target": { "role": "individual",
+                              "name": "Vivian"
+                  },
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "nemoVoiceWaypoint",
+                    "maxDist" : 0.001,
+                    "enableMotion" : false}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "nemo_audience_places",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_audience_places",
+                   "target": { "role": "spectator"},
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "nemoAudWaypoint",
+                    "maxDist" : 10,
+                    "enableMotion" : false}
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupNemoRecallAud",
+               "time": 0}
+    },
+    {
+      "name": "nemo_audience_places",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_audience_places",
+                   "target": { "role": "participant"},
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "nemoAudWaypoint",
+                    "maxDist" : 10,
+                    "enableMotion" : false}
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupNemoRecallAud",
+               "time": 0}
+    },
+    {
+      "name": "nemo_character_av_2",
+      "role": "dave",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_character_av_2",
+                   "target": { "role": "individual",
+                                "name": "Mrs_Nemo"
+                  },
+                   "action": { "type": "change_avatar",
+                    "link" : "https://onboardxr.github.io/onboard_json/avatar/NEMOav2.glb"}
                 }
                 },
       "trig": {"type": "button",
