@@ -18,11 +18,11 @@
       "role": "test",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://drive.google.com/file/d/1-xw4aL9nFx-339EGKnRZYlUVz4xYDvJM/view?usp=sharing"},
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/669830fc-9ebb-4d7d-8932-3469f23a0c27.glb"},
       "action": {"type": "spawn_item",
                  "pos": {"x": 24, "y":2, "z":0},
                  "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+                 "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
     },  
