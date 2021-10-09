@@ -52,6 +52,21 @@
       "trig": {"type": "button",
                "time": 0}
     }, 
+       {
+      "name": "Test_move_kraken1",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Test_kraken1"},
+      "action": {"type": "move",
+                 "duration": 2000,
+                 "loop": true,
+                 "pos": {"x": 42, "y":2, "z":0},
+                 "rot": {"x": -180, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
     {
       "name": "Test_2_spawn_item_video",
       "role": "test",
