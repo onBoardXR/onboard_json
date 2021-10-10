@@ -1489,7 +1489,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"NEEDSUPDATE"},
+                 "link":"https://xrtheater.live/scenes/iwpFCHT"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -2050,7 +2050,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"NEEDSUPDATE"},
+                 "link":"https://xrtheater.live/scenes/iYKN3op"},
       "trig": {"type": "button",
                "time": 0}
     },
