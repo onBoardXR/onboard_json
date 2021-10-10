@@ -92,7 +92,7 @@
                  "duration": 4000,
                  "loop": false,
                  "pos": {"x": 24, "y":-26, "z":0},
-                 "rot": {"x": -10, "y":0, "z":0},
+                 "rot": {"x": 1, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
@@ -117,10 +117,10 @@
                   "dest": "local",
                   "src": "Nemo_helmet"},
       "action": {"type": "move",
-                 "duration": 2000,
+                 "duration": 3000,
                  "loop": false,
                  "pos": {"x": 25.5, "y":1, "z":6.5},
-                 "rot": {"x": -10, "y":5, "z":0},
+                 "rot": {"x": -5, "y":5, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
                "time": 0}
@@ -132,9 +132,9 @@
                   "dest": "local",
                   "src": "Nemo_helmet"},
       "action": {"type": "move",
-                 "duration": 2000,
+                 "duration": 4000,
                  "loop": false,
-                 "pos": {"x": 25.5, "y":2, "z":6.5},
+                 "pos": {"x": 25.5, "y":8, "z":6.5},
                  "rot": {"x": 0, "y":-2, "z":2},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
@@ -147,9 +147,9 @@
                   "dest": "local",
                   "src": "Nemo_helmet"},
       "action": {"type": "move",
-                 "duration": 2000,
+                 "duration": 4000,
                  "loop": false,
-                 "pos": {"x": 25.5, "y":2, "z":6.5},
+                 "pos": {"x": 25.5, "y":16, "z":6.5},
                  "rot": {"x": 5, "y":3, "z":-3},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
@@ -2318,6 +2318,27 @@
                 },
       "trig": {"type": "button",
             "groupChain": "groupNemoRecallAud",
+               "time": 0}
+    },
+        {
+      "name": "nemo_actor_entrance",
+      "role": "nemo-qs",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_actor_starting_place",
+                   "target": { "role": "individual",
+                              "name": "Mrs_Nemo"
+                  },
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "vivEntranceWaypoint",
+                    "maxDist" : 0.001,
+                    "enableMotion" : false}
+                }
+                },
+      "trig": {"type": "button",
                "time": 0}
     },
     {
