@@ -1514,14 +1514,14 @@
                "time": 0}
     },
     {
-      "name": "WH_god_mic",
+      "name": "AQU_god_mic",
       "role": "rbca",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "WH_god_mic",
+                   "name": "AQU_god_mic",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
                     "names": ["Rebecca"],
@@ -1767,7 +1767,7 @@
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 0.1, "y":0.1, "z":0.1}},
       "trig": {"type": "button",
-              "groupChain": "groupChangeToDAS",
+              "groupChain": "groupDASTopOfShow",
                "time": 0}
     },
     {
@@ -1789,7 +1789,7 @@
                   }
                 },
       "trig": {"type": "button",
-              "groupChain": "groupChangeToDAS",
+              "groupChain": "groupDASTopOfShow",
                "time": 0}
     },
     {
