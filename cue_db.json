@@ -1448,9 +1448,29 @@
                    "name": "test_change_rolloff",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["demz"],
+                    "names": ["---"],
                     "rolloff": 0.3,
                     "refDistance": 10
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "music_rolloff",
+      "role": "clem",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["--"],
+                    "rolloff": 0.5,
+                    "refDistance": 1
                     }
                 }
                 },
