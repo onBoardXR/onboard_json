@@ -14,33 +14,33 @@
                "time": 0}
     },
 {
-      "name": "Test_kraken1",
+      "name": "Load_kraken1",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/87369cd7-181b-4afc-841c-7734277a2114.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": 40, "y":2, "z":0},
+                 "pos": {"x": 46, "y":2, "z":0},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
     }, 
     {
-      "name": "Test_kraken2",
+      "name": "Load_kraken2",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/0067aa28-11ee-4f4f-b807-3993878e07aa.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": 40, "y":2, "z":0},
+                 "pos": {"x": 20, "y":1, "z":-1},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
     }, 
         {
-      "name": "Test_kraken_eye",
+      "name": "Load_kraken_eye",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
@@ -53,16 +53,16 @@
                "time": 0}
     }, 
        {
-      "name": "Test_move_kraken1",
+      "name": "Release_kraken1",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src": "Test_kraken1"},
+                  "src": "Load_kraken1"},
       "action": {"type": "move",
-                 "duration": 2000,
+                 "duration": 2500,
                  "loop": false,
                  "pos": {"x": 56, "y":2, "z":0},
-                 "rot": {"x": -10, "y":0, "z":0},
+                 "rot": {"x": -12, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
@@ -72,7 +72,7 @@
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src": "Test_kraken2"},
+                  "src": "Load_kraken2"},
       "action": {"type": "move",
                  "duration": 2000,
                  "loop": false,
@@ -87,7 +87,7 @@
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src": "Test_kraken2"},
+                  "src": "Load_kraken_eye"},
       "action": {"type": "move",
                  "duration": 2000,
                  "loop": false,
@@ -108,7 +108,6 @@
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-                "groupChain" : "NemoHelmetFloatChain",
                "time": 0}
     }, 
     {
@@ -124,9 +123,8 @@
                  "rot": {"x": -10, "y":5, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
-                "groupChain" : "NemoHelmetFloatChain",
-                "order": 1,
-               "time": 3000}
+                "groupChain" : "groupNemoHelmetFloat",
+               "time": 0}
     },
         {
       "name": "Nemo_helmet_float2",
@@ -141,9 +139,9 @@
                  "rot": {"x": 0, "y":-2, "z":2},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
-                "groupChain" : "NemoHelmetFloatChain",
-                "order": 2,
-               "time": 1000}
+                "groupChain" : "groupNemoHelmetFloat",
+                "order": 1,
+               "time": 2000}
     },
             {
       "name": "Nemo_helmet_float3",
@@ -158,7 +156,7 @@
                  "rot": {"x": 5, "y":3, "z":-3},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
-                "groupChain" : "NemoHelmetFloatChain",
+                "groupChain" : "groupNemoHelmetFloat",
                 "order": 3,
                "time": 2000}
     },
@@ -279,6 +277,18 @@
                   "pos": {"x": 3, "y":1, "z":1},
                   "rot": {"x": 0, "y":0, "z":0},
                   "scale": {"x": 2, "y":2, "z":2}
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "Nemo_shareCamera",
+      "role": "nemo-qs",
+      "target": { "type": "webcam" },
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 25, "y":2, "z":-4},
+                  "rot": {"x": 0, "y":0, "z":0},
+                  "scale": {"x": 6, "y":3, "z":1}
                 },
       "trig": {"type": "button",
                "time": 0}
