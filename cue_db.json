@@ -123,7 +123,6 @@
                  "rot": {"x": -10, "y":5, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
-                "groupChain" : "groupNemoHelmetFloat",
                "time": 0}
     },
         {
@@ -139,9 +138,7 @@
                  "rot": {"x": 0, "y":-2, "z":2},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
-                "groupChain" : "groupNemoHelmetFloat",
-                "order": 1,
-               "time": 2000}
+               "time": 0}
     },
             {
       "name": "Nemo_helmet_float3",
@@ -156,9 +153,7 @@
                  "rot": {"x": 5, "y":3, "z":-3},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
-                "groupChain" : "groupNemoHelmetFloat",
-                "order": 3,
-               "time": 2000}
+               "time": 0}
     },
     {
       "name": "Test_2_spawn_item_video",
