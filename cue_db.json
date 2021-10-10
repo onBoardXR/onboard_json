@@ -1931,7 +1931,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"NEEDSUPDATE"},
+                 "link":"https://xrtheater.live/scenes/dadHgGh"},
       "trig": {"type": "button",
                "time": 0}
     },
