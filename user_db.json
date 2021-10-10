@@ -15,6 +15,7 @@
   "azerty":  {"name": "Crew0", "role": "performer"},
   "crew":  {"name": "Crew1", "role": "performer"},
   "dave":  {"name": "David", "role": "dave"},
+   "davd": {"name": "David_too","role":"nemo-qs"},
   "kevn": {"name": "Kevin", "role": "stagemanager"},
   "alex": {"name": "Alex", "role": "stagemanager"},
   "brnd": {"name": "Brendan", "role": "performer"},
