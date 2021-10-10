@@ -44,7 +44,7 @@
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/aa0d32f2-ea55-459a-ab6d-21cf69e8013d.glb"},
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/fb985139-643c-4001-85dd-beb9484a0372.glb"},
       "action": {"type": "spawn_item",
                  "pos": {"x": 11, "y":2, "z":11},
                  "rot": {"x": 0, "y":0, "z":0},
