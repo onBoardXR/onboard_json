@@ -46,7 +46,7 @@
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/aa0d32f2-ea55-459a-ab6d-21cf69e8013d.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": 24, "y":-20, "z":14},
+                 "pos": {"x": 11, "y":2, "z":11},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
