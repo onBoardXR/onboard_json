@@ -3,15 +3,15 @@
         "show" : "test",
         "role" : "participant",
         "date" : "11 Oct 2021",
-        "startingTime" : "16:30:00",
-        "endingTime" : "19:30:00"
+        "startingTime" : "00:00:00",
+        "endingTime" : "23:59:59"
     },
     "ydusmnv98212" : {
         "show" : "test",
         "role" : "spectator",
         "date" : "11 Oct 2021",
-        "startingTime" : "16:30:00",
-        "endingTime" : "19:30:00"
+        "startingTime" : "00:00:00",
+        "endingTime" : "23:59:59"
     },
     "81hf3k19cnb3" : {
         "show" : "invitedDress1",
