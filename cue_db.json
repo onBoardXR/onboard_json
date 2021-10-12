@@ -2595,7 +2595,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/HEXKmYR"},
+                 "link":"https://xrtheater.live/scenes/ZgHqm5C"},
       "trig": {"type": "button",
                "time": 0}
     },
