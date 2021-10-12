@@ -1671,7 +1671,7 @@
       "role": "rbca",
       "target": { },
       "action": {"type": "jump_to_waypoint",
-                 "anchor":"#audienceStartingPoint"},
+                 "anchor":"#audienceStartingPosition"},
       "trig": {"type": "button",
               "groupChain" : "groupAQUTopOfShow",
                "time": 0}
@@ -1795,10 +1795,10 @@
                       "loop": false,
                       "autoplay": false,
                       "easing": "easeInOutSine",
-                      "duration": 10000
+                      "duration": 2000
                       },
                       "timelines" : [
-                        { "x": 20, "y": 20, "z": 20 }
+                        { "x": 6, "y": 6, "z": 6 }
                       ]
                     }
                   }
@@ -1826,10 +1826,10 @@
                       "loop": false,
                       "autoplay": false,
                       "easing": "easeInOutSine",
-                      "duration": 10000
+                      "duration": 2000
                       },
                       "timelines" : [
-                        { "x": "NEEDSUPDATE", "y": "NEEDSUPDATE", "z": "NEEDSUPDATE" }
+                        { "x": 12, "y": 9, "z": 24 }
                       ]
                     }
                   }
@@ -2302,7 +2302,7 @@
                    "name": "nemo_audience_places",
                    "target": { "role": "participant"},
                    "action": { "type": "recall_audience",
-                    "waypoint" : "nemoAudWaypoint",
+                    "waypoint" : "audienceStartingPosition",
                     "maxDist" : 10,
                     "enableMotion" : false}
                 }
