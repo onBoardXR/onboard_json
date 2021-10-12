@@ -40,7 +40,7 @@
                "time": 0}
     }, 
         {
-      "name": "Load_kraken_eye",
+      "name": "Nemo_kraken_eye",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
@@ -2862,7 +2862,7 @@
     },
         {
       "name": "nemo_character_av_3",
-      "role": "nemo-qs",
+      "role": "nemo-temp",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -2878,6 +2878,102 @@
                 },
       "trig": {"type": "button",
                "time": 0}
+    },
+        {
+      "name": "Nemo_delete_kraken1",
+      "role": "test",
+      "target": { "type": "glb",
+                  "src": "Nemo_kraken1"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+         "groupChain": "groupNEMODeleteAllKraken",
+               "time": 0}
+    },
+            {
+      "name": "Nemo_delete_kraken2",
+      "role": "test",
+      "target": { "type": "glb",
+                  "src": "Nemo_kraken2"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+         "groupChain": "groupNEMODeleteAllKraken",
+               "time": 0}
+    },
+            {
+      "name": "Nemo_delete_kraken_eye",
+      "role": "test",
+      "target": { "type": "glb",
+                  "src": "Nemo_kraken_eye"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+         "groupChain": "groupNEMODeleteAllKraken",
+               "time": 0}
+    },    
+    {
+      "name": "MrsNemo_start_waypoint",
+      "role": "vivi",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#nemoStartWaypoint"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "Nemo_sound_waypoint",
+      "role": "belo",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"nemoVoiceWaypoint"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "Nemo_cues_waypoint",
+      "role": "nemo-qs",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"nemoCuesWaypoint"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Nemo_wheelchair_avatar",
+      "role":"vivi",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/NEMOav1.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Nemo_mermaid_avatar",
+      "role":"vivi",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/NEMOav2.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Nemo_audio_avatar",
+      "role":"belo",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+       {
+      "name": "Nemo_cues_avatar",
+      "role":"nemo-qs",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+      "trig": {"type": "button",
+               "time": 0}
     }
+
+
+
       ]
 }
