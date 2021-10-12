@@ -1709,7 +1709,7 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                   "name": "test_lock_waypoint",
-                  "target": { "role": ["participant", "performer", "stagemanager"] },
+                  "target": { "role": ["participant", "stagemanager"] },
                   "action": { "type" : "lock_waypoint",
                     "waypoint" : "NPCWaypoint61",
                     "recallAud" : true,
