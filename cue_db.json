@@ -1489,7 +1489,7 @@
                   "action": { "type" : "lock_waypoint",
                     "waypoint" : "NPCWaypoint51",
                     "recallAud" : true,
-                    "maxDist" : 0.001,
+                    "maxDist" : 0.0001,
                     "anime" : {
                      "targets": "",
                      "delay" : 1000,
@@ -1561,6 +1561,310 @@
       "trig": {"type": "button",
         "groupChain" : "NPCgroup43",
                "time": 0}
+    },
+    {
+      "name": "Change_to_LGTTB",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/Rq4auFD"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Brendan_starting_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "octopus_position",
+                  "role": "brnd",
+                  "target": { "role": "individual",
+                    "name": "Brendan"},
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#octopusStartingPosition"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupLGTTBToS",
+               "time": 0}
+    },
+    {
+      "name": "Brendan2_starting_position",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "music_position",
+                  "role": "brnd",
+                  "target": { "role": "individual",
+                  "name": "Brendan2"
+                  },
+                  "action": {"type": "jump_to_waypoint",
+                             "anchor":"#musicStartingPosition"},
+                  "trig": {"type": "button",
+                           "time": 0}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupLGTTBToS",
+               "time": 0}
+    },
+    {
+      "name": "change_Brendan_to_Octopus",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "change_Brendan_to_Octopus",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/LGTTBmain.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupLGTTBToS",
+               "time": 0}
+    },
+    {
+      "name": "change_Brendan2_to_Invis",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "change_Brendan_to_Octopus",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan2"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupLGTTBToS",
+               "time": 0}
+    },
+    {
+      "name": "music_rolloff",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Brendan"],
+                    "rolloff": 9999999,
+                    "refDistance": 0.0000001
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBToS",
+               "time": 0}
+    },
+    {
+      "name": "music_rolloff",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Brendan2"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBToS",
+               "time": 0}
+    },
+    {
+      "name": "load_heart_B",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/ad3dcb41-674d-4e9b-a364-f807ccc55e5d.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 321, "y":-100, "z":34.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBToS",
+               "time": 0}
+    },
+    {
+      "name": "load_heart_A",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/092d8675-6e4f-4db1-b1d5-b40f194d537b.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 222.50000000000009, "y":-100, "z":-44.3},
+                 "rot": {"x": 0, "y":-85, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBToS",
+               "time": 0}
+    },
+    {
+      "name": "Audience_lock_waypoint",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "test_lock_waypoint",
+                  "target": { "role": "stagemanager" },
+                  "action": { "type" : "lock_waypoint",
+                    "waypoint" : "NPCWaypoint61",
+                    "recallAud" : true,
+                    "maxDist" : 0.001,
+                    "anime" : {
+                     "targets": "",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": true,
+                     "easing": "linear",
+                     "duration": 4000
+                     },
+                     "timelines" : [
+                      {"x": 144.1471118531734, "y": 27.92318653751175, "z": -7.15644323206858, "easing": "easeInSine", "delay":30000},
+                      {"x": 173.43603113839785, "y": 28.940120809387818, "z": -17.253956376160513, "delay": 0, "duration": 1500},
+                      {"x": 185.87640956495792, "y": 29.54621401913267, "z": -19.07611349128432, "duration": 650},
+                      {"x": 195.8755469844249, "y": 29.29805291328146, "z": -19.45593830919932, "duration":400},
+                      {"x": 231.41698293231295, "y": 29.58573095022229, "z": 4.70257773608278, "duration":1250},
+                      {"x": 249.15109093325432, "y": 29.062290160942023, "z": 10.962794093518749, "duration":850},
+                      {"x": 293.6771054170409, "y": 28.89402516038848, "z": 8.962549868723524, "duration":1500},
+                      {"x": 308.19355915572356, "y": 29.12997117757952, "z": 15.816105678420255, "duration":800},
+                      {"x": 326.4358132380269, "y": 29.104242109879966, "z": 34.10062073299889, "duration": 1000},
+                      {"x": 349.60154842581306, "y": 25.174056423406576, "z": 41.2695479512863, "duration":1200},
+                      {"x": 367.9004325029384, "y": 22.503045396357358, "z": 54.129631360976546, "duration": 2000, "easing": "easeOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBIntoHeart",
+               "time": 0}
+    },
+    {
+      "name": "moveBrendan",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "test_manipulate_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Brendan",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 7500
+                     },
+                     "timelines" : [
+                       {"x": 150, "y":0, "z":-34.45660006785802},
+                       {"x": 150, "y":-150, "z":-34.45660006785802, "duration": 15000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBIntoHeart",
+               "time": 0}
+    },
+    {
+      "name": "inflate_Brendan",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "test_manipulate_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Brendan",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 20000
+                     },
+                     "timelines" : [
+                       {"x": 450, "y":150, "z":450}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBIntoHeart",
+               "time": 0}
+    },
+    {
+      "name": "MoveHeartB",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "load_heart_B"},
+      "action": {"type": "move",
+                 "duration": 0,
+                 "loop": false,
+                 "pos": {"x": 370, "y":20.5, "z":56},
+                 "rot": {"x": 0, "y":180, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBIntoHeart",
+               "time": 27000}
+    },
+    {
+      "name": "MoveHeartA",
+      "role": "stagemanager",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "load_heart_A"},
+      "action": {"type": "move",
+                 "duration": 0,
+                 "loop": false,
+                 "pos": {"x": 236.50000000000009, "y":30, "z":10},
+                 "rot": {"x": 0, "y":250, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBIntoHeart",
+        "time": 27000
+      }
     },
     {
       "name": "Change_to_UW",
