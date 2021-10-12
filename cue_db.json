@@ -13,34 +13,6 @@
       "trig": {"type": "button",
                "time": 0}
     },
-        {
-      "name": "Nemo_pool_door_left",
-      "role": "nemo-qs",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/4bc2277a-df1f-4f1e-83bf-82b4e691dc51.glb"},
-      "action": {"type": "spawn_item",
-                 "pos": {"x": 8, "y":-0.1, "z":-2},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-      "trig": {"type": "button",
-        "groupChain": "groupNEMOTopOfShow",
-               "time": 0}
-    },
-            {
-      "name": "Nemo_pool_door_right",
-      "role": "nemo-qs",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/6e9638a7-8117-4840-9845-a8f5febde8c5.glb"},
-      "action": {"type": "spawn_item",
-                 "pos": {"x": 8, "y":-0.1, "z":2},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-      "trig": {"type": "button",
-        "groupChain": "groupNEMOTopOfShow",
-               "time": 0}
-    }, 
     {
       "name": "Nemo_kraken1",
       "role": "nemo-qs",
@@ -173,11 +145,11 @@
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src": "Nemo_pool_door_left"},
+                  "src": "Nemo_pool_door"},
       "action": {"type": "move",
                  "duration": 3000,
                  "loop": false,
-                 "pos": {"x": 8, "y":-0.1, "z":-4},
+                 "pos": {"x": 26.2, "y":-0.1, "z":-0.3},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
@@ -185,7 +157,7 @@
     },
             {
       "name": "Nemo_open_door2",
-      "role": "nemo-qs",
+      "role": "nemo-temp",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "Nemo_pool_door_right"},
@@ -2623,7 +2595,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/iYKN3op"},
+                 "link":"https://xrtheater.live/scenes/nxxJvQr"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -2753,6 +2725,61 @@
         "groupChain": "groupNEMOTopOfShow",
                "time": 0}
     },
+            {
+      "name": "Nemo_mini_kraken",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/5521cbd8-2c2b-4a9c-9fef-00d614f8d947.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 30.7, "y":1.4, "z":0.47},
+                 "rot": {"x": 1, "y":1, "z":-97},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+                {
+      "name": "Nemo_prop2",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/5521cbd8-2c2b-4a9c-9fef-00d614f8d947.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 20.3, "y":1.37, "z":-1},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.2, "y":0.2, "z":0.2}},
+      "trig": {"type": "button",
+        "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+           {
+      "name": "Nemo_pool_door",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/f63c6514-0883-4292-b750-1e61db62210c.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 26.2, "y":-0.05, "z":2.59},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain": "groupNEMOTopOfShow",
+               "time": 0}
+    },
+            {
+      "name": "Nemo_prop_placeholder",
+      "role": "nemo-temp",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/6e9638a7-8117-4840-9845-a8f5febde8c5.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 8, "y":-0.1, "z":2},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    }, 
     {
       "name": "nemo_audience_places",
       "role": "stagemanager",
@@ -2828,6 +2855,25 @@
                   },
                    "action": { "type": "change_avatar",
                     "link" : "https://onboardxr.github.io/onboard_json/avatar/NEMOav2.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "nemo_character_av_3",
+      "role": "nemo-qs",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_character_av_2",
+                   "target": { "role": "individual",
+                                "name": "Mrs_Nemo"
+                  },
+                   "action": { "type": "change_avatar",
+                    "link" : "https://onboardxr.github.io/onboard_json/avatar/NEMOav3.glb"}
                 }
                 },
       "trig": {"type": "button",
