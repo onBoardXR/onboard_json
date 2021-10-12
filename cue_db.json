@@ -2881,7 +2881,7 @@
     },
         {
       "name": "Nemo_delete_kraken1",
-      "role": "test",
+      "role": "nemo-qs",
       "target": { "type": "glb",
                   "src": "Nemo_kraken1"},
       "action": {"type": "delete"},
@@ -2891,7 +2891,7 @@
     },
             {
       "name": "Nemo_delete_kraken2",
-      "role": "test",
+      "role": "nemo-qs",
       "target": { "type": "glb",
                   "src": "Nemo_kraken2"},
       "action": {"type": "delete"},
@@ -2901,7 +2901,7 @@
     },
             {
       "name": "Nemo_delete_kraken_eye",
-      "role": "test",
+      "role": "nemo-qs",
       "target": { "type": "glb",
                   "src": "Nemo_kraken_eye"},
       "action": {"type": "delete"},
