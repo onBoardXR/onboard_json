@@ -1848,6 +1848,24 @@
                "time": 0}
     },
     {
+      "name": "Change_to_Lobby",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/7sxxV49"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Change_to_Interstit",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/LjAuTzS"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "spawn_caravan",
       "role": "stagemanager",
       "target": { "type": "glb",
