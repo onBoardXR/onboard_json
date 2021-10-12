@@ -1657,6 +1657,166 @@
                "time": 0}
     },
     {
+      "name": "AQU_enable_flight",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_enable_flight",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_flight",
+                    "flight" : true}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupAQUEnableFlying",
+               "time": 0}
+    },
+    {
+      "name": "AQU_enable_flight",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_enable_flight",
+                   "target": { "role": "spectator" },
+                   "action": { "type": "socket_toggle_flight",
+                    "flight" : true}
+                }
+                },
+      "trig": {"type": "button",
+          "groupChain" : "groupAQUEnableFlying",
+               "time": 0}
+    },{
+      "name": "AQU_disable_flight",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_disable_flight",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_flight",
+                    "flight" : false}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupAQUDisableFlying",
+               "time": 0}
+    },
+    {
+      "name": "AQU_disable_flight",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_disable_flight",
+                   "target": { "role": "spectator" },
+                   "action": { "type": "socket_toggle_flight",
+                    "flight" : false}
+                }
+                },
+      "trig": {"type": "button",
+          "groupChain" : "groupAQUDisableFlying",
+               "time": 0}
+    },
+    {
+      "name": "AQU_disable_movement",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_disable_movement",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_movement",
+                    "movement" : true}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupAQUDisableFlying",
+               "time": 0}
+    },
+    {
+      "name": "AQU_disable_movement",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_disable_movement",
+                   "target": { "role": "spectator" },
+                   "action": { "type": "socket_toggle_movement",
+                    "movement" : true}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupAQUDisableMovement",
+               "time": 0}
+    },{
+      "name": "AQU_disable_movement",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_disable_movement",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_movement",
+                    "movement" : true}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupAQUDisableMovement",
+               "time": 0}
+    },
+    {
+      "name": "AQU_enable_movement",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_enable_movement",
+                   "target": { "role": "participant" },
+                   "action": { "type": "socket_toggle_movement",
+                    "movement" : false}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupAQUEnableMovement",
+               "time": 0}
+    },
+    {
+      "name": "AQU_enable_movement",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_enable_movement",
+                   "target": { "role": "spectator" },
+                   "action": { "type": "socket_toggle_movement",
+                    "movement" : false}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupAQUEnableMovement",
+               "time": 0}
+    },
+    {
       "name": "change_to_stage_avatar",
       "role":"rbca",
       "target": { },
