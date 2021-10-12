@@ -3,7 +3,7 @@
   "testUser": {"name": "testUser", "role": "test"}, 
   "stephen": {"name": "SM", "role":"stagemanager"},
   "participant": {"name":"participant","role":"participant"},
-  "spectator": {"name":"spectator","role":"spectator"},
+  "spectator": {"name":"spectator","role":"ghost"},
   "clem": {"name":"--","role":"clem"},
   "vivi": {"name":"Mrs_Nemo","role":"vivi"},
   "belo": {"name":"Vivian","role":"belo"},
