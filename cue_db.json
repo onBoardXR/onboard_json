@@ -1652,7 +1652,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/iwpFCHT"},
+                 "link":"https://xrtheater.live/scenes/ULyzQyE"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -1671,7 +1671,7 @@
       "role": "rbca",
       "target": { },
       "action": {"type": "jump_to_waypoint",
-                 "anchor":"NEEDSUPDATE"},
+                 "anchor":"#audienceStartingPoint"},
       "trig": {"type": "button",
               "groupChain" : "groupAQUTopOfShow",
                "time": 0}
@@ -1743,78 +1743,6 @@
                "time": 0}
     },
     {
-      "name": "change_all_to_flytrap_avatar",
-      "role": "rbca",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"rbca",
-                  "target": { "role" : "general"},
-                  "action": {"type": "change_avatar",
-                             "link":"NEEDSUPDATE"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "change_aud_to_female_barnacle_avatar",
-      "role": "rbca",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"rbca",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"NEEDSUPDATE"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "change_aud_to_male_barnacle_avatar",
-      "role": "rbca",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"rbca",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"NEEDSUPDATE"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "change_aud_to_shrimp_avatar",
-      "role": "rbca",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"rbca",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"NEEDSUPDATE"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
       "name": "change_aud_to_AR_barnacle_avatar",
       "role": "rbca",
       "target": { },
@@ -1826,7 +1754,7 @@
                   "role":"rbca",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"NEEDSUPDATE"}
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUbarnacle.glb"}
                 }
                 },
       "trig": {"type": "button",
