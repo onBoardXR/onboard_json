@@ -18,7 +18,7 @@
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/e5f7c182-5163-489e-9d0a-93c76cdeb115.glb"},
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/bbed0f05-625f-4935-8c13-c05696e3afbd.glb"},
       "action": {"type": "spawn_item",
                  "pos": {"x": 18, "y":-1.5, "z":-1},
                  "rot": {"x": 0, "y":0, "z":0},
@@ -33,9 +33,9 @@
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/2d2f4564-afa2-4885-83f5-5dde34105b5b.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": 45, "y":2, "z":0},
-                 "rot": {"x": 1, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
+                 "pos": {"x": 40, "y":2, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.75, "y":0.9, "z":0.9}},
       "trig": {"type": "button",
                "time": 0}
     }, 
@@ -44,7 +44,7 @@
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/5f43daa7-2dc2-480b-a43b-16ac6c5b6572.glb"},
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/89632f04-6638-4efc-bc94-8eb6b3058aed.glb"},
       "action": {"type": "spawn_item",
                  "pos": {"x": 24, "y":-12, "z":10},
                  "rot": {"x": 0, "y":0, "z":0},
@@ -82,54 +82,6 @@
       "trig": {"type": "button",
                "time": 0}
     }, 
-            {
-      "name": "Kraken_shake_left",
-      "role": "nemo-qs",
-      "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "Nemo_kraken_eye"},
-      "action": {"type": "move",
-                 "duration": 500,
-                 "loop": false,
-                 "pos": {"x": 25.5, "y":3, "z":11},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-      "trig": {"type": "button",
-        "groupChain":"groupNEMOKrakenShake",
-               "time": 0}
-    }, 
-                {
-      "name": "Kraken_shake_right",
-      "role": "nemo-qs",
-      "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "Nemo_kraken_eye"},
-      "action": {"type": "move",
-                 "duration": 200,
-                 "loop": false,
-                 "pos": {"x": 24.5, "y":3, "z":11},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-      "trig": {"type": "button",
-        "groupChain":"groupNEMOKrakenShake",
-               "time": 201}
-    },             
-    {
-      "name": "Kraken_shake_return",
-      "role": "nemo-qs",
-      "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "Nemo_kraken_eye"},
-      "action": {"type": "move",
-                 "duration": 200,
-                 "loop": false,
-                 "pos": {"x": 25, "y":3.1, "z":11},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-      "trig": {"type": "button",
-        "groupChain":"groupNEMOKrakenShake",
-               "time": 402}
-    }, 
      {
       "name": "Kraken_eye_fall",
       "role": "nemo-qs",
@@ -154,8 +106,8 @@
       "action": {"type": "move",
                  "duration": 2500,
                  "loop": false,
-                 "pos": {"x": 56, "y":2, "z":0},
-                 "rot": {"x": -12, "y":0, "z":0},
+                 "pos": {"x": 57, "y":2, "z":0},
+                 "rot": {"x": -14, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
@@ -2665,7 +2617,7 @@
                 }
                 },
       "trig": {"type": "button",
-              "groupChain": "groupNEMOTopOfShow",
+              "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
     {
@@ -2685,7 +2637,7 @@
                 }
                 },
       "trig": {"type": "button",
-              "groupChain": "groupNEMOTopOfShow",
+              "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
     {
@@ -2706,7 +2658,7 @@
                 }
                 },
       "trig": {"type": "button",
-            "groupChain": "groupNEMOTopOfShow",
+            "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
     {
@@ -2727,7 +2679,7 @@
                 }
                 },
       "trig": {"type": "button",
-            "groupChain": "groupNEMOTopOfShow",
+            "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
     {
@@ -2749,7 +2701,7 @@
                 }
                 },
       "trig": {"type": "button",
-        "groupChain": "groupNEMOTopOfShow",
+        "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
     {
@@ -2771,7 +2723,7 @@
                 }
                 },
       "trig": {"type": "button",
-        "groupChain": "groupNEMOTopOfShow",
+        "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
             {
@@ -2785,7 +2737,7 @@
                  "rot": {"x": 1, "y":1, "z":-97},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-        "groupChain": "groupNEMOTopOfShow",
+        "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
                 {
@@ -2799,7 +2751,7 @@
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 0.55, "y":0.55, "z":0.55}},
       "trig": {"type": "button",
-        "groupChain": "groupNEMOTopOfShow",
+        "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
            {
@@ -2813,7 +2765,7 @@
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-        "groupChain": "groupNEMOTopOfShow",
+        "groupChain": "groupNemoTopOfShow",
                "time": 0}
     },
             {
@@ -2928,6 +2880,54 @@
       "trig": {"type": "button",
                "time": 0}
     },
+    {
+      "name": "Kraken_shake_left",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Nemo_kraken_eye"},
+      "action": {"type": "move",
+                 "duration": 500,
+                 "loop": false,
+                 "pos": {"x": 25.5, "y":3, "z":11},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain":"groupNemoKrakenShake",
+               "time": 0}
+    }, 
+                {
+      "name": "Kraken_shake_right",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Nemo_kraken_eye"},
+      "action": {"type": "move",
+                 "duration": 200,
+                 "loop": false,
+                 "pos": {"x": 24.5, "y":3, "z":11},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain":"groupNemoKrakenShake",
+               "time": 201}
+    },             
+    {
+      "name": "Kraken_shake_return",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Nemo_kraken_eye"},
+      "action": {"type": "move",
+                 "duration": 200,
+                 "loop": false,
+                 "pos": {"x": 25, "y":3.1, "z":11},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain":"groupNemoKrakenShake",
+               "time": 402}
+    }, 
         {
       "name": "Nemo_delete_kraken1",
       "role": "nemo-qs",
@@ -2935,7 +2935,7 @@
                   "src": "Nemo_kraken1"},
       "action": {"type": "delete"},
       "trig": {"type": "button",
-         "groupChain": "groupNEMODeleteAllKraken",
+         "groupChain": "groupNemoDeleteAllKraken",
                "time": 0}
     },
             {
@@ -2945,7 +2945,7 @@
                   "src": "Nemo_kraken2"},
       "action": {"type": "delete"},
       "trig": {"type": "button",
-         "groupChain": "groupNEMODeleteAllKraken",
+         "groupChain": "groupNemoDeleteAllKraken",
                "time": 0}
     },
             {
@@ -2955,7 +2955,7 @@
                   "src": "Nemo_kraken_eye"},
       "action": {"type": "delete"},
       "trig": {"type": "button",
-         "groupChain": "groupNEMODeleteAllKraken",
+         "groupChain": "groupNemoDeleteAllKraken",
                "time": 0}
     },    
     {
