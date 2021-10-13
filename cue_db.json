@@ -95,6 +95,7 @@
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
+        "groupChain":"groupNEMOKrakenShake",
                "time": 0}
     }, 
                 {
@@ -104,13 +105,14 @@
                   "dest": "local",
                   "src": "Nemo_kraken_eye"},
       "action": {"type": "move",
-                 "duration": 500,
+                 "duration": 200,
                  "loop": false,
                  "pos": {"x": 24.5, "y":3, "z":11},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-               "time": 0}
+        "groupChain":"groupNEMOKrakenShake",
+               "time": 201}
     },             
     {
       "name": "Kraken_shake_return",
@@ -119,20 +121,21 @@
                   "dest": "local",
                   "src": "Nemo_kraken_eye"},
       "action": {"type": "move",
-                 "duration": 500,
+                 "duration": 200,
                  "loop": false,
                  "pos": {"x": 25, "y":3.1, "z":11},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-               "time": 0}
+        "groupChain":"groupNEMOKrakenShake",
+               "time": 402}
     }, 
      {
       "name": "Kraken_eye_fall",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src": "Load_kraken_eye"},
+                  "src": "Nemo_kraken_eye"},
       "action": {"type": "move",
                  "duration": 6000,
                  "loop": false,
