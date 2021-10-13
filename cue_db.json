@@ -14,6 +14,27 @@
                "time": 0}
     },
     {
+      "name": "nemo_actor_entrance",
+      "role": "nemo-qs",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_actor_starting_place",
+                   "target": { "role": "individual",
+                              "name": "Mrs_Nemo"
+                  },
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "vivEntranceWaypoint",
+                    "maxDist" : 0.001,
+                    "enableMotion" : false}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "Nemo_kraken1",
       "role": "nemo-qs",
       "target": { "type": "glb",
@@ -54,7 +75,7 @@
     },
     {
       "name": "Squeeze_kraken1",
-      "role": "nemo-qs",
+      "role": "nemo-temp",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "Nemo_kraken1"},
@@ -127,7 +148,6 @@
       "trig": {"type": "button",
                "time": 0}
     },
-
     {
       "name": "Nemo_helmet",
       "role": "nemo-qs",
@@ -294,7 +314,7 @@
     },
         {
       "name": "Nemo_shareCamera",
-      "role": "nemo-qs",
+      "role": "nemo-temp",
       "target": { "type": "webcam" },
       "action": { "type": "spawn_item",
                   "pos": {"x": 25, "y":2, "z":-4},
@@ -2737,7 +2757,7 @@
                  "rot": {"x": 1, "y":1, "z":-97},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-        "groupChain": "groupNemoTopOfShow",
+        "groupChain": "groupNemoLoadProps",
                "time": 0}
     },
                 {
@@ -2751,7 +2771,7 @@
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 0.55, "y":0.55, "z":0.55}},
       "trig": {"type": "button",
-        "groupChain": "groupNemoTopOfShow",
+        "groupChain": "groupNemoLoadProps",
                "time": 0}
     },
            {
@@ -2765,7 +2785,7 @@
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
-        "groupChain": "groupNemoTopOfShow",
+        "groupChain": "groupNemoLoadProps",
                "time": 0}
     },
             {
@@ -2821,29 +2841,8 @@
             "groupChain": "groupNemoRecallAud",
                "time": 0}
     },
-        {
-      "name": "nemo_actor_entrance",
-      "role": "nemo-qs",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "nemo_actor_starting_place",
-                   "target": { "role": "individual",
-                              "name": "Mrs_Nemo"
-                  },
-                   "action": { "type": "recall_audience",
-                    "waypoint" : "vivEntranceWaypoint",
-                    "maxDist" : 0.001,
-                    "enableMotion" : false}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
     {
-      "name": "nemo_character_av_2",
+      "name": "nemo_avatar_to_mermaid",
       "role": "nemo-qs",
       "target": { },
       "action": {"type": "call_method_from_object",
@@ -2887,7 +2886,7 @@
                   "dest": "local",
                   "src": "Nemo_kraken_eye"},
       "action": {"type": "move",
-                 "duration": 500,
+                 "duration": 400,
                  "loop": false,
                  "pos": {"x": 25.5, "y":3, "z":11},
                  "rot": {"x": 0, "y":0, "z":0},
@@ -2910,7 +2909,7 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain":"groupNemoKrakenShake",
-               "time": 201}
+               "time": 301}
     },             
     {
       "name": "Kraken_shake_return",
@@ -2926,7 +2925,7 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain":"groupNemoKrakenShake",
-               "time": 402}
+               "time": 502}
     }, 
         {
       "name": "Nemo_delete_kraken1",
@@ -2968,6 +2967,33 @@
                "time": 0}
     },
         {
+      "name": "Nemo_wheelchair_avatar",
+      "role":"vivi",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/NEMOav1.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "MrsNemo_Entrance_waypoint",
+      "role": "vivi",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"#vivEntranceWaypoint"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Nemo_mermaid_avatar",
+      "role":"vivi",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/NEMOav2.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
       "name": "Nemo_sound_waypoint",
       "role": "belo",
       "target": { },
@@ -2982,24 +3008,6 @@
       "target": { },
       "action": {"type": "jump_to_waypoint",
                  "anchor":"nemoCuesWaypoint"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "Nemo_wheelchair_avatar",
-      "role":"vivi",
-      "target": { },
-      "action": {"type": "change_avatar",
-                 "link":"https://onboardxr.github.io/onboard_json/avatar/NEMOav1.glb"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "Nemo_mermaid_avatar",
-      "role":"vivi",
-      "target": { },
-      "action": {"type": "change_avatar",
-                 "link":"https://onboardxr.github.io/onboard_json/avatar/NEMOav2.glb"},
       "trig": {"type": "button",
                "time": 0}
     },
