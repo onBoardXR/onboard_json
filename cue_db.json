@@ -2659,7 +2659,7 @@
                 },
       "trig": {"type": "button",
             "groupChain": "groupNemoTopOfShow",
-               "time": 0}
+               "time": 5000}
     },
     {
       "name": "nemo_voice_rolloff",
@@ -2680,7 +2680,7 @@
                 },
       "trig": {"type": "button",
             "groupChain": "groupNemoTopOfShow",
-               "time": 0}
+               "time": 5000}
     },
     {
       "name": "nemo_actor_starting_place",
