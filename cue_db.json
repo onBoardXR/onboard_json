@@ -72,7 +72,7 @@
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src": "Load_kraken_eye"},
+                  "src": "Nemo_kraken_eye"},
       "action": {"type": "move",
                  "duration": 2500,
                  "loop": false,
