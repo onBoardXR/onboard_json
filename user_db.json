@@ -1,5 +1,5 @@
 {
-  "romamile": {"name": "Roman", "role": "test"}, 
+  "romamile": {"name": "Roman", "role": "testVR"}, 
   "testUser": {"name": "testUser", "role": "test"}, 
   "stephen": {"name": "SM", "role":"stagemanager"},
   "participant": {"name":"participant","role":"participant"},
