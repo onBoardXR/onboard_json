@@ -1804,7 +1804,7 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "groupLGTTBToS",
-               "time": 0}
+               "time": 5000}
     },
     {
       "name": "music_rolloff",
@@ -1825,7 +1825,7 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "groupLGTTBToS",
-               "time": 0}
+               "time": 5000}
     },
     {
       "name": "load_heart_B",
@@ -1920,7 +1920,7 @@
                      },
                      "timelines" : [
                        {"x": 150, "y":0, "z":-34.45660006785802},
-                       {"x": 150, "y":-150, "z":-34.45660006785802, "duration": 15000}
+                       {"x": 150, "y":-170, "z":-34.45660006785802, "duration": 15000}
                      ]
                    }
                  }
