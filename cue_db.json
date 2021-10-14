@@ -179,26 +179,11 @@
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src": "Nemo_pool_door"},
+                  "src": "Nemo_load_pool_door"},
       "action": {"type": "move",
                  "duration": 3000,
                  "loop": false,
                  "pos": {"x": 26.2, "y":-0.03, "z":-0.3},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
-       "trig": {"type": "button",
-               "time": 0}
-    },
-            {
-      "name": "Nemo_open_door2",
-      "role": "nemo-temp",
-      "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "Nemo_pool_door_right"},
-      "action": {"type": "move",
-                 "duration": 3000,
-                 "loop": false,
-                 "pos": {"x": 8, "y":-0.1, "z":4},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
        "trig": {"type": "button",
@@ -2879,9 +2864,9 @@
       "trig": {"type": "button",
         "groupChain": "groupNemoTopOfShow",
                "time": 0}
-    },
-            {
-      "name": "Nemo_mini_kraken",
+    },            
+    {
+      "name": "Nemo_load_mini_kraken",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
@@ -2895,7 +2880,7 @@
                "time": 0}
     },
                 {
-      "name": "Nemo_mini_sub",
+      "name": "Nemo_load_mini_sub",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
@@ -2908,8 +2893,8 @@
         "groupChain": "groupNemoLoadProps",
                "time": 0}
     },
-           {
-      "name": "Nemo_pool_door",
+    {
+      "name": "Nemo_load_pool_door",
       "role": "nemo-qs",
       "target": { "type": "glb",
                   "dest": "url",
@@ -2920,6 +2905,60 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain": "groupNemoLoadProps",
+               "time": 0}
+    },
+            {
+      "name": "Nemo_mini_kraken",
+      "role": "dave",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/49d3256b-7ffe-4c69-9528-877ae557977b.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 30.7, "y":1.4, "z":0.47},
+                 "rot": {"x": 1, "y":1, "z":-97},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+                {
+      "name": "Nemo_mini_sub",
+      "role": "dave",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/6a2849c2-abf3-4e06-bf53-37583050b3f8.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 19.47, "y":1.35, "z":4.1},
+                 "rot": {"x": 0, "y":1.39, "z":0},
+                 "scale": {"x": 0.6, "y":0.6, "z":0.6}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+           {
+      "name": "Nemo_pool_door",
+      "role": "dave",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/f63c6514-0883-4292-b750-1e61db62210c.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 26.2, "y":-0.03, "z":2.7},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "Nemo_open_door2",
+      "role": "dave",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Nemo_pool_door"},
+      "action": {"type": "move",
+                 "duration": 3000,
+                 "loop": false,
+                 "pos": {"x": 8, "y":-0.1, "z":4},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+       "trig": {"type": "button",
                "time": 0}
     },
             {
