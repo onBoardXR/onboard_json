@@ -12,6 +12,19 @@
                  "scale": {"x": 1.2, "y":1.2, "z":1.2}},
       "trig": {"type": "button",
                "time": 0}
+    },    
+    {
+      "name": "Test_1_spawn_item_avocado",
+      "role": "testVR",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/glTF-Binary/Avocado.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 16.17, "y":1.48, "z":0.189},
+                 "rot": {"x": 0, "y":1.57, "z":0},
+                 "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+      "trig": {"type": "button",
+               "time": 0}
     },
     {
       "name": "nemo_actor_entrance",
