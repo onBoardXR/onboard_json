@@ -3162,8 +3162,26 @@
                  "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "recall_aud_for_transition",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "aud_transition",
+                   "target": { "role": "general" },
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "transitionWaypoint",
+                    "maxDist" : 3,
+                    "enableMotion" : true}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
     }
-
 
 
       ]
