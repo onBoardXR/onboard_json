@@ -1,6 +1,7 @@
 {
   "romamile": {"name": "Roman", "role": "test"}, 
   "showcase": {"name": "Showcase", "role": "showcase"}, 
+  "demo": {"name": "Demo", "role": "demo"}, 
   "testUser": {"name": "testUser", "role": "test"}, 
   "stephen": {"name": "SM", "role":"stagemanager"},
   "participant": {"name":"participant","role":"participant"},
