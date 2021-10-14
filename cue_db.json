@@ -155,8 +155,8 @@
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/bc51e117-f34c-4e26-bfbf-2d322340f0e3.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": 25.5, "y":-3, "z":7.2},
-                 "rot": {"x": 0, "y":0, "z":0},
+                 "pos": {"x": 25.8, "y":-3, "z":8.5},
+                 "rot": {"x": 0, "y":-1, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
