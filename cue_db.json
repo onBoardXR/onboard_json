@@ -3083,7 +3083,7 @@
                    "name": "test_load_360_image",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://onboardxr.github.io/onboard_json/object/DAScrowd.jpg",
+                    "src" : "https://onboardxr.github.io/onboard_json/image/DAScrowd.jpg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
                     "scale" : {"x": 22, "y": 22, "z": 22}
                   }
@@ -3104,7 +3104,7 @@
                    "name": "test_load_360_image",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://onboardxr.github.io/onboard_json/object/DASpow.jpeg",
+                    "src" : "https://onboardxr.github.io/onboard_json/image/DASpow.jpeg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
                     "scale" : {"x": 23, "y": 23, "z": 23}
                   }
@@ -3125,7 +3125,7 @@
                    "name": "test_load_360_image",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://onboardxr.github.io/onboard_json/object/DAScaravan.jpeg",
+                    "src" : "https://onboardxr.github.io/onboard_json/image/DAScaravan.jpeg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
                     "scale" : {"x": 23.256, "y": 23.256, "z": 23.256}
                   }
