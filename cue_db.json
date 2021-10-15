@@ -12,6 +12,19 @@
                  "scale": {"x": 1.2, "y":1.2, "z":1.2}},
       "trig": {"type": "button",
                "time": 0}
+    },     
+    {
+      "name": "Add_light",
+      "role": "romamile",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/fishlight.glb"},
+      "action": {"type": "spawn_item",
+                 "pos": {"x": 4, "y":0, "z":0},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
     },    
     {
       "name": "Test_1_spawn_item_avocado",
