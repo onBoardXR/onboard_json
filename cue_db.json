@@ -3080,7 +3080,7 @@
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "test_load_360_image",
+                   "name": "festival_crowd_pano",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
                     "src" : "https://onboardxr.github.io/onboard_json/image/DAScrowd.jpg",
@@ -3101,7 +3101,7 @@
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "test_load_360_image",
+                   "name": "festival_pow_pano",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
                     "src" : "https://onboardxr.github.io/onboard_json/image/DASpow.jpeg",
@@ -3122,7 +3122,7 @@
                  "object_name": "sockSys",
                  "function_name": "cueSocket",
                  "_cue": { 
-                   "name": "test_load_360_image",
+                   "name": "festival_ext_pano",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
                     "src" : "https://onboardxr.github.io/onboard_json/image/DAScaravan.jpeg",
@@ -3425,27 +3425,6 @@
                   "rolloffFactor":0,
                   "refDistance":5,
                   "maxDistance":10},
-      "trig": {"type": "button",
-        "groupChain": "groupDASShowgirlAvatar",
-               "time": 0}
-    },
-    {
-      "name": "festival_crowd_pano",
-      "role": "naom",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "test_load_360_image",
-                   "target": { "role": "general" },
-                   "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/e25ae1e1-fb25-4c76-967b-de69325d04b5.png",
-                    "position" : {"x": 6.5, "y": 20, "z": 13},
-                    "scale" : {"x": 23, "y": 23, "z": 23}
-                  }
-                  }
-                },
       "trig": {"type": "button",
         "groupChain": "groupDASShowgirlAvatar",
                "time": 0}
