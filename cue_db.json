@@ -18,7 +18,7 @@
       "role": "romamile",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/5399e0ef-00b6-4aa4-872c-1030f9763bf1.glb"},
+                  "src":  "https://onboardxr.github.io/onboard_json/object/fishlight.glb"},
       "action": {"type": "spawn_item",
                  "pos": {"x": 4, "y":0, "z":0},
                  "rot": {"x": 0, "y":0, "z":0},
