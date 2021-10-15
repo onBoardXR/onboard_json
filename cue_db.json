@@ -3258,7 +3258,7 @@
     },
     {
       "name": "sea_surface_audio",
-      "role": "naom",
+      "role": "none",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/audio/DASsurface.mp3"},
@@ -3272,7 +3272,6 @@
                   "refDistance":5,
                   "maxDistance":10},
       "trig": {"type": "button",
-        "groupChain": "groupDASseasurface",
                "time": 0}
     },
     {
@@ -3328,7 +3327,7 @@
     },
     {
       "name": "To_DO_audio",
-      "role": "naom",
+      "role": "none",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "NEEDSUPDATE"},
@@ -3342,7 +3341,6 @@
                   "refDistance":5,
                   "maxDistance":10},
       "trig": {"type": "button",
-        "groupChain": "groupDASAcademicAvatar",
                "time": 0}
     },
     {
@@ -3378,7 +3376,7 @@
     },
     {
       "name": "doing_your_best_audio",
-      "role": "naom",
+      "role": "none",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/audio/DASbest.mp3"},
@@ -3392,7 +3390,6 @@
                   "refDistance":5,
                   "maxDistance":10},
       "trig": {"type": "button",
-        "groupChain": "groupDASElderAvatar",
                "time": 0}
     },
     {
@@ -3459,7 +3456,7 @@
     },
     {
       "name": "doing_your_best_audio",
-      "role": "naom",
+      "role": "none",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/audio/DASanxious.mp3"},
@@ -3473,7 +3470,6 @@
                   "refDistance":5,
                   "maxDistance":10},
       "trig": {"type": "button",
-        "groupChain": "groupDASWorkerAvatar",
                "time": 0}
     },
     {
@@ -3509,7 +3505,7 @@
     },
     {
       "name": "doing_your_best_audio",
-      "role": "naom",
+      "role": "none",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/audio/DAScrowd.mp3"},
@@ -3523,7 +3519,6 @@
                   "refDistance":5,
                   "maxDistance":10},
       "trig": {"type": "button",
-        "groupChain": "groupDASShowgirlAvatar",
                "time": 0}
     },
     {
@@ -3624,7 +3619,7 @@
     },
     {
       "name": "festival_pow_audio",
-      "role": "naom",
+      "role": "none",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/audio/DASpow.mp3"},
@@ -3638,7 +3633,6 @@
                   "refDistance":5,
                   "maxDistance":10},
       "trig": {"type": "button",
-        "groupChain": "groupDASFestivalPow",
                "time": 0}
     },
     {
@@ -3888,7 +3882,7 @@
                       "duration": 0
                       },
                       "timelines" : [
-                        { "x": 6.5, "y": 17.256, "z": 13 }
+                        { "x": 6.5, "y": -200, "z": 13 }
                       ]
                     }
                 }
