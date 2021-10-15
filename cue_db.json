@@ -2653,7 +2653,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/ZgHqm5C"},
+                 "link":"https://xrtheater.live/scenes/zAjdM5d"},
       "trig": {"type": "button",
                "time": 0}
     },
