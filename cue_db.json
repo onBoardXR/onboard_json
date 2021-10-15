@@ -3190,7 +3190,7 @@
                    "target": { "role": "general"},
                    "action": { "type": "recall_audience",
                     "waypoint" : "waterSurface",
-                    "maxDist" : 5,
+                    "maxDist" : 3,
                     "enableMotion" : false}
                 }
                 },
