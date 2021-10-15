@@ -3083,7 +3083,7 @@
                    "name": "test_load_360_image",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/e25ae1e1-fb25-4c76-967b-de69325d04b5.png",
+                    "src" : "https://onboardxr.github.io/onboard_json/object/DAScrowd.jpg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
                     "scale" : {"x": 22, "y": 22, "z": 22}
                   }
@@ -3104,7 +3104,7 @@
                    "name": "test_load_360_image",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/a09d26c1-db85-4f73-b39d-5dddc71f6b13.jpg",
+                    "src" : "https://onboardxr.github.io/onboard_json/object/DASpow.jpeg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
                     "scale" : {"x": 23, "y": 23, "z": 23}
                   }
@@ -3125,7 +3125,7 @@
                    "name": "test_load_360_image",
                    "target": { "role": "general" },
                    "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/a4e66e66-48af-4d2b-bfe2-9d4298219926.jpg",
+                    "src" : "https://onboardxr.github.io/onboard_json/object/DAScaravan.jpeg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
                     "scale" : {"x": 23.256, "y": 23.256, "z": 23.256}
                   }
