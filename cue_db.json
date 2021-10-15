@@ -2107,7 +2107,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/ULyzQyE"},
+                 "link":"https://xrtheater.live/scenes/hfAtqRi"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -2381,7 +2381,7 @@
                 },
       "trig": {"type": "button",
             "groupChain": "groupAQUTopOfShow",
-               "time": 0}
+               "time": 5000}
     },
     {
       "name": "change_to_transparent_avatar",
@@ -2390,7 +2390,29 @@
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
       "trig": {"type": "button",
+        "groupChain": "groupAQUInvisAv",
                "time": 0}
+    },
+    {
+      "name": "AQU_god_mic",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Rebecca"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupAQUInvisAv",
+               "time": 5000}
     },
     {
       "name": "change_to_scientist_avatar",
@@ -2399,7 +2421,29 @@
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/AQUscientist.glb"},
       "trig": {"type": "button",
+        "groupChain": "groupAQUScientistAv",
                "time": 0}
+    },
+    {
+      "name": "AQU_god_mic",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Rebecca"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupAQUScientistAv",
+               "time": 5000}
     },
     {
       "name": "change_to_investor_avatar",
@@ -2408,7 +2452,29 @@
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/AQUinvestor.glb"},
       "trig": {"type": "button",
+        "groupChain": "groupAQUInvestorAv",
                "time": 0}
+    },
+    {
+      "name": "AQU_god_mic",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Rebecca"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupAQUInvestorAv",
+               "time": 5000}
     },
     {
       "name": "change_to_siren_avatar",
@@ -2417,7 +2483,29 @@
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/AQUsiren.glb"},
       "trig": {"type": "button",
+        "groupChain": "groupAQUSirenAv",
                "time": 0}
+    },
+    {
+      "name": "AQU_god_mic",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Rebecca"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupAQUSirenAv",
+               "time": 5000}
     },
     {
       "name": "change_to_intern_avatar",
@@ -2425,6 +2513,64 @@
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/AQUintern.glb"},
+      "trig": {"type": "button",
+        "groupChain": "groupAQUInternAv",
+               "time": 0}
+    },
+    {
+      "name": "AQU_god_mic",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Rebecca"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupAQUInternAv",
+               "time": 5000}
+    },
+    {
+      "name": "change_aud_to_AR_anenome_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUbanenome.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_to_AR_shrimp_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUbshrimp.glb"}
+                }
+                },
       "trig": {"type": "button",
                "time": 0}
     },
@@ -2529,7 +2675,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/7sxxV49"},
+                 "link":"https://xrtheater.live/scenes/WWMae8Y"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -2538,7 +2684,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/LjAuTzS"},
+                 "link":"https://xrtheater.live/scenes/ZwfNVCw"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -2547,7 +2693,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/dadHgGh"},
+                 "link":"https://xrtheater.live/scenes/TX893U8"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -2580,7 +2726,7 @@
                 },
       "trig": {"type": "button",
             "groupChain": "groupWHTopOfShow",
-               "time": 0}
+               "time": 5000}
     },
     {
       "name": "WH_intro_waypoint",
@@ -2612,7 +2758,7 @@
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": 5, "y":-50, "z":0},
+                 "pos": {"x": 5, "y":0.5, "z":0},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
@@ -2626,7 +2772,7 @@
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": -5, "y":-50, "z":0},
+                 "pos": {"x": -5, "y":0.5, "z":0},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
@@ -2640,7 +2786,7 @@
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": 0, "y":-50, "z":5},
+                 "pos": {"x": 0, "y":0.5, "z":5},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
@@ -2654,7 +2800,7 @@
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
       "action": {"type": "spawn_item",
-                 "pos": {"x": 0, "y":-50, "z":-5},
+                 "pos": {"x": 0, "y":0.5, "z":-5},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
@@ -3147,6 +3293,26 @@
                     "waypoint" : "transitionWaypoint",
                     "maxDist" : 3,
                     "enableMotion" : true}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "recall_house_for_transition",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "aud_transition",
+                   "target": { "role": "individual",
+                  "name" : "House_Manager" },
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "houseWaypoint",
+                    "maxDist" : 0.1,
+                    "enableMotion" : false}
                 }
                 },
       "trig": {"type": "button",
