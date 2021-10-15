@@ -1912,7 +1912,7 @@
                   "action": { "type": "manipulate_avatar",
                     "anime": {
                      "targets": "",
-                     "delay" : 0,
+                     "delay" : 5000,
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInSine",
@@ -1920,7 +1920,7 @@
                      },
                      "timelines" : [
                        {"x": 150, "y":0, "z":-34.45660006785802},
-                       {"x": 150, "y":-170, "z":-34.45660006785802, "duration": 15000}
+                       {"x": 150, "y":-150, "z":-34.45660006785802, "duration": 10000}
                      ]
                    }
                  }
@@ -1948,7 +1948,7 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInSine",
-                     "duration": 20000
+                     "duration": 17500
                      },
                      "timelines" : [
                        {"x": 450, "y":150, "z":450}
@@ -2430,15 +2430,6 @@
                "time": 0}
     },
     {
-      "name": "Change_to_DAS",
-      "role":"stagemanager",
-      "target": { },
-      "action": {"type": "change_scene",
-                 "link":"NEEDSUPDATE"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
       "name": "Change_to_Lobby",
       "role":"stagemanager",
       "target": { },
@@ -2454,176 +2445,6 @@
       "action": {"type": "change_scene",
                  "link":"https://xrtheater.live/scenes/LjAuTzS"},
       "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "spawn_caravan",
-      "role": "stagemanager",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/31db54a6-e53d-423d-88bb-ff6c83565055.glb"},
-      "action": {"type": "spawn_item",
-                 "pos": {"x": 7, "y":0, "z":2},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 0.1, "y":0.1, "z":0.1}},
-      "trig": {"type": "button",
-              "groupChain": "groupDASTopOfShow",
-               "time": 0}
-    },
-    {
-      "name": "underwater_panorama",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "underwater_panorama",
-                   "target": { "role": "general" },
-                   "action": { "type": "load_360_image",
-                    "src" : "NEEDSUPDATE",
-                    "position" : {"x": 6.5, "y": 17.256, "z": 11},
-                    "rotation" : {"x": 0, "y": -152, "z": 0},
-                    "scale" : {"x": 23.256, "y": 23.256, "z": 23.256}
-                  }
-                  }
-                },
-      "trig": {"type": "button",
-              "groupChain": "groupDASTopOfShow",
-               "time": 0}
-    },
-    {
-      "name": "DAS_recall_audience",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "DAS_recall_audience",
-                   "target": { "role": "general" },
-                   "action": { "type": "recall_audience",
-                    "waypoint" : "audienceStartWaypoint",
-                    "maxDist" : 10,
-                    "enableMotion" : false}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "load_daisy",
-      "role": "naom",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/2a9735b0-6396-4bcc-87fe-f24afe8a6322.glb"},
-      "action": {"type": "spawn_item",
-                 "pos": {"x": 9, "y":0.061, "z":5.958},
-                 "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 0.03, "y":0.03, "z":0.03}},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "naomi_animate_avatar_size",
-      "role": "naom",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "test_manipulate_avatar",
-                   "target": { "role" : "individual",
-                     "name": "Naomi",
-                     "aspect" : "scale" },
-                   "action": { "type": "manipulate_avatar",
-                     "anime": {
-                      "targets": "",
-                      "delay" : 0,
-                      "loop": false,
-                      "autoplay": false,
-                      "easing": "easeInOutSine",
-                      "duration": 10000
-                      },
-                      "timelines" : [
-                        { "x": 20, "y": 20, "z": 20 }
-                      ]
-                    }
-                  }
-                },
-      "trig": {"type": "button",
-              "groupChain": "groupNaomiInflateAvatar",
-               "time": 0}
-    },
-    {
-      "name": "naomi_animate_avatar_position",
-      "role": "naom",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "test_manipulate_avatar",
-                   "target": { "role" : "individual",
-                     "name": "Naomi",
-                     "aspect" : "position" },
-                   "action": { "type": "manipulate_avatar",
-                     "anime": {
-                      "targets": "",
-                      "delay" : 0,
-                      "loop": false,
-                      "autoplay": false,
-                      "easing": "easeInOutSine",
-                      "duration": 10000
-                      },
-                      "timelines" : [
-                        { "x": "NEEDSUPDATE", "y": "NEEDSUPDATE", "z": "NEEDSUPDATE" }
-                      ]
-                    }
-                  }
-                },
-      "trig": {"type": "button",
-              "groupChain": "groupNaomiInflateAvatar",
-               "time": 0}
-    },
-    {
-      "name": "DAS_delete_underwater_panorama",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "delete_underwater_panorama",
-                  "role": "stagemanager",
-                  "target": { "type": "glb",
-                              "role": "general",
-                              "src": "underwater_panorama"},
-                  "action": {"type": "delete"}
-                }
-                },
-      "trig": {"type": "button",
-              "groupChain": "changeOutDAS",
-               "time": 0}
-    },
-    {
-      "name": "DAS_delete_daisy",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "delete_daisy",
-                  "role": "stagemanager",
-                  "target": { "type": "glb",
-                              "role": "general",
-                              "src": "load_daisy"},
-                  "action": {"type": "delete"}
-                }
-                },
-      "trig": {"type": "button",
-              "groupChain": "changeOutDAS",
                "time": 0}
     },
     {
@@ -3181,8 +3002,817 @@
                 },
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "Change_to_DAS",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/NpBH3vD"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "DAS_disable_rolloff",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "DAS_disable_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Naomi"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupDASTopOfShow",
+               "time": 5000}
+    },
+    {
+      "name": "festival_crowd_pano",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_load_360_image",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/e25ae1e1-fb25-4c76-967b-de69325d04b5.png",
+                    "position" : {"x": 6.5, "y": -200, "z": 13},
+                    "scale" : {"x": 22, "y": 22, "z": 22}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "festival_pow_pano",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_load_360_image",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/a09d26c1-db85-4f73-b39d-5dddc71f6b13.jpg",
+                    "position" : {"x": 6.5, "y": -200, "z": 13},
+                    "scale" : {"x": 23, "y": 23, "z": 23}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "festival_ext_pano",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_load_360_image",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/a4e66e66-48af-4d2b-bfe2-9d4298219926.jpg",
+                    "position" : {"x": 6.5, "y": -200, "z": 13},
+                    "scale" : {"x": 23.256, "y": 23.256, "z": 23.256}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASTopOfShow",
+               "time": 0}
+    },
+    {
+      "name": "load_framed_photo",
+      "role": "naom",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/DASphoto.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 0.5, "y":0.5, "z":0.5}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "load_pink_chair",
+      "role": "naom",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/DASchair.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0.8, "y":-3.0, "z":3},
+                 "scale": {"x": 0.12, "y":0.20, "z":0.15}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "sea_surface_audio",
+      "role": "naom",
+      "target": { "type": "audio",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/c2996832-6341-4649-889a-90aeb7333859.mp3"},
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 1.3, "y":-20, "z":1.85},
+                  "rot": {"x": 0, "y":-1.57, "z":0},
+                  "scale": {"x": 1.67, "y":1.67, "z":1.67},
+                  "volume":0.9,
+                  "distanceModel": "linear",
+                  "rolloffFactor":0,
+                  "refDistance":5,
+                  "maxDistance":10},
+      "trig": {"type": "button",
+        "groupChain": "groupDASseasurface",
+               "time": 0}
+    },
+    {
+      "name": "DAS_aud_to_surface",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "DAS_aud_to_surface",
+                   "target": { "role": "general"},
+                   "action": { "type": "recall_audience",
+                    "waypoint" : "surfaceWaypoint",
+                    "maxDist" : 5,
+                    "enableMotion" : false}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASseasurface",
+               "time": 0}
+    },
+    {
+      "name": "academic_avatar",
+      "role":"naom",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/DASacademicAv.glb"},
+      "trig": {"type": "button",
+        "groupChain": "groupDASAcademicAvatar",
+               "time": 0}
+    },
+    {
+      "name": "DAS_disable_rolloff",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "DAS_disable_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Naomi"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupDASAcademicAvatar",
+               "time": 5000}
+    },
+    {
+      "name": "To_DO_audio",
+      "role": "naom",
+      "target": { "type": "audio",
+                  "dest": "url",
+                  "src":  "NEEDSUPDATE"},
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 1.3, "y":-20, "z":1.85},
+                  "rot": {"x": 0, "y":-1.57, "z":0},
+                  "scale": {"x": 1.67, "y":1.67, "z":1.67},
+                  "volume":0.9,
+                  "distanceModel": "linear",
+                  "rolloffFactor":0,
+                  "refDistance":5,
+                  "maxDistance":10},
+      "trig": {"type": "button",
+        "groupChain": "groupDASAcademicAvatar",
+               "time": 0}
+    },
+    {
+      "name": "elder_avatar",
+      "role":"naom",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/DASelder.glb"},
+      "trig": {"type": "button",
+        "groupChain": "groupDASElderAvatar",
+               "time": 0}
+    },
+    {
+      "name": "DAS_disable_rolloff",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "DAS_disable_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Naomi"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupDASElderAvatar",
+               "time": 5000}
+    },
+    {
+      "name": "doing_your_best_audio",
+      "role": "naom",
+      "target": { "type": "audio",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/8217f10b-bc80-460b-be84-f6c21fbe7871.mp3"},
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 1.3, "y":-20, "z":1.85},
+                  "rot": {"x": 0, "y":-1.57, "z":0},
+                  "scale": {"x": 1.67, "y":1.67, "z":1.67},
+                  "volume":0.9,
+                  "distanceModel": "linear",
+                  "rolloffFactor":0,
+                  "refDistance":5,
+                  "maxDistance":10},
+      "trig": {"type": "button",
+        "groupChain": "groupDASElderAvatar",
+               "time": 0}
+    },
+    {
+      "name": "child_avatar",
+      "role":"naom",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/DASchild.glb"},
+      "trig": {"type": "button",
+        "groupChain": "groupDASChildAvatar",
+               "time": 0}
+    },
+    {
+      "name": "DAS_disable_rolloff",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "DAS_disable_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Naomi"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupDASChildAvatar",
+               "time": 5000}
+    },
+    {
+      "name": "worker_avatar",
+      "role":"naom",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/DASworker.glb"},
+      "trig": {"type": "button",
+        "groupChain": "groupDASWorkerAvatar",
+               "time": 0}
+    },
+    {
+      "name": "DAS_disable_rolloff",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "DAS_disable_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Naomi"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupDASWorkerAvatar",
+               "time": 5000}
+    },
+    {
+      "name": "doing_your_best_audio",
+      "role": "naom",
+      "target": { "type": "audio",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/e557ef42-67ba-476d-99bb-7935af698136.mp3"},
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 1.3, "y":-20, "z":1.85},
+                  "rot": {"x": 0, "y":-1.57, "z":0},
+                  "scale": {"x": 1.67, "y":1.67, "z":1.67},
+                  "volume":0.9,
+                  "distanceModel": "linear",
+                  "rolloffFactor":0,
+                  "refDistance":5,
+                  "maxDistance":10},
+      "trig": {"type": "button",
+        "groupChain": "groupDASWorkerAvatar",
+               "time": 0}
+    },
+    {
+      "name": "showgirl_avatar",
+      "role":"naom",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/DASshowgirl.glb"},
+      "trig": {"type": "button",
+        "groupChain": "groupDASShowgirlAvatar",
+               "time": 0}
+    },
+    {
+      "name": "DAS_disable_rolloff",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "DAS_disable_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Naomi"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupDASShowgirlAvatar",
+               "time": 5000}
+    },
+    {
+      "name": "doing_your_best_audio",
+      "role": "naom",
+      "target": { "type": "audio",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/30da365b-d420-4c6a-b5cd-0d5256a10b5b.mp3"},
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 1.3, "y":-20, "z":1.85},
+                  "rot": {"x": 0, "y":-1.57, "z":0},
+                  "scale": {"x": 1.67, "y":1.67, "z":1.67},
+                  "volume":0.9,
+                  "distanceModel": "linear",
+                  "rolloffFactor":0,
+                  "refDistance":5,
+                  "maxDistance":10},
+      "trig": {"type": "button",
+        "groupChain": "groupDASShowgirlAvatar",
+               "time": 0}
+    },
+    {
+      "name": "festival_crowd_pano",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_load_360_image",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/e25ae1e1-fb25-4c76-967b-de69325d04b5.png",
+                    "position" : {"x": 6.5, "y": 20, "z": 13},
+                    "scale" : {"x": 23, "y": 23, "z": 23}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASShowgirlAvatar",
+               "time": 0}
+    },
+    {
+      "name": "festival_crowd_pano_move",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_crowd_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": 17, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASShowgirlAvatar",
+               "time": 0}
+    },
+    {
+      "name": "festival_crowd_pano_move",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_pow_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASShowgirlAvatar",
+               "time": 0}
+    },
+    {
+      "name": "festival_crowd_pano_move",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_ext_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASShowgirlAvatar",
+               "time": 0}
+    },
+    {
+      "name": "festival_pow_audio",
+      "role": "naom",
+      "target": { "type": "audio",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/bc08e5a8-0608-439b-90ba-f93cf5b6b210.mp3"},
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 1.3, "y":-20, "z":1.85},
+                  "rot": {"x": 0, "y":-1.57, "z":0},
+                  "scale": {"x": 1.67, "y":1.67, "z":1.67},
+                  "volume":0.9,
+                  "distanceModel": "linear",
+                  "rolloffFactor":0,
+                  "refDistance":5,
+                  "maxDistance":10},
+      "trig": {"type": "button",
+        "groupChain": "groupDASFestivalPow",
+               "time": 0}
+    },
+    {
+      "name": "festival_pow_audio",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_crowd_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASFestivalPow",
+               "time": 0}
+    },
+    {
+      "name": "festival_pow_audio",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_pow_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": 20, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASFestivalPow",
+               "time": 0}
+    },
+    {
+      "name": "festival_ext_move",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_ext_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASFestivalPow",
+               "time": 0}
+    },
+    {
+      "name": "festival_ext_move",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_pow_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASCaravanEXT",
+               "time": 0}
+    },
+    {
+      "name": "festival_ext_move",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_ext_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASCaravanEXT",
+               "time": 0}
+    },
+    {
+      "name": "festival_ext_move",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_crowd_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": 17.256, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASCaravanEXT",
+               "time": 0}
+    },
+    {
+      "name": "festival_clear_pano",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_pow_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASCaravanEXT",
+               "time": 0}
+    },
+    {
+      "name": "festival_clear_pano",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_ext_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASCaravanEXT",
+               "time": 0}
+    },
+    {
+      "name": "festival_clear_pano",
+      "role": "naom",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "position"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "festival_crowd_pano",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": true,
+                      "autoplay": false,
+                      "easing": "easeInCirc",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 6.5, "y": -200, "z": 13 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "groupDASClearPano",
+               "time": 0}
     }
-
-
       ]
 }
