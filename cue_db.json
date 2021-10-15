@@ -2184,7 +2184,7 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "SMEnableFlying",
+                "groupChain" : "groupSMEnableFlying",
                "time": 0}
     },
     {
@@ -2202,7 +2202,7 @@
                 }
                 },
       "trig": {"type": "button",
-          "groupChain" : "SMEnableFlying",
+          "groupChain" : "groupSMEnableFlying",
                "time": 0}
     },{
       "name": "SM_disable_flight",
@@ -2219,7 +2219,7 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "SMDisableFlying",
+                "groupChain" : "groupSMDisableFlying",
                "time": 0}
     },
     {
@@ -2237,7 +2237,7 @@
                 }
                 },
       "trig": {"type": "button",
-          "groupChain" : "SMDisableFlying",
+          "groupChain" : "groupSMDisableFlying",
                "time": 0}
     },
     {
