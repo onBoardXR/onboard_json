@@ -2322,24 +2322,6 @@
                  "function_name": "cueSocket",
                  "_cue": { 
                    "name": "AQU_disable_movement",
-                   "target": { "role": "participant" },
-                   "action": { "type": "socket_toggle_movement",
-                    "movement" : true}
-                }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "groupAQUDisableFlying",
-               "time": 0}
-    },
-    {
-      "name": "AQU_disable_movement",
-      "role": "rbca",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "AQU_disable_movement",
                    "target": { "role": "spectator" },
                    "action": { "type": "socket_toggle_movement",
                     "movement" : true}
@@ -2610,7 +2592,7 @@
                   "role":"rbca",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUbanenome.glb"}
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUanenome.glb"}
                 }
                 },
       "trig": {"type": "button",
@@ -2628,7 +2610,7 @@
                   "role":"rbca",
                   "target": { "role" : "participant"},
                   "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUbshrimp.glb"}
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUshrimp.glb"}
                 }
                 },
       "trig": {"type": "button",
