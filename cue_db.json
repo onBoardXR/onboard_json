@@ -1892,7 +1892,7 @@
                   "action": { "type" : "lock_waypoint",
                     "waypoint" : "NPCWaypoint61",
                     "recallAud" : true,
-                    "maxDist" : 3,
+                    "maxDist" : 1,
                     "anime" : {
                      "targets": "",
                      "delay" : 1000,
@@ -1942,7 +1942,7 @@
                       "duration": 10000
                       },
                       "timelines" : [
-                        { "x": 0.3, "y": 0.3, "z": 0.3 }
+                        { "x": 0.5, "y": 0.5, "z": 0.5 }
                       ]
                     }
                   }
@@ -3372,7 +3372,7 @@
                    "action": { "type": "load_360_image",
                     "src" : "https://onboardxr.github.io/onboard_json/image/DAScrowd.jpg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
-                    "scale" : {"x": 22, "y": 22, "z": 22}
+                    "scale" : {"x": 19, "y": 19, "z": 19}
                   }
                   }
                 },
@@ -3393,7 +3393,7 @@
                    "action": { "type": "load_360_image",
                     "src" : "https://onboardxr.github.io/onboard_json/image/DASpow.jpeg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
-                    "scale" : {"x": 23, "y": 23, "z": 23}
+                    "scale" : {"x": 19, "y": 19, "z": 19}
                   }
                   }
                 },
@@ -3414,7 +3414,7 @@
                    "action": { "type": "load_360_image",
                     "src" : "https://onboardxr.github.io/onboard_json/image/DAScaravan.jpeg",
                     "position" : {"x": 6.5, "y": -200, "z": 13},
-                    "scale" : {"x": 23.256, "y": 23.256, "z": 23.256}
+                    "scale" : {"x": 19, "y": 19, "z": 19}
                   }
                   }
                 },
