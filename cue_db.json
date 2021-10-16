@@ -2167,7 +2167,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/hfAtqRi"},
+                 "link":"https://xrtheater.live/scenes/dcGZUAD"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -2199,6 +2199,23 @@
                  "_cue": { 
                    "name": "AQU_enable_flight",
                    "target": { "role": "spectator" },
+                   "action": { "type": "socket_toggle_flight",
+                    "flight" : true}
+                }
+                },
+      "trig": {"type": "button",
+          "groupChain" : "groupAQUEnableFlying",
+               "time": 0}
+    },{
+      "name": "AQU_enable_flight",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_enable_flight",
+                   "target": { "role": "participant" },
                    "action": { "type": "socket_toggle_flight",
                     "flight" : true}
                 }
@@ -2426,6 +2443,37 @@
                "time": 5000}
     },
     {
+      "name": "change_to_flytrap_avatar",
+      "role":"rbca",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/AQUflytrap.glb"},
+      "trig": {"type": "button",
+        "groupChain": "groupAQUflytrap",
+               "time": 0}
+    },
+    {
+      "name": "AQU_god_mic",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AQU_god_mic",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Rebecca"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+            "groupChain": "groupAQUflytrap",
+               "time": 5000}
+    },
+    {
       "name": "change_to_transparent_avatar",
       "role":"rbca",
       "target": { },
@@ -2579,6 +2627,24 @@
       "trig": {"type": "button",
             "groupChain": "groupAQUInternAv",
                "time": 5000}
+    },
+    {
+      "name": "change_aud_to_AR_flytrap_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUflytrap.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
     },
     {
       "name": "change_aud_to_AR_anenome_avatar",
@@ -2735,7 +2801,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/TX893U8"},
+                 "link":"https://xrtheater.live/scenes/uAbRNet"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -3716,7 +3782,7 @@
                       "duration": 0
                       },
                       "timelines" : [
-                        { "x": 6.5, "y": 17, "z": 13 }
+                        { "x": 6.5, "y": 15, "z": 13 }
                       ]
                     }
                 }
@@ -3862,7 +3928,7 @@
                       "duration": 0
                       },
                       "timelines" : [
-                        { "x": 6.5, "y": 20, "z": 13 }
+                        { "x": 6.5, "y": 15, "z": 13 }
                       ]
                     }
                 }
@@ -3958,7 +4024,7 @@
                       "duration": 0
                       },
                       "timelines" : [
-                        { "x": 6.5, "y": 17.256, "z": 13 }
+                        { "x": 6.5, "y": 15, "z": 13 }
                       ]
                     }
                 }
