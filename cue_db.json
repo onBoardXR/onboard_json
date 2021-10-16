@@ -1718,7 +1718,7 @@
       "role":"stagemanager",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/Rq4auFD"},
+                 "link":"https://xrtheater.live/scenes/C8WoeGB"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -1892,7 +1892,7 @@
                   "action": { "type" : "lock_waypoint",
                     "waypoint" : "NPCWaypoint61",
                     "recallAud" : true,
-                    "maxDist" : 0.001,
+                    "maxDist" : 1,
                     "anime" : {
                      "targets": "",
                      "delay" : 1000,
@@ -1902,7 +1902,7 @@
                      "duration": 4000
                      },
                      "timelines" : [
-                      {"x": 144.1471118531734, "y": 27.92318653751175, "z": -7.15644323206858, "easing": "easeInSine", "delay":30000},
+                      {"x": 144.1471118531734, "y": 27.92318653751175, "z": -7.15644323206858, "easing": "easeInSine", "delay":20000},
                       {"x": 173.43603113839785, "y": 28.940120809387818, "z": -17.253956376160513, "delay": 0, "duration": 1500},
                       {"x": 185.87640956495792, "y": 29.54621401913267, "z": -19.07611349128432, "duration": 650},
                       {"x": 195.8755469844249, "y": 29.29805291328146, "z": -19.45593830919932, "duration":400},
@@ -1919,7 +1919,67 @@
                 },
       "trig": {"type": "button",
         "groupChain" : "groupLGTTBIntoHeart",
+               "time": 10000}
+    },
+    {
+      "name": "into_heart_shrink_av",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "into_heart_shrink_av",
+                   "target": { "role": ["participant", "stagemanager", "housemanager"],
+                     "aspect" : "scale" },
+                   "action": { "type": "manipulate_avatar",
+                     "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 10000
+                      },
+                      "timelines" : [
+                        { "x": 0.1, "y": 0.1, "z": 0.1 }
+                      ]
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBIntoHeart",
                "time": 0}
+    },
+    {
+      "name": "into_heart_grow_av",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "into_heart_shrink_av",
+                   "target": { "role": ["participant", "stagemanager", "housemanager"],
+                     "aspect" : "scale" },
+                   "action": { "type": "manipulate_avatar",
+                     "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 2000
+                      },
+                      "timelines" : [
+                        { "x": 1, "y": 1, "z": 1 }
+                      ]
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "groupLGTTBIntoHeart",
+               "time": 40000}
     },
     {
       "name": "moveBrendan",
@@ -3052,46 +3112,6 @@
                "time": 0}
     }, 
     {
-      "name": "nemo_audience_places",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "nemo_audience_places",
-                   "target": { "role": "spectator"},
-                   "action": { "type": "recall_audience",
-                    "waypoint" : "nemoAudWaypoint",
-                    "maxDist" : 10,
-                    "enableMotion" : false}
-                }
-                },
-      "trig": {"type": "button",
-            "groupChain": "groupNemoRecallAud",
-               "time": 0}
-    },
-    {
-      "name": "nemo_audience_places",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "nemo_audience_places",
-                   "target": { "role": "participant"},
-                   "action": { "type": "recall_audience",
-                    "waypoint" : "audienceStartingPosition",
-                    "maxDist" : 10,
-                    "enableMotion" : false}
-                }
-                },
-      "trig": {"type": "button",
-            "groupChain": "groupNemoRecallAud",
-               "time": 0}
-    },
-    {
       "name": "nemo_avatar_to_mermaid",
       "role": "nemo-qs",
       "target": { },
@@ -3276,45 +3296,6 @@
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "recall_aud_for_transition",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "aud_transition",
-                   "target": { "role": "general" },
-                   "action": { "type": "recall_audience",
-                    "waypoint" : "transitionWaypoint",
-                    "maxDist" : 3,
-                    "enableMotion" : true}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "recall_house_for_transition",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "aud_transition",
-                   "target": { "role": "individual",
-                  "name" : "House_Manager" },
-                   "action": { "type": "recall_audience",
-                    "waypoint" : "houseWaypoint",
-                    "maxDist" : 0.1,
-                    "enableMotion" : false}
-                }
-                },
       "trig": {"type": "button",
                "time": 0}
     },
