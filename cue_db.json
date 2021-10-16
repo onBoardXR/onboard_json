@@ -1892,7 +1892,7 @@
                   "action": { "type" : "lock_waypoint",
                     "waypoint" : "NPCWaypoint61",
                     "recallAud" : true,
-                    "maxDist" : 1,
+                    "maxDist" : 3,
                     "anime" : {
                      "targets": "",
                      "delay" : 1000,
@@ -1942,7 +1942,7 @@
                       "duration": 10000
                       },
                       "timelines" : [
-                        { "x": 0.1, "y": 0.1, "z": 0.1 }
+                        { "x": 0.3, "y": 0.3, "z": 0.3 }
                       ]
                     }
                   }
