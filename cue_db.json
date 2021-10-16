@@ -3150,6 +3150,36 @@
                "time": 0}
     },
     {
+      "name": "Nemo_enlarge_vivian",
+      "role": "nemo-qs",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Nemo_enlarge_vivian",
+                  "target": { "role" : "individual",
+                    "name": "Mrs_Nemo",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 250
+                     },
+                     "timelines" : [
+                       {"x": 1.4, "y":1.4, "z":1.4}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "Kraken_shake_left",
       "role": "nemo-qs",
       "target": { "type": "glb",
