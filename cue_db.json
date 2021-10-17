@@ -2437,7 +2437,7 @@
                    "name": "AQU_god_mic",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["Rebecca"],
+                    "names": ["Aquaian"],
                     "rolloff": 0,
                     "refDistance": 1
                     }
@@ -2468,7 +2468,7 @@
                    "name": "AQU_god_mic",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["Rebecca"],
+                    "names": ["Aquaian"],
                     "rolloff": 0,
                     "refDistance": 1
                     }
@@ -2499,7 +2499,7 @@
                    "name": "AQU_god_mic",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["Rebecca"],
+                    "names": ["Aquaian"],
                     "rolloff": 0,
                     "refDistance": 1
                     }
@@ -2530,7 +2530,7 @@
                    "name": "AQU_god_mic",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["Rebecca"],
+                    "names": ["Aquaian"],
                     "rolloff": 0,
                     "refDistance": 1
                     }
@@ -2561,7 +2561,7 @@
                    "name": "AQU_god_mic",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["Rebecca"],
+                    "names": ["Aquaian"],
                     "rolloff": 0,
                     "refDistance": 1
                     }
@@ -2592,7 +2592,7 @@
                    "name": "AQU_god_mic",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["Rebecca"],
+                    "names": ["Aquaian"],
                     "rolloff": 0,
                     "refDistance": 1
                     }
@@ -2623,7 +2623,7 @@
                    "name": "AQU_god_mic",
                    "target": { "role": "general" },
                    "action": { "type": "change_rolloff",
-                    "names": ["Rebecca"],
+                    "names": ["Aquaian"],
                     "rolloff": 0,
                     "refDistance": 1
                     }
@@ -2731,7 +2731,7 @@
                  "_cue": { 
                    "name": "test_manipulate_avatar",
                    "target": { "role" : "individual",
-                     "name": "Rebecca",
+                     "name": "Aquaian",
                      "aspect" : "scale" },
                    "action": { "type": "manipulate_avatar",
                      "anime": {
@@ -2762,7 +2762,7 @@
                  "_cue": { 
                    "name": "test_manipulate_avatar",
                    "target": { "role" : "individual",
-                     "name": "Rebecca",
+                     "name": "Aquaian",
                      "aspect" : "position" },
                    "action": { "type": "manipulate_avatar",
                      "anime": {
@@ -3416,7 +3416,7 @@
     },
     {
       "name": "festival_crowd_pano",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3437,7 +3437,7 @@
     },
     {
       "name": "festival_pow_pano",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3458,7 +3458,7 @@
     },
     {
       "name": "festival_ext_pano",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3768,7 +3768,7 @@
     },
     {
       "name": "festival_crowd_pano_move",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3800,7 +3800,7 @@
     },
     {
       "name": "festival_crowd_pano_move",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3832,7 +3832,7 @@
     },
     {
       "name": "festival_crowd_pano_move",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3882,7 +3882,7 @@
     },
     {
       "name": "festival_pow_audio",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3914,7 +3914,7 @@
     },
     {
       "name": "festival_pow_audio",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3946,7 +3946,7 @@
     },
     {
       "name": "festival_ext_move",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -3978,7 +3978,7 @@
     },
     {
       "name": "festival_ext_move",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -4010,7 +4010,7 @@
     },
     {
       "name": "festival_ext_move",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -4042,7 +4042,7 @@
     },
     {
       "name": "festival_ext_move",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -4074,7 +4074,7 @@
     },
     {
       "name": "festival_clear_pano",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -4106,7 +4106,7 @@
     },
     {
       "name": "festival_clear_pano",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -4138,7 +4138,7 @@
     },
     {
       "name": "festival_clear_pano",
-      "role": "naom",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
