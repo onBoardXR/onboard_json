@@ -4229,7 +4229,7 @@
                "time": 0}
     },
     {
-      "name": "load_pink_chair",
+      "name": "host_prop",
       "role": "housemanager",
       "target": { "type": "glb",
                   "dest": "url",
