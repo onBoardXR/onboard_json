@@ -4239,6 +4239,18 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "host_playbill",
+      "role": "housemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/ARIhostPlaybill.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
     }
       ]
 }
