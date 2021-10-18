@@ -1927,6 +1927,27 @@
                "time": 10000}
     },
     {
+      "name": "change_Brendan_to_Invis",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "change_Brendan_to_Invis",
+                  "role":"stagemanager",
+                  "target": { "role" : "individual",
+                  "name" : "Brendan"
+                  },
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"}
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "groupLGTTBToS",
+               "time": 40000}
+    },
+    {
       "name": "into_heart_shrink_av",
       "role": "stagemanager",
       "target": { },
