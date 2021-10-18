@@ -24,8 +24,8 @@
    "chrs": {"name": "_-_","role":"nemo-qs"},
   "brnd": {"name": "Brendan", "role": "brnd"},
   "brnd2": {"name": "Brendan2", "role": "brnd2"},
-   "ari":{"name":"MC","role":"housemanager"},
+   "arit":{"name":"Codebeard","role":"housemanager"},
   "dash":{"name":"Cap'n Nobeard", "role":"stagemanager"},
-  "dsha":{"name":"MC", "role":"housemanager"},
+  "dsha":{"name":"Daaarrrsha", "role":"housemanager"},
    "aud": {"name": "Audience","role":"guest"}
  }

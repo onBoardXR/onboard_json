@@ -4160,6 +4160,85 @@
                 },
       "trig": {"type": "button",
                "time": 0}
+    },
+    {
+      "name": "house_enable_god_mic",
+      "role": "housemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Daaarrrsha", "Codebeard", "House_Manager"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "house_disable_god_mic",
+      "role": "housemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Daaarrrsha", "Codebeard", "House_Manager"],
+                    "rolloff": 1.2,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_invis",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_codebeard_normal",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeard.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_to_codebeard_matrix",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeardmatrix.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "load_pink_chair",
+      "role": "housemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/ARIhostProp.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
     }
       ]
 }
