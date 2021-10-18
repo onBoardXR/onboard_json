@@ -2022,15 +2022,15 @@
                   "action": { "type": "manipulate_avatar",
                     "anime": {
                      "targets": "",
-                     "delay" : 5000,
+                     "delay" : 2000,
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInSine",
-                     "duration": 7500
+                     "duration": 10500
                      },
                      "timelines" : [
-                       {"x": 145, "y":0, "z":-34.45660006785802},
-                       {"x": 195, "y":-310, "z":19.45660006785802, "duration": 10000}
+                       {"x": 145, "y":-150, "z":-34.45660006785802},
+                       {"x": 165, "y":-330, "z":8.45660006785802, "duration": 10000}
                      ]
                    }
                  }
