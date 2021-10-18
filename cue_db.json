@@ -3332,7 +3332,66 @@
       "trig": {"type": "button",
          "groupChain": "groupNemoDeleteAllKraken",
                "time": 0}
-    },    
+    },  
+    {
+      "name": "Nemo_delete_mini_kraken",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "src": "Nemo_load_mini_kraken"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+         "groupChain": "groupNemoDeleteProps",
+               "time": 0}
+    },   
+        {
+      "name": "Nemo_delete_mini_sub",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "src": "Nemo_load_mini_sub"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+         "groupChain": "groupNemoDeleteProps",
+               "time": 0}
+    }, 
+        {
+      "name": "Nemo_delete_pool_door",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "src": "Nemo_load_pool_door"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+         "groupChain": "groupNemoDeleteProps",
+               "time": 0}
+    },
+    {
+      "name": "Nemo_delete_bubbles",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "src": "Nemo_bubbles"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+         "groupChain": "groupNemoDeleteProps",
+               "time": 0}
+    }, 
+    {
+      "name": "Nemo_delete_helmet",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "src": "Nemo_helmet"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+         "groupChain": "groupNemoDeleteProps",
+               "time": 0}
+    }, 
+    {
+      "name": "MrsNemo_invisible_avatar",
+      "role":"vivi",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
     {
       "name": "MrsNemo_start_waypoint",
       "role": "vivi",
@@ -3342,7 +3401,7 @@
       "trig": {"type": "button",
                "time": 0}
     },
-        {
+    {
       "name": "Nemo_wheelchair_avatar",
       "role":"vivi",
       "target": { },
@@ -3351,7 +3410,7 @@
       "trig": {"type": "button",
                "time": 0}
     },
-        {
+    {
       "name": "MrsNemo_Entrance_waypoint",
       "role": "vivi",
       "target": { },
@@ -3369,7 +3428,7 @@
       "trig": {"type": "button",
                "time": 0}
     },
-        {
+    {
       "name": "Nemo_sound_waypoint",
       "role": "belo",
       "target": { },
