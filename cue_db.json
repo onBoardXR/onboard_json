@@ -3032,6 +3032,46 @@
             "groupChain": "groupNemoTopOfShow",
                "time": 5000}
     },
+        {
+      "name": "nemo_godmic2",
+      "role": "nemo-qs",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_godmic2",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Vivian"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "nemo_godmic3",
+      "role": "nemo-qs",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "nemo_godmic3",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Vivian"],
+                    "rolloff": 0,
+                    "refDistance": 20
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
     {
       "name": "nemo_actor_starting_place",
       "role": "nemo-qs",
