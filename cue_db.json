@@ -2743,6 +2743,22 @@
                "time": 0}
     },
     {
+      "name": "ghost_to_spawn",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "ghost_to_spawn",
+                   "target": { "role": "ghost" },
+                   "action": { "type": "hop_to_spawn_point"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "rebecca_animate_avatar_size",
       "role": "rbca",
       "target": { },
