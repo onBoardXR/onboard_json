@@ -108,7 +108,7 @@
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/89632f04-6638-4efc-bc94-8eb6b3058aed.glb"},
       "action": {"type": "spawn_item",
-                "pin_it": true,
+                "pin_it": 2500,
                  "pos": {"x": 24, "y":-12, "z":10},
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
