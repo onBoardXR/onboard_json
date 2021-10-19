@@ -4,8 +4,8 @@
   "demo": {"name": "Demo", "role": "demo"}, 
   "testUser": {"name": "testUser", "role": "test"}, 
   "stephen": {"name": "Stephen", "role":"housemanager"},
-  "participant": {"name":"participant","role":"participant"},
-  "spectator": {"name":"spectator","role":"participant"},
+  "partpant": {"name":"participant","role":"participant"},
+  "spectat": {"name":"spectator","role":"participant"},
   "clem": {"name":"--","role":"clem"},
   "vivi": {"name":"Mrs_Nemo","role":"vivi","avatarURL":"NEMOav1.glb"},
   "belo": {"name":"Vivian","role":"belo"},
@@ -27,7 +27,8 @@
   "brnd": {"name": "Brendan", "role": "brnd"},
   "brnd2": {"name": "Brendan2", "role": "brnd2"},
    "arit":{"name":"Codebeard","role":"housemanager"},
-  "dash":{"name":"Cap'n Nobeard", "role":"stagemanager"},
+   "brad":{"name":"Codebeard","role":"housemanager"},
+  "dash":{"name":"House_Manager", "role":"stagemanager"},
   "dsha":{"name":"Daaarrrsha", "role":"housemanager"},
    "aud": {"name": "Audience","role":"guest"}
  }
