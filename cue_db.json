@@ -3608,15 +3608,6 @@
                "time": 0}
     },
         {
-      "name": "Nemo_cues_waypoint",
-      "role": "nemo-qs",
-      "target": { },
-      "action": {"type": "jump_to_waypoint",
-                 "anchor":"nemoCuesWaypoint"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
       "name": "Nemo_audio_avatar",
       "role":"belo",
       "target": { },
@@ -3625,7 +3616,34 @@
       "trig": {"type": "button",
                "time": 0}
     },
-       {
+        {
+      "name": "Viv_desktop_wheelchair_avatar",
+      "role":"belo",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/NEMOav1.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "Viv_desktop_mermaid_avatar",
+      "role":"belo",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/NEMOav2.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+     {
+      "name": "Nemo_cues_waypoint",
+      "role": "nemo-qs",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"nemoCuesWaypoint"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+{
       "name": "Nemo_cues_avatar",
       "role":"nemo-qs",
       "target": { },
