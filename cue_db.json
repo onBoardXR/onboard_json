@@ -2030,7 +2030,7 @@
                      },
                      "timelines" : [
                        {"x": 145, "y":-150, "z":-34.45660006785802},
-                       {"x": 165, "y":-330, "z":8.45660006785802, "duration": 10000}
+                       {"x": 220, "y":-700, "z":8.45660006785802, "duration": 10000}
                      ]
                    }
                  }
@@ -2084,7 +2084,7 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "groupLGTTBIntoHeart",
-               "time": 27000}
+               "time": 33000}
     },
     {
       "name": "MoveHeartA",
@@ -2100,7 +2100,7 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "groupLGTTBIntoHeart",
-        "time": 27000
+        "time": 33000
       }
     },
     {
