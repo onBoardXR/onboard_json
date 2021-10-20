@@ -4387,6 +4387,15 @@
                "time": 0}
     },
     {
+      "name": "change_to_dasha_pirate",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIdashaPirate.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "change_to_codebeard_normal",
       "role":"housemanager",
       "target": { },
@@ -4422,6 +4431,18 @@
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/object/ARIhostPlaybill.glb"},
+      "action": {"type": "spawn_prop",
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "host_playbill",
+      "role": "housemanager",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://onboardxr.github.io/onboard_json/object/ARIsubProp.glb"},
       "action": {"type": "spawn_prop",
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 1, "y":1, "z":1}},
