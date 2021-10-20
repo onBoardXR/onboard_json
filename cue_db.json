@@ -3217,6 +3217,15 @@
         "groupChain": "groupNemoLoadProps",
                "time": 0}
     },
+        {
+      "name": "Nemo_backup_invisible_avatar",
+      "role":"dave",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
             {
       "name": "Nemo_mini_kraken",
       "role": "dave",
@@ -3400,6 +3409,54 @@
       "trig": {"type": "button",
         "groupChain":"groupNemoKrakenShake",
                "time": 502}
+    }, 
+        {
+      "name": "Kraken_shake_up",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Nemo_kraken_eye"},
+      "action": {"type": "move",
+                 "duration": 250,
+                 "loop": false,
+                 "pos": {"x": 25.1, "y":3.2, "z":11},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain":"groupNemoKrakenShake",
+               "time": 1200}
+    }, 
+                    {
+      "name": "Kraken_shake_right_2",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Nemo_kraken_eye"},
+      "action": {"type": "move",
+                 "duration": 200,
+                 "loop": false,
+                 "pos": {"x": 24.5, "y":2.9, "z":11},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain":"groupNemoKrakenShake",
+               "time": 1450}
+    }, 
+        {
+      "name": "Kraken_shake_return_2",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Nemo_kraken_eye"},
+      "action": {"type": "move",
+                 "duration": 300,
+                 "loop": false,
+                 "pos": {"x": 25, "y":3.1, "z":11},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+        "groupChain":"groupNemoKrakenShake",
+               "time": 1700}
     }, 
         {
       "name": "Nemo_delete_kraken1",
