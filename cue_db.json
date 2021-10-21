@@ -2329,7 +2329,7 @@
     },
     {
       "name": "SM_enable_flight",
-      "role": "stagemanager",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -2342,12 +2342,11 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "groupSMEnableFlying",
                "time": 0}
     },
     {
       "name": "SM_enable_flight",
-      "role": "stagemanager",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -2360,11 +2359,10 @@
                 }
                 },
       "trig": {"type": "button",
-          "groupChain" : "groupSMEnableFlying",
                "time": 0}
     },{
       "name": "SM_disable_flight",
-      "role": "stagemanager",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -2377,12 +2375,11 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "groupSMDisableFlying",
                "time": 0}
     },
     {
       "name": "SM_disable_flight",
-      "role": "stagemanager",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -2395,7 +2392,6 @@
                 }
                 },
       "trig": {"type": "button",
-          "groupChain" : "groupSMDisableFlying",
                "time": 0}
     },
     {
@@ -2868,6 +2864,15 @@
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://xrtheater.live/scenes/WWMae8Y"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Change_to_Lobby2",
+      "role":"stagemanager",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/tWWc6Xn"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -4510,14 +4515,14 @@
                "time": 0}
     },
     {
-      "name": "host_playbill",
+      "name": "host_sub",
       "role": "housemanager",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/object/ARIsubProp.glb"},
       "action": {"type": "spawn_prop",
                  "rot": {"x": 0, "y":0, "z":0},
-                 "scale": {"x": 1, "y":1, "z":1}},
+                 "scale": {"x": 0.05, "y":0.05, "z":0.05}},
       "trig": {"type": "button",
                "time": 0}
     }
