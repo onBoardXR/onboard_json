@@ -2068,11 +2068,11 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInSine",
-                     "duration": 10500
+                     "duration": 7500
                      },
                      "timelines" : [
                        {"x": 140, "y":-250, "z":50.45660006785802},
-                       {"x": 140, "y":-775, "z":50.45660006785802, "duration": 10000}
+                       {"x": 140, "y":-775, "z":50.45660006785802, "duration": 8000}
                      ]
                    }
                  }
@@ -4541,6 +4541,46 @@
       "action": {"type": "spawn_prop",
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 0.05, "y":0.05, "z":0.05}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "brnd2_enable_god_mic",
+      "role": "brnd2",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Brendan2"],
+                    "rolloff": 0,
+                    "refDistance": 1
+                    }
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "brnd2_disable_god_mic",
+      "role": "brnd2",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_change_rolloff",
+                   "target": { "role": "general" },
+                   "action": { "type": "change_rolloff",
+                    "names": ["Brendan2"],
+                    "rolloff": 1.2,
+                    "refDistance": 1
+                    }
+                }
+                },
       "trig": {"type": "button",
                "time": 0}
     }
