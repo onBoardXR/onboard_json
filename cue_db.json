@@ -2066,11 +2066,11 @@
                      "loop": false,
                      "autoplay": false,
                      "easing": "easeInSine",
-                     "duration": 4000
+                     "duration": 6000
                      },
                      "timelines" : [
-                      {"x": 100, "y":-200, "z":50.45660006785802, "duration": 6000},
-                      {"x": 120, "y":-385, "z":20.45660006785802, "duration": 0, "delay": 0}
+                      {"x": 100, "y":-100, "z":20.45660006785802},
+                      {"x": 120, "y":-390, "z":20.45660006785802, "duration": 10000}
                      ]
                    }
                  }
