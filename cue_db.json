@@ -1969,7 +1969,7 @@
     },
     {
       "name": "change_Brendan_to_Invis",
-      "role": "none",
+      "role": "stagemanager",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1985,6 +1985,7 @@
                 }
                 },
       "trig": {"type": "button",
+        "groupChain" : "groupLGTTBIntoHeart",
                "time": 40000}
     },
     {
@@ -2112,7 +2113,7 @@
     },
     {
       "name": "change_Brendan_to_LGTTB2",
-      "role": "stagemanager",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -2128,7 +2129,6 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "groupLGTTBIntoHeart",
                "time": 8000}
     },
     {
