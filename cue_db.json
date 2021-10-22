@@ -2070,7 +2070,7 @@
                      "duration": 6000
                      },
                      "timelines" : [
-                      {"x": 100, "y":-100, "z":20.45660006785802},
+                      {"x": 100, "y":-150, "z":20.45660006785802},
                       {"x": 120, "y":-390, "z":20.45660006785802, "duration": 10000}
                      ]
                    }
@@ -2155,12 +2155,12 @@
       "action": {"type": "move",
                  "duration": 0,
                  "loop": false,
-                 "pos": {"x": 170.50000000000009, "y":130.5, "z":100},
+                 "pos": {"x": 170.50000000000009, "y":150.5, "z":100},
                  "rot": {"x": -0.1, "y":249.3, "z":-0.1},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "groupLGTTBIntoHeart",
-        "time": 8000
+        "time": 10000
       }
     },
     {
@@ -2170,14 +2170,14 @@
                   "dest": "local",
                   "src": "load_heart_A"},
       "action": {"type": "move",
-                 "duration": 10000,
+                 "duration": 8000,
                  "loop": false,
                  "pos": {"x": 170.50000000000009, "y":30.5, "z":100},
                  "rot": {"x": -0.1, "y":249.3, "z":-0.1},
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
         "groupChain" : "groupLGTTBIntoHeart",
-        "time":8000
+        "time":10000
       }
     },
     {
