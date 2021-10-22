@@ -1969,7 +1969,7 @@
     },
     {
       "name": "change_Brendan_to_Invis",
-      "role": "stagemanager",
+      "role": "none",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1985,7 +1985,6 @@
                 }
                 },
       "trig": {"type": "button",
-                "groupChain" : "groupLGTTBIntoHeart",
                "time": 40000}
     },
     {
