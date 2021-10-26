@@ -4565,7 +4565,7 @@
     },
     {
       "name": "change_to_codebeard_normal",
-      "role":"housemanager",
+      "role":"none",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeard.glb"},
@@ -4637,7 +4637,7 @@
     },
     {
       "name": "host_prop",
-      "role": "housemanager",
+      "role": "none",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/object/ARIhostProp.glb"},
@@ -4738,7 +4738,7 @@
     },
     {
       "name": "sub_transition",
-      "role": "stagemanager",
+      "role": "housemanager",
       "target": { "type": "audio",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/audio/AriSub.mp3"},
