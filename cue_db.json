@@ -3257,6 +3257,44 @@
         "groupChain": "groupNemoLoadProps",
                "time": 0}
     },
+    {
+      "name": "Nemo_manualload_pool_door",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/f63c6514-0883-4292-b750-1e61db62210c.glb"},
+      "action": {"type": "spawn_item",
+                "pin_it": true,
+                 "pos": {"x": 26.2, "y":-0.03, "z":2.7},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+                {
+      "name": "Nemo_manualopen_door",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "Nemo_manualload_pool_door"},
+      "action": {"type": "move",
+                 "duration": 3000,
+                 "loop": false,
+                 "pos": {"x": 26.2, "y":-0.03, "z":-0.3},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1}},
+       "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "Nemo_manualdelete_pool_door",
+      "role": "nemo-qs",
+      "target": { "type": "glb",
+                  "src": "Nemo_manualload_pool_door"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
         {
       "name": "Nemo_backup_invisible_avatar",
       "role":"dave",
