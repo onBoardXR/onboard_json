@@ -4636,6 +4636,24 @@
                "time": 0}
     },
     {
+      "name": "Dasha_Avatar",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/DashaAvatar.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Tyler_Avatar",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/TylerAvatar.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
       "name": "Smile_Codebeard",
       "role":"housemanager",
       "target": { },
