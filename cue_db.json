@@ -4823,7 +4823,7 @@
     },
     {
       "name": "PXR_Mike_Load_Slide_1",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "image",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/image/PXRMikeSlide1.jpg"},
@@ -4837,7 +4837,7 @@
     },
     {
       "name": "PXR_Mike_Load_Slide_2",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "image",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/image/PXRMikeSlide2.jpg"},
@@ -4851,7 +4851,7 @@
     },
     {
       "name": "PXR_Mike_Load_Slide_3",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "image",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/image/PXRMikeSlide3.jpg"},
@@ -4865,7 +4865,7 @@
     },
     {
       "name": "PXR_Mike_Load_Slide_4",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "image",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/image/PXRMikeSlide4.jpg"},
@@ -4879,7 +4879,7 @@
     },
     {
       "name": "PXR_Mike_Load_Slide_5",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "image",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/image/PXRMikeSlide5.jpg"},
@@ -4893,7 +4893,7 @@
     },
     {
       "name": "PXR_Mike_Load_Slide_6",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "image",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/image/PXRMikeSlide6.jpg"},
@@ -4907,7 +4907,7 @@
     },
     {
       "name": "PXR_Mike_Slide_1",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_1"},
@@ -4923,7 +4923,7 @@
     },
     {
       "name": "PXR_Mike_Slide_1_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_1"},
@@ -4939,7 +4939,7 @@
     },
     {
       "name": "PXR_Mike_Slide_2",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_2"},
@@ -4955,7 +4955,7 @@
     },
     {
       "name": "PXR_Mike_Slide_2_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_2"},
@@ -4971,7 +4971,7 @@
     },
     {
       "name": "PXR_Mike_Slide_3",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_3"},
@@ -4987,7 +4987,7 @@
     },
     {
       "name": "PXR_Mike_Slide_3_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_3"},
@@ -5003,7 +5003,7 @@
     },
     {
       "name": "PXR_Mike_Slide_4",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_4"},
@@ -5019,7 +5019,7 @@
     },
     {
       "name": "PXR_Mike_Slide_4_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_4"},
@@ -5035,7 +5035,7 @@
     },
     {
       "name": "PXR_Mike_Slide_5",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_5"},
@@ -5051,7 +5051,7 @@
     },
     {
       "name": "PXR_Mike_Slide_5_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_5"},
@@ -5067,7 +5067,7 @@
     },
     {
       "name": "PXR_Mike_Slide_6",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_6"},
@@ -5083,7 +5083,7 @@
     },
     {
       "name": "PXR_Mike_Slide_1_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_1"},
@@ -5099,7 +5099,7 @@
     },
     {
       "name": "PXR_Mike_Slide_2_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_2"},
@@ -5115,7 +5115,7 @@
     },
     {
       "name": "PXR_Mike_Slide_3_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_3"},
@@ -5131,7 +5131,7 @@
     },
     {
       "name": "PXR_Mike_Slide_4_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_4"},
@@ -5147,7 +5147,7 @@
     },
     {
       "name": "PXR_Mike_Slide_5_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_5"},
@@ -5163,7 +5163,7 @@
     },
     {
       "name": "PXR_Mike_Slide_6_clear",
-      "role": "stagemanager",
+      "role": "mikePXR",
       "target": { "type": "glb",
                   "dest": "local",
                   "src": "PXR_Mike_Load_Slide_6"},
