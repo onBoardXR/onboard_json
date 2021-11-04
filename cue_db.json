@@ -5,7 +5,7 @@
     
     {
       "name": "Cue_1 item avocado",
-      "role": "test",
+      "role": "romapres",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://github.com/KhronosGroup/glTF-Sample-Models/raw/master/2.0/Avocado/glTF-Binary/Avocado.glb"},
