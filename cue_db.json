@@ -51,7 +51,7 @@
       "role": "romapres",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src": "Test_1_spawn_item_avocado"},
+                  "src": "Cue_1 item avocado"},
       "action": {"type": "move",
                  "duration": 2000,
                  "loop": true,
