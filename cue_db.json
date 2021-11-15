@@ -55,7 +55,7 @@
       "action": {"type": "move",
                  "duration": 2000,
                  "loop": true,
-                 "pos": {"x": 3, "y":3, "z":3},
+                 "pos": { "x": 35.353, "y": 3.0766, "z": -11.774 },
                  "rot": {"x": 0, "y":39.785, "z":0},
                  "scale": {"x": 2, "y":2, "z":2}},
       "trig": {"type": "button",
