@@ -5339,6 +5339,42 @@
                "time": 0}
     },
     {
+      "name": "scale_mike_avatar",
+      "role": "mikePXR",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "scale_mike_avatar",
+                  "target": { "role" : "participant",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 7000
+                     },
+                     "timelines" : [
+                      {"x": 100, "y":1, "z":0.1, "delay": 500, "duration":3000, "easing": "linear"},
+                      {"x": 0.1, "y":1, "z":100, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 100, "y":5, "z":0.1, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 0.1, "y":5, "z":100, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 100, "y":1, "z":0.1, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 0.1, "y":1, "z":1000, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 1, "y":1, "z":1, "delay": 500, "duration": 2500, "easing": "linear"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeScaleAudAvatargroup",
+               "time": 0}
+    },
+    {
       "name": "rotate_mike_avatar",
       "role": "mikePXR",
       "target": { },
