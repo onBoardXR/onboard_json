@@ -5154,22 +5154,6 @@
                "time": 0}
     },
     {
-      "name": "PXR_Mike_Slide_5_clear",
-      "role": "mikePXR",
-      "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "PXR_Mike_Load_Slide_5"},
-      "action": {"type": "move",
-                 "duration": 0,
-                 "loop": false,
-                 "pos": {"x": 35.47580337524414, "y": -50, "z": -3.870436429977417},
-                 "rot": {"x": 0.021555254136002698, "y": -2.88654257135035, "z": -0.00018855032891079715},
-                 "scale": {"x": 7.610231030360152, "y": 7.610231030263224, "z": 7.6102310303580065}},
-      "trig": {"type": "button",
-        "groupChain": "PXRMikeSlide6group",
-               "time": 0}
-    },
-    {
       "name": "PXR_Mike_Slide_6",
       "role": "mikePXR",
       "target": { "type": "glb",
