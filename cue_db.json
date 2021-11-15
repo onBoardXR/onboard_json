@@ -12,7 +12,7 @@
       "action": {"type": "spawn_item",
                  "pos": { "x": 35.353, "y": 1.0766, "z": -11.774 },
                  "rot": {"x": 0, "y":1.57, "z":0},
-                 "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+                 "scale": {"x": 3, "y":3, "z":3}},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -42,7 +42,7 @@
                   "src":  "https://xrtheater-assets.xrtheater.live/files/2acc1a73-429b-4895-b766-b28c954a39b2.glb"},
       "action": {"type": "spawn_prop",
                  "rot": {"x": 0, "y":1.57, "z":0},
-                 "scale": {"x": 1.2, "y":1.2, "z":1.2}},
+                 "scale": {"x": 3, "y":3, "z":3}},
       "trig": {"type": "button",
                "time": 0}
     },
