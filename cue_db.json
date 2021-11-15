@@ -12,7 +12,7 @@
       "action": {"type": "spawn_item",
                  "pos": { "x": 35.353, "y": 1.0766, "z": -11.774 },
                  "rot": {"x": 0, "y":1.57, "z":0},
-                 "scale": {"x": 3, "y":3, "z":3}},
+                 "scale": {"x": 10, "y":10, "z":10}},
       "trig": {"type": "button",
                "time": 0}
     },
