@@ -5176,6 +5176,253 @@
       "trig": {"type": "button",
         "groupChain": "PXRMikeClearAllSlidesgroup",
                "time": 0}
+    },
+    {
+      "name": "change_aud_to_flytrap_avatar",
+      "role": "mikePXR",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "change_aud_to_flytrap_avatar",
+                  "role":"mikePXR",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUflytrap.glb"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "PXRMikeAudToFlytrapgroup",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_avatar_back",
+      "role": "mikePXR",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_avatar_change_back",
+                   "target": { "role": "participant" },
+                   "action": { "type": "avatar_change_back"}
+                }
+                },
+      "trig": {"type": "button",
+        "groupChain": "PXRMikeAudAvBackgroup",
+               "time": 0}
+    },
+    {
+      "name": "scale_mike_avatar",
+      "role": "mikePXR",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "scale_mike_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Michael",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 7000
+                     },
+                     "timelines" : [
+                      {"x": 100, "y":1, "z":0.1, "delay": 500, "duration":3000, "easing": "linear"},
+                      {"x": 0.1, "y":1, "z":100, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 100, "y":5, "z":0.1, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 0.1, "y":5, "z":100, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 100, "y":1, "z":0.1, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 0.1, "y":1, "z":1000, "delay": 500, "duration": 3000, "easing": "linear"},
+                      {"x": 1, "y":1, "z":1, "delay": 500, "duration": 2500, "easing": "linear"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeScaleAvatargroup",
+               "time": 0}
+    },
+    {
+      "name": "rotate_mike_avatar",
+      "role": "mikePXR",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "scale_mike_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Michael",
+                    "aspect" : "rotation" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 7000
+                     },
+                     "timelines" : [
+                      {"x": 405, "y": 1298475, "z": 123, "delay": 0, "easing": "linear", "duration": 5000},
+                      {"x": 0, "y": 0, "z": 0, "delay": 0, "easing": "linear", "duration": 5000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeRotateAvatargroup",
+               "time": 0}
+    },
+    {
+      "name": "move_mike_avatar",
+      "role": "mikePXR",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "scale_mike_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Michael",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 7000
+                     },
+                     "timelines" : [
+                      {"x": 35.308973902816796, "y": 0.0766710090641294, "z": -10.873220712210037, "delay": 0, "easing": "linear", "duration": 1500}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeFinalDemogroup",
+               "time": 0}
+    },
+    {
+      "name": "scale_mike_avatar",
+      "role": "mikePXR",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "scale_mike_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Michael",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 7000
+                     },
+                     "timelines" : [
+                      {"x": 3, "y": 3, "z": 3, "delay": 0, "easing": "linear", "duration": 1500}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeFinalDemogroup",
+               "time": 0}
+    },
+    {
+      "name": "move_slide_1",
+      "role": "mikePXR",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "PXR_Mike_Load_Slide_1"},
+      "action": {"type": "move",
+                 "duration": 2500,
+                 "loop": false,
+                 "pos": {"x": 35.768973902816796, "y":5, "z":-10},
+                 "rot": {"x": 0.021555254136002698, "y": -2.88654257135035, "z": 1.5707963267948966},
+                 "scale": {"x": 3, "y":3, "z":7.6102310303580065}},
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeFinalDemogroup",
+               "time": 1500}
+    },
+    {
+      "name": "move_slide_2",
+      "role": "mikePXR",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "PXR_Mike_Load_Slide_2"},
+      "action": {"type": "move",
+                 "duration": 2500,
+                 "loop": false,
+                 "pos": {"x": 34.668973902816796, "y":5, "z":-10.5},
+                 "rot": {"x": 0, "y": 1.9634954084936207, "z": 1.5707963267948966},
+                 "scale": {"x": 3, "y":3, "z":7.6102310303580065}},
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeFinalDemogroup",
+               "time": 1700}
+    },
+    {
+      "name": "move_slide_3",
+      "role": "mikePXR",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "PXR_Mike_Load_Slide_3"},
+      "action": {"type": "move",
+                 "duration": 2500,
+                 "loop": false,
+                 "pos": {"x": 36.248973902816796, "y":5, "z":-11},
+                 "rot": {"x": 0, "y": 1.9634954084936207, "z": 1.5707963267948966},
+                 "scale": {"x": 3, "y":3, "z":7.6102310303580065}},
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeFinalDemogroup",
+               "time": 1900}
+    },
+    {
+      "name": "move_slide_4",
+      "role": "mikePXR",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "PXR_Mike_Load_Slide_4"},
+      "action": {"type": "move",
+                 "duration": 2500,
+                 "loop": false,
+                 "pos": {"x": 35.448973902816796, "y":3.5, "z":-10.7},
+                 "rot": {"x": 1.5707963267948966, "y": 1.9334954084936207, "z": 1.5707963267948966},
+                 "scale": {"x": 1.8, "y":3.2, "z":7.6102310303580065}},
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeFinalDemogroup",
+               "time": 2100}
+    },
+    {
+      "name": "move_slide_5",
+      "role": "mikePXR",
+      "target": { "type": "glb",
+                  "dest": "local",
+                  "src": "PXR_Mike_Load_Slide_5"},
+      "action": {"type": "move",
+                 "duration": 2500,
+                 "loop": false,
+                 "pos": {"x": 35.448973902816796, "y":6.5, "z":-10.7},
+                 "rot": {"x": 1.5707963267948966, "y": 1.9334954084936207, "z": 1.5707963267948966},
+                 "scale": {"x": 1.8, "y":3.2, "z":7.6102310303580065}},
+      "trig": {"type": "button",
+        "groupChain" : "PXRMikeFinalDemogroup",
+               "time": 2100}
     }
       ]
 }
