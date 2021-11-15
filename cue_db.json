@@ -5446,7 +5446,7 @@
                  "scale": {"x": 3, "y":3, "z":7.6102310303580065}},
       "trig": {"type": "button",
         "groupChain" : "PXRMikeFinalDemogroup",
-               "time": 1500}
+               "time": 500}
     },
     {
       "name": "move_slide_2",
@@ -5462,7 +5462,7 @@
                  "scale": {"x": 3, "y":3, "z":7.6102310303580065}},
       "trig": {"type": "button",
         "groupChain" : "PXRMikeFinalDemogroup",
-               "time": 1700}
+               "time": 700}
     },
     {
       "name": "move_slide_3",
@@ -5478,7 +5478,7 @@
                  "scale": {"x": 3, "y":3, "z":7.6102310303580065}},
       "trig": {"type": "button",
         "groupChain" : "PXRMikeFinalDemogroup",
-               "time": 1900}
+               "time": 900}
     },
     {
       "name": "move_slide_4",
@@ -5494,7 +5494,7 @@
                  "scale": {"x": 1.8, "y":3.2, "z":7.6102310303580065}},
       "trig": {"type": "button",
         "groupChain" : "PXRMikeFinalDemogroup",
-               "time": 2100}
+               "time": 1100}
     },
     {
       "name": "move_slide_5",
@@ -5510,7 +5510,7 @@
                  "scale": {"x": 1.8, "y":3.2, "z":7.6102310303580065}},
       "trig": {"type": "button",
         "groupChain" : "PXRMikeFinalDemogroup",
-               "time": 2100}
+               "time": 1300}
     }
       ]
 }
