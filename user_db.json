@@ -29,6 +29,8 @@
   "brnd": {"name": "Brendan", "role": "brnd"},
   "brnd2": {"name": "Brendan2", "role": "brnd2"},
    "arit":{"name":"Codebeard","role":"housemanager"},
+   "bbitl1": {"name":"Ari","role":"bbitl1"},
+   "bbitl2": {"name":"Ari2","role":"bbitl1"},
    "brad":{"name":"Codebeard","role":"housemanager"},
   "dash":{"name":"House_Manager", "role":"stagemanager"},
   "mikePXR":{"name":"Michael", "role":"mikePXR"},
