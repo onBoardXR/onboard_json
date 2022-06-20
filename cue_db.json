@@ -54,7 +54,7 @@
     },    
     {
       "name": "nemo_actor_entrance",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -234,225 +234,6 @@
        "trig": {"type": "button",
                "time": 0}
     },
-        {
-      "name": "Nemo_shareCamera",
-      "role": "nemo-temp",
-      "target": { "type": "webcam" },
-      "action": { "type": "spawn_item",
-                  "pos": {"x": 25, "y":2, "z":-4},
-                  "rot": {"x": 0, "y":0, "z":0},
-                  "scale": {"x": 6, "y":3, "z":1}
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "test_socket_load_360",
-      "role": "test",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "NPC_61A",
-                   "target": { "role": "general" },
-                   "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/be8aac0d-cef1-464e-9026-2eb76e863062.png",
-                    "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
-                    "scale" : {"x": 20, "y": 20, "z": 20}
-                  }
-                  }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "NPCgroup6Skybox1",
-               "time": 0}
-    },
-    {
-      "name": "test_socket_load_360",
-      "role": "test",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "NPC_61B",
-                   "target": { "role": "general" },
-                   "action": { "type": "load_360_image",
-                    "src" : "https://xrtheater-assets.xrtheater.live/files/66a0556d-f87c-4008-a7af-735bbc4edb80.png",
-                    "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
-                    "scale" : {"x": 4000, "y": 4000, "z": 4000}
-                  }
-                  }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "NPCgroup6Skybox1",
-               "time": 0}
-    },
-    {
-      "name": "test_socket_manipulate_skybox_360",
-      "role": "test",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "test_manipulate_skybox_360",
-                   "target": { "role": "general",
-                      "aspect": "scale"
-                  },
-                   "action": { "type": "manipulate_skybox_360",
-                    "itemMap" : "NPC_61A",
-                    "anime": {
-                      "targets": "",
-                      "delay" : 0,
-                      "loop": false,
-                      "autoplay": false,
-                      "easing": "easeInSine",
-                      "duration": 5000
-                      },
-                      "timelines" : [
-                        { "x": 4500, "y": 4500, "z": 4500 }
-                      ]
-                    }
-                }
-                },
-      "trig": {"type": "button",
-                "groupChain" : "NPCgroup6Skybox2",
-               "time": 0}
-    },
-    {
-      "name": "test_socket_manipulate_avatar",
-      "role": "test",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                  "name": "test_manipulate_avatar",
-                  "target": { "role" : "individual",
-                    "name": "Brendan",
-                    "aspect" : "position" },
-                  "action": { "type": "manipulate_avatar",
-                    "anime": {
-                     "targets": "",
-                     "delay" : 0,
-                     "loop": false,
-                     "autoplay": false,
-                     "easing": "easeInSine",
-                     "duration": 7500
-                     },
-                     "timelines" : [
-                       {"x": 150, "y":0, "z":-34.45660006785802},
-                       {"x": 150, "y":-150, "z":-34.45660006785802, "duration": 15000}
-                     ]
-                   }
-                 }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "NPCgroup6Skybox3",
-               "time": 0}
-    },
-    {
-      "name": "test_socket_manipulate_avatar",
-      "role": "test",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                  "name": "test_manipulate_avatar",
-                  "target": { "role" : "individual",
-                    "name": "Brendan",
-                    "aspect" : "scale" },
-                  "action": { "type": "manipulate_avatar",
-                    "anime": {
-                     "targets": "",
-                     "delay" : 1000,
-                     "loop": false,
-                     "autoplay": false,
-                     "easing": "easeInSine",
-                     "duration": 20000
-                     },
-                     "timelines" : [
-                       {"x": 450, "y":150, "z":450}
-                     ]
-                   }
-                 }
-                },
-      "trig": {"type": "button",
-        "groupChain" : "NPCgroup6Skybox3",
-               "time": 0}
-    },
-    {
-      "name": "change_aud_to_AR_flytrap_avatar",
-      "role": "rbca",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"rbca",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUflytrap.glb"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "change_aud_to_AR_anenome_avatar",
-      "role": "rbca",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"rbca",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUanenome.glb"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "change_aud_to_AR_shrimp_avatar",
-      "role": "rbca",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": {
-                  "name": "Test_change_avatar",
-                  "role":"rbca",
-                  "target": { "role" : "participant"},
-                  "action": {"type": "change_avatar",
-                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUshrimp.glb"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "change_aud_avatar_back",
-      "role": "stagemanager",
-      "target": { },
-      "action": {"type": "call_method_from_object",
-                 "object_name": "sockSys",
-                 "function_name": "cueSocket",
-                 "_cue": { 
-                   "name": "test_avatar_change_back",
-                   "target": { "role": "participant" },
-                   "action": { "type": "avatar_change_back"}
-                }
-                },
-      "trig": {"type": "button",
-               "time": 0}
-    },
     {
       "name": "ghost_to_spawn",
       "role": "stagemanager",
@@ -471,7 +252,7 @@
     },
     {
       "name": "Change_to_NEMO",
-      "role":"stagemanager",
+      "role":"nemo-qs",
       "target": { },
       "action": {"type": "change_scene",
                  "link":"https://xrtheater.live/scenes/zAjdM5d"},
@@ -480,7 +261,7 @@
     },
     {
       "name": "nemo_char_av_1",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -501,7 +282,7 @@
     },
     {
       "name": "nemo_voice_av",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -521,7 +302,7 @@
     },
     {
       "name": "nemo_avatar_rolloff",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -542,7 +323,7 @@
     },
     {
       "name": "nemo_voice_rolloff",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -563,7 +344,7 @@
     },
         {
       "name": "nemo_godmic2",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -603,7 +384,7 @@
     },
     {
       "name": "nemo_actor_starting_place",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -625,7 +406,7 @@
     },
     {
       "name": "nemo_voice_starting_place",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -814,7 +595,7 @@
     }, 
     {
       "name": "nemo_avatar_to_mermaid",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -852,7 +633,7 @@
     },
     {
       "name": "Nemo_enlarge_vivian",
-      "role": "nemo-qs",
+      "role": "nemo-qs-SOCK",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1252,6 +1033,225 @@
       "action": {"type": "spawn_prop",
                  "rot": {"x": 0, "y":0, "z":0},
                  "scale": {"x": 0.05, "y":0.05, "z":0.05}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "Nemo_shareCamera",
+      "role": "nemo-temp",
+      "target": { "type": "webcam" },
+      "action": { "type": "spawn_item",
+                  "pos": {"x": 25, "y":2, "z":-4},
+                  "rot": {"x": 0, "y":0, "z":0},
+                  "scale": {"x": 6, "y":3, "z":1}
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "test_socket_load_360",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_61A",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/be8aac0d-cef1-464e-9026-2eb76e863062.png",
+                    "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
+                    "scale" : {"x": 20, "y": 20, "z": 20}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPCgroup6Skybox1",
+               "time": 0}
+    },
+    {
+      "name": "test_socket_load_360",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "NPC_61B",
+                   "target": { "role": "general" },
+                   "action": { "type": "load_360_image",
+                    "src" : "https://xrtheater-assets.xrtheater.live/files/66a0556d-f87c-4008-a7af-735bbc4edb80.png",
+                    "position" : {"x": 23.486209337511696, "y":0, "z":-34.45660006785802},
+                    "scale" : {"x": 4000, "y": 4000, "z": 4000}
+                  }
+                  }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPCgroup6Skybox1",
+               "time": 0}
+    },
+    {
+      "name": "test_socket_manipulate_skybox_360",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_manipulate_skybox_360",
+                   "target": { "role": "general",
+                      "aspect": "scale"
+                  },
+                   "action": { "type": "manipulate_skybox_360",
+                    "itemMap" : "NPC_61A",
+                    "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInSine",
+                      "duration": 5000
+                      },
+                      "timelines" : [
+                        { "x": 4500, "y": 4500, "z": 4500 }
+                      ]
+                    }
+                }
+                },
+      "trig": {"type": "button",
+                "groupChain" : "NPCgroup6Skybox2",
+               "time": 0}
+    },
+    {
+      "name": "test_socket_manipulate_avatar",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "test_manipulate_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Brendan",
+                    "aspect" : "position" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 0,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 7500
+                     },
+                     "timelines" : [
+                       {"x": 150, "y":0, "z":-34.45660006785802},
+                       {"x": 150, "y":-150, "z":-34.45660006785802, "duration": 15000}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPCgroup6Skybox3",
+               "time": 0}
+    },
+    {
+      "name": "test_socket_manipulate_avatar",
+      "role": "test",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "test_manipulate_avatar",
+                  "target": { "role" : "individual",
+                    "name": "Brendan",
+                    "aspect" : "scale" },
+                  "action": { "type": "manipulate_avatar",
+                    "anime": {
+                     "targets": "",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInSine",
+                     "duration": 20000
+                     },
+                     "timelines" : [
+                       {"x": 450, "y":150, "z":450}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "NPCgroup6Skybox3",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_to_AR_flytrap_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUflytrap.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_to_AR_anenome_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUanenome.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_to_AR_shrimp_avatar",
+      "role": "rbca",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": {
+                  "name": "Test_change_avatar",
+                  "role":"rbca",
+                  "target": { "role" : "participant"},
+                  "action": {"type": "change_avatar",
+                             "link":"https://onboardxr.github.io/onboard_json/avatar/AQUshrimp.glb"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "change_aud_avatar_back",
+      "role": "stagemanager",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_avatar_change_back",
+                   "target": { "role": "participant" },
+                   "action": { "type": "avatar_change_back"}
+                }
+                },
       "trig": {"type": "button",
                "time": 0}
     },
