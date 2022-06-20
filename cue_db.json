@@ -1072,7 +1072,7 @@
                "time": 0}
     }, 
     {
-      "name": "MrsNemo_invisible_avatar",
+      "name": "Invisible_avatar",
       "role":"vivi",
       "target": { },
       "action": {"type": "change_avatar",
@@ -1081,7 +1081,7 @@
                "time": 0}
     },
     {
-      "name": "MrsNemo_start_waypoint",
+      "name": "Start_waypoint",
       "role": "vivi",
       "target": { },
       "action": {"type": "jump_to_waypoint",
@@ -1090,7 +1090,7 @@
                "time": 0}
     },
     {
-      "name": "Nemo_wheelchair_avatar",
+      "name": "Wheelchair_avatar",
       "role":"vivi",
       "target": { },
       "action": {"type": "change_avatar",
@@ -1099,7 +1099,7 @@
                "time": 0}
     },
     {
-      "name": "MrsNemo_Entrance_waypoint",
+      "name": "Entrance_waypoint",
       "role": "vivi",
       "target": { },
       "action": {"type": "jump_to_waypoint",
@@ -1108,7 +1108,7 @@
                "time": 0}
     },
     {
-      "name": "Nemo_mermaid_avatar",
+      "name": "Mermaid_avatar",
       "role":"vivi",
       "target": { },
       "action": {"type": "change_avatar",
