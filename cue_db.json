@@ -51,7 +51,25 @@
                  "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
-    },    
+    },  
+    {
+      "name": "Change_to_NEMO",
+      "role":"nemo-qs",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/3EHH5Jp"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "Change_to_BEACH",
+      "role":"nemo-qs",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/cG7WmDF"},
+      "trig": {"type": "button",
+               "time": 0}
+    },  
     {
       "name": "nemo_actor_entrance",
       "role": "nemo-qs-SOCK",
@@ -247,24 +265,6 @@
                    "action": { "type": "hop_to_spawn_point"}
                 }
                 },
-      "trig": {"type": "button",
-               "time": 0}
-    },
-    {
-      "name": "Change_to_NEMO",
-      "role":"nemo-qs",
-      "target": { },
-      "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/3EHH5Jp"},
-      "trig": {"type": "button",
-               "time": 0}
-    },
-        {
-      "name": "Change_to_BEACH",
-      "role":"nemo-qs",
-      "target": { },
-      "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/cG7WmDF"},
       "trig": {"type": "button",
                "time": 0}
     },
