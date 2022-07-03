@@ -908,7 +908,7 @@
     },
                 {
       "name": "Baby_kraken",
-      "role": "vivi",
+      "role": "vivi-reh",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/49d3256b-7ffe-4c69-9528-877ae557977b.glb"},
@@ -921,7 +921,7 @@
     },
                 {
       "name": "Baby_sub",
-      "role": "vivi",
+      "role": "vivi-reh",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/6a2849c2-abf3-4e06-bf53-37583050b3f8.glb"},
