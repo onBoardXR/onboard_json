@@ -186,7 +186,7 @@
                   "dest": "local",
                   "src": "Nemo_kraken2"},
       "action": {"type": "move",
-                 "duration": 3500,
+                 "duration": 5000,
                  "loop": false,
                  "pos": {"x": 57, "y":2, "z":0},
                  "rot": {"x": -14, "y":0, "z":0},
@@ -890,7 +890,7 @@
     },
     {
       "name": "Entrance_waypoint",
-      "role": "vivi",
+      "role": "vivi-reh",
       "target": { },
       "action": {"type": "jump_to_waypoint",
                  "anchor":"#vivEntranceWaypoint"},
@@ -929,6 +929,24 @@
                  "pos": {"x": 19.47, "y":1.35, "z":4.1},
                  "rot": {"x": 0, "y":1.39, "z":0},
                  "scale": {"x": 0.6, "y":0.6, "z":0.6}},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "belowIsland_waypoint",
+      "role": "belo",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"BelowIsland"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "belowIsland_waypoint",
+      "role": "vivi",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"BelowIsland"},
       "trig": {"type": "button",
                "time": 0}
     },
