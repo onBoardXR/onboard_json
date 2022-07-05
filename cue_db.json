@@ -1347,6 +1347,68 @@
                   "maxDistance":10000},
       "trig": {"type": "button",
                "time": 0}
+    },
+       {
+      "name": "codebeard_normal",
+      "role":"arit",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeard.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "codebeard_matrix",
+      "role":"arit",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeardmatrix.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "codebeard_sad",
+      "role":"arit",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARISadCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "codebeard_angry",
+      "role":"arit",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIAngryCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "codebeard_confused",
+      "role":"arit",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIConfusedCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "codebeard_smile",
+      "role":"arit",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARISmileCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },        {
+      "name": "codebeard_neutral",
+      "role":"arit",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARINeutralCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
     }
       ]
 }
