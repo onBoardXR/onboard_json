@@ -1006,7 +1006,7 @@
     },
     {
       "name": "house_enable_god_mic",
-      "role": "housemanager",
+      "role": "housemanager-hide",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1026,7 +1026,7 @@
     },
     {
       "name": "house_disable_god_mic",
-      "role": "housemanager",
+      "role": "housemanager-hide",
       "target": { },
       "action": {"type": "call_method_from_object",
                  "object_name": "sockSys",
@@ -1067,7 +1067,7 @@
     },
     {
       "name": "host_playbill",
-      "role": "housemanager",
+      "role": "housemanager-hide",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/object/ARIhostPlaybill.glb"},
@@ -1079,7 +1079,7 @@
     },
     {
       "name": "host_sub",
-      "role": "housemanager",
+      "role": "housemanager-hide",
       "target": { "type": "glb",
                   "dest": "url",
                   "src":  "https://onboardxr.github.io/onboard_json/object/ARIsubProp.glb"},
