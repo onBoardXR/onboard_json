@@ -1350,7 +1350,7 @@
     },
        {
       "name": "codebeard_normal",
-      "role":"arit",
+      "role":"housemanager",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeard.glb"},
@@ -1359,7 +1359,7 @@
     },
     {
       "name": "codebeard_matrix",
-      "role":"arit",
+      "role":"housemanager",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeardmatrix.glb"},
@@ -1368,7 +1368,7 @@
     },
         {
       "name": "codebeard_sad",
-      "role":"arit",
+      "role":"housemanager",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/ARISadCap.glb"},
@@ -1377,7 +1377,7 @@
     },
             {
       "name": "codebeard_angry",
-      "role":"arit",
+      "role":"housemanager",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/ARIAngryCap.glb"},
@@ -1386,7 +1386,7 @@
     },
             {
       "name": "codebeard_confused",
-      "role":"arit",
+      "role":"housemanager",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/ARIConfusedCap.glb"},
@@ -1395,7 +1395,7 @@
     },
             {
       "name": "codebeard_smile",
-      "role":"arit",
+      "role":"housemanager",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/ARISmileCap.glb"},
@@ -1403,7 +1403,7 @@
                "time": 0}
     },        {
       "name": "codebeard_neutral",
-      "role":"arit",
+      "role":"housemanager",
       "target": { },
       "action": {"type": "change_avatar",
                  "link":"https://onboardxr.github.io/onboard_json/avatar/ARINeutralCap.glb"},
