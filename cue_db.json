@@ -1079,7 +1079,363 @@
               "scale": {"x": 1, "y":1, "z":1}},
       "trig": {"type": "button",
                "time": 0}
- }
+ },
+ {
+  "name": "BTB_1",
+  "role": "stagemanager",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": {
+              "name": "BTB_1",
+              "role":"stagemanager",
+              "target": { "role" : "individual",
+              "name" : "Angie"
+              },
+              "action": {"type": "change_avatar",
+                         "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/BTB_A_1.glb"}
+            }
+            },
+  "trig": {"type": "button",
+            "groupChain" : "BTB_group_1",
+           "time": 0}
+},
+{
+  "name": "BTB_1A",
+  "role": "stagemanager",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": { 
+               "name": "BTB_1A",
+               "target": { "role": "general" },
+               "action": { "type": "change_rolloff",
+                "names": ["Angie"],
+                "rolloff": 0,
+                "refDistance": 1
+                }
+            }
+            },
+  "trig": {"type": "button",
+    "groupChain" : "BTB_group_1",
+           "time": 3000}
+},
+{
+  "name": "BTB_2",
+  "role":"stagemanager",
+  "target": { },
+  "action": {"type": "change_scene",
+             "link":"https://onboardxr.live/scenes/cnEGPLi"},
+  "trig": {"type": "button",
+    "groupChain" : "BTB_group_1",
+           "time": 3000}
+},
+{
+  "name": "BTB_3",
+  "role": "stagemanager",
+  "target": { "type": "audio",
+              "dest": "url",
+              "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/BTB_A_3.wav"},
+  "action": { "type": "spawn_item",
+              "pos": {"x": -92.89260277008137, "y": 0.13955284042021154, "z":16.032020761070353},
+              "rot": {"x": 0, "y":0, "z":0},
+              "scale": {"x": 1, "y":1, "z":1},
+              "volume":1,
+              "distanceModel": "linear",
+              "rolloffFactor":0.6,
+              "refDistance":1,
+              "maxDistance":10000},
+  "trig": {"type": "button",
+    "groupChain" : "BTB_group_2",
+           "time": 0}
+},
+{
+  "name": "BTB_5",
+  "role": "stagemanager",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/67dbabb5-5ab6-448c-9473-f4fe3144a707.glb"},
+  "action": {"type": "spawn_item",
+    "pos": {"x": -77.89433792418514, "y": 5.048663776181288, "z": 6.549522132313907},
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 4, "y":4, "z":4}},
+  "trig": {"type": "button",
+    "groupChain" : "BTB_group_3",
+           "time": 0}
+},
+{
+  "name": "BTB_6",
+  "role": "stagemanager",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": { 
+              "name": "BTB_6",
+              "sceneLink": "https://onboardxr.live/scenes/cnEGPLi/below-the-barracks-09-feb-22",
+              "target": { "role": "general",
+                "aspect" : "position" },
+              "action": { "type": "socket_manipulate_object",
+                "mapItem": "BTB_5",
+                "attr": "object3D",
+                "anime": {
+                 "targets": "scale",
+                 "delay" : 1000,
+                 "loop": false,
+                 "autoplay": false,
+                 "easing": "easeInOutSine",
+                 "duration": 1000
+                 },
+                 "timelines" : [
+                  {"x": -80.51838684082031, "y": 3.3720719814300537, "z": 22.78017234802246, "duration": 14000, "delay": 0, "easing": "easeInSine"},
+                  {"x": -76.67950439453125, "y": -11.053196907043457, "z": 86.020751953125, "duration": 16000, "delay": 0, "easing": "easeOutSine"}
+                 ]
+               }
+             }
+            },
+  "trig": {"type": "button",
+    "groupChain" : "BTB_group_3",
+           "time": 1000}
+  },
+  {
+    "name": "BTB_7",
+    "role": "stagemanager",
+    "target": { "type": "glb",
+                "src": "BTB_5"},
+    "action": {"type": "delete"},
+    "trig": {"type": "button",
+      "groupChain" : "BTB_group_3",
+             "time": 31000}
+  },
+{
+  "name": "BTB_4",
+  "role": "stagemanager",
+  "target": { "type": "audio",
+              "dest": "url",
+              "src":  "https://jigsawhubs.github.io/Jigsaw_data/audio/BTB_A_4.wav"},
+  "action": { "type": "spawn_item",
+              "pos": {"x": -92.89260277008137, "y": 0.13955284042021154, "z":16.032020761070353},
+              "rot": {"x": 0, "y":0, "z":0},
+              "scale": {"x": 0, "y":0, "z":0},
+              "volume":1,
+              "distanceModel": "linear",
+              "rolloffFactor":0.6,
+              "refDistance":1,
+              "maxDistance":10000},
+  "trig": {"type": "button",
+    "groupChain" : "BTB_group_4",
+           "time": 0}
+},
+{
+  "name": "Change_to_WH",
+  "role":"stagemanager",
+  "target": { },
+  "action": {"type": "change_scene",
+             "link":"https://xrtheater.live/scenes/uAbRNet"},
+  "trig": {"type": "button",
+           "time": 0}
+},
+{
+  "name": "change_to_druid_avatar",
+  "role":"kryn",
+  "target": { },
+  "action": {"type": "change_avatar",
+             "link":"https://onboardxr.github.io/onboard_json/avatar/WHdruid.glb"},
+  "trig": {"type": "button",
+    "groupChain": "groupWHTopOfShow",
+           "time": 0}
+},
+{
+  "name": "WH_god_mic",
+  "role": "kryn",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": { 
+               "name": "WH_god_mic",
+               "target": { "role": "general" },
+               "action": { "type": "change_rolloff",
+                "names": ["Koryn"],
+                "rolloff": 0,
+                "refDistance": 1
+                }
+            }
+            },
+  "trig": {"type": "button",
+        "groupChain": "groupWHTopOfShow",
+           "time": 5000}
+},
+{
+  "name": "WH_intro_waypoint",
+  "role": "kryn",
+  "target": { },
+  "action": {"type": "jump_to_waypoint",
+             "anchor":"#WHIntroWaypoint"},
+  "trig": {"type": "button",
+          "groupChain": "groupWHTopOfShow",
+           "time": 0}
+},
+{
+  "name": "druid_knot",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHdruidKnot.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": 0, "y":0, "z":0},
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 10, "y":10, "z":10}},
+  "trig": {"type": "button",
+           "time": 0}
+},
+{
+  "name": "liver_1",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": 5, "y":0.5, "z":0},
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHLoadLiver",
+           "time": 0}
+},
+{
+  "name": "liver_2",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": -5, "y":0.5, "z":0},
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHLoadLiver",
+           "time": 0}
+},
+{
+  "name": "liver_3",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": 0, "y":0.5, "z":5},
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHLoadLiver",
+           "time": 0}
+},
+{
+  "name": "liver_4",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": 0, "y":0.5, "z":-5},
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHLoadLiver",
+           "time": 0}
+},
+{
+  "name": "A1",
+  "role": "ari",
+  "target": { },
+  "action": {"type": "jump_to_waypoint",
+             "anchor":"#aristart"},
+  "trig": {"type": "button",
+           "time": 0}
+},
+{
+     "name": "H1",
+     "role": "ari",
+     "target": { "type": "glb",
+                 "dest": "url",
+                 "src":  "https://xrtheater-assets.xrtheater.live/files/38f17dbc-2ca1-4717-9969-425b694a31cc.glb"},
+     "action": {"type": "spawn_prop",
+                "rot": {"x": 0, "y":90, "z":0},
+                "scale": {"x": 0.03, "y":0.03, "z":0.03}},
+     "trig": {"type": "button",
+              "time": 0}
+   },
+  {
+     "name": "H2",
+     "role": "ari",
+     "target": { "type": "glb",
+                 "dest": "url",
+                 "src":  "https://xrtheater-assets.xrtheater.live/files/7f16a534-3026-4c18-b661-8a53a4e92755.glb"},
+     "action": {"type": "spawn_prop",
+                "rot": {"x": 0, "y":0, "z":0},
+                "scale": {"x": 0.461, "y":0.461, "z":0.461}},
+     "trig": {"type": "button",
+              "time": 0}
+   },
+   {
+    "name": "MA1",
+    "role": "ari",
+    "target": { "type": "glb",
+                "dest": "local",
+                "src": "M1"},
+    "action": {"type": "move",
+               "duration": 15000.00,
+               "loop": false,
+               "pos": {"x": -56.30, "y":-32.10, "z":28.60},
+               "rot": {"x": -180.00, "y":80.00, "z":-180.00},
+               "scale": {"x": 7.0, "y":3.0, "z":3.0}},
+    "trig": {"type": "button",
+             "time": 0}
+  },
+   {
+      "name": "MD1",
+      "role": "ari",
+            "target": { "type": "glb",
+                "dest": "local",
+                "src": "M1"},
+            "action": {"type": "delete"},
+    "trig": {"type": "button",
+             "time": 0}
+  },
+  {
+    "name": "P2",
+    "role": "ari",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/eb166cf8-9c6d-486a-9cfe-b6d985316555.glb"},
+    "action": {"type": "spawn_item",
+               "pos": {"x": -41.50, "y":-31.70, "z":15.90},
+               "rot": {"x": -90.00, "y":0, "z":-90.00},
+               "scale": {"x": 5.60, "y":5.60, "z":5.60}},
+    "trig": {"type": "button",
+             "time": 0}
+  },
+  {
+    "name": "A2",
+    "role": "ari",
+    "target": { },
+    "action": {"type": "jump_to_waypoint",
+               "anchor":"#ari2"},
+    "trig": {"type": "button",
+             "time": 0}
+  },
+   {
+    "name": "A3",
+    "role": "ari",
+    "target": { },
+    "action": {"type": "jump_to_waypoint",
+               "anchor":"#ari3"},
+    "trig": {"type": "button",
+             "time": 0}
+  }
         ],
         "listBeam": [
           {
