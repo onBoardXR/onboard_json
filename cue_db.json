@@ -1064,7 +1064,7 @@
       "role":"stgm",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/4pqAwKD"},
+                 "link":"https://xrtheater.live/scenes/hbm5iws"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -1073,7 +1073,7 @@
       "role":"stgm",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/MP2f2iz"},
+                 "link":"https://xrtheater.live/scenes/aCePFFM"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -1082,7 +1082,7 @@
       "role":"stgm",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/vdbpHuz"},
+                 "link":"https://xrtheater.live/scenes/qhAfVE3"},
       "trig": {"type": "button",
                "time": 0}
     },
