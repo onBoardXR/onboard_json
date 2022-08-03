@@ -54,6 +54,16 @@
                    "link":"https://SCENEURL-after-spoke-publish"},
         "trig": {"type": "button",
                  "time": 0}
+      },
+      
+      {
+        "name": "Ot2_hopping_to_a_waypoint",
+        "role": "yourRole",
+        "target": { },
+        "action": {"type": "jump_to_waypoint",
+                   "anchor":"#waypointNameOnSPoke"},
+        "trig": {"type": "button",
+                 "time": 0}
       }
       
     ]
