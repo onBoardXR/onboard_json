@@ -64,5 +64,6 @@
   "dash":{"name":"House_Manager", "role":"stagemanager"},
   "mikePXR":{"name":"Michael", "role":"mikePXR"},
   "dsha":{"name":"Daaarrrsha", "role":"housemanager"},
-   "aud": {"name": "Audience","role":"guest"}
+   "aud": {"name": "Audience","role":"guest"},
+  "newRole": {"name": "newRole","role":"newRole"}
  }
