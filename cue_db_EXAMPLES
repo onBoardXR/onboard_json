@@ -6,7 +6,7 @@
         "role":"yourRole",
         "target": { },
         "action": {"type": "change_avatar",
-                   "link":"https://assetURL/assetName.glb"},
+                   "link":"https://onboardxr.github.io/onboard_json/avatar/assetName.glb"},
         "trig": {"type": "button",
                  "time": 0}
       },
@@ -16,7 +16,7 @@
         "role": "yourRole",
         "target": { "type": "glb",
                     "dest": "url",
-                    "src":  "https://assetURL/assetName.glb"},
+                    "src":  "https://onboardxr.github.io/onboard_json/object/assetName.glb"},
         "action": {"type": "spawn_item",
                 "pos": {"x": -27.335, "y":3.85, "z":12.725},
                 "rot": {"x": 0, "y":0, "z":0},
@@ -61,7 +61,7 @@
         "role": "yourRole",
         "target": { },
         "action": {"type": "jump_to_waypoint",
-                   "anchor":"#waypointNameOnSPoke"},
+                   "anchor":"#waypointNameInSpoke"},
         "trig": {"type": "button",
                  "time": 0}
       }
