@@ -1,0 +1,61 @@
+{
+    "listCue": [  
+    
+      {
+        "name": "Av1_changing_your_avatar",
+        "role":"yourRole",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://assetURL/assetName.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+      
+      {
+        "name": "Ob1_spawning_objects",
+        "role": "yourRole",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://assetURL/assetName.glb"},
+        "action": {"type": "spawn_item",
+                "pos": {"x": -27.335, "y":3.85, "z":12.725},
+                "rot": {"x": 0, "y":0, "z":0},
+                "scale": {"x": 1, "y":1, "z":1}},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+      
+      {
+        "name": "Au1_changing_audio_rolloff_god_mic",
+        "role": "yourRole",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                     "name": "test_change_rolloff",
+                     "target": { "role": "general" },
+                     "action": { "type": "change_rolloff",
+                      "names": ["yourRole"],
+                      "rolloff": 0,
+                      "refDistance": 1
+                      }
+                  }
+                  },
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+      
+      {
+        "name": "Ot1_changing_scene",
+        "role":"yourRole",
+        "target": { },
+        "action": {"type": "change_scene",
+                   "link":"https://SCENEURL-after-spoke-publish"},
+        "trig": {"type": "button",
+                 "time": 0}
+      }
+      
+    ]
+}
+  
