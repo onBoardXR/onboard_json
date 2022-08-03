@@ -1,4 +1,15 @@
 {
+   "listBeam": [
+          {
+            "name": "test",
+            "room": "testDEACTIVATE",
+            "pos": { "x": 1, "y": 1, "z": 1 },
+            "radius": 0.001,
+            "link": "https://onboardxr.live"
+          }
+        ],
+    
+    
     "listCue": [  
       {
         "name": "Change_to_NEMO",
@@ -1436,15 +1447,6 @@
     "trig": {"type": "button",
              "time": 0}
   }
-        ],
-        "listBeam": [
-          {
-            "name": "test",
-            "room": "testDEACTIVATE",
-            "pos": { "x": 1, "y": 1, "z": 1 },
-            "radius": 0.001,
-            "link": "https://onboardxr.live"
-          }
         ]
   }
   
