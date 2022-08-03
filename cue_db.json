@@ -1446,7 +1446,19 @@
                "anchor":"#ari3"},
     "trig": {"type": "button",
              "time": 0}
-  }
+  },
+   {
+     "name": "clem_insivible",
+     "role":"clem",
+     "target": { },
+     "action": {"type": "change_avatar",
+                "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+     "trig": {"type": "button",
+              "time": 0}
+    }
+       
+       
+       
         ]
   }
   
