@@ -1,4 +1,22 @@
 {
+   "listBeam": [
+          {
+            "name": "test",
+            "room": "testDEACTIVATE",
+            "pos": { "x": 1, "y": 1, "z": 1 },
+            "radius": 0.001,
+            "link": "https://onboardxr.live"
+          },
+            {
+              "name": "test",
+              "room": "testDEACTIVATE",
+              "pos": { "x": 1, "y": 1, "z": 1 },
+              "radius": 0.001,
+              "link": "https://onboardxr.live"
+            }
+        ],
+    
+    
     "listCue": [  
       {
         "name": "Change_to_NEMO",
@@ -948,138 +966,744 @@
         "trig": {"type": "button",
                  "time": 0}
       },
+      
+  {
+           "name": "AV_Presenter",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_PresenterAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
       {
-        "name": "Avatar_Naomi",
-        "role":"naomi",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_NaomiAvatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-    },
+           "name": "AV_Naomi",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_NaomiAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "AV_Partner",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_PartnerAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "AV_Kid",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_KidAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+              {
+           "name": "AV_Gremlin",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_GremlinAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "AV_Student",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_StudentAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
+       {
+           "name": "AV_Young_Partner",
+           "role":"naomi",
+           "target": { },
+           "action": {"type": "change_avatar",
+                      "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_YoungPartnerAvatar.glb"},
+           "trig": {"type": "button",
+                    "time": 0}
+       },
     {
-        "name": "Avatar_Partner",
-        "role":"naomi",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_PartnerAvatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-    },
-    {
-        "name": "Avatar_Kid",
-        "role":"naomi",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_KidAvatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-    },
-           {
-        "name": "Avatar_Gremlin",
-        "role":"naomi",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_GremlinAvatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-    },
-           {
-        "name": "Avatar_Student",
-        "role":"naomi",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_StudentAvatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-    },
-           {
-        "name": "Avatar_Young_Partner",
-        "role":"naomi",
-        "target": { },
-        "action": {"type": "change_avatar",
-                   "link":"https://jigsawhubs.github.io/Jigsaw_data/avatar/NAOMI_YoungPartnerAvatar.glb"},
-        "trig": {"type": "button",
-                 "time": 0}
-    },
-    {
-      "name": "Student_Party_Scan",
-      "role": "naomi",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-party-scan-c.glb"},
-      "action": {"type": "spawn_item",
-              "pos": {"x": -7.3, "y":5.674, "z":-36.2},
-              "rot": {"x": 0, "y":0, "z":0},
-              "scale": {"x": 1, "y":1, "z":1}},
+      "name": "SCEN_Intro",
+      "role":"naomi",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/4pqAwKD"},
       "trig": {"type": "button",
                "time": 0}
     },
     {
-      "name": "Student_Bedroom_Scan",
-      "role": "naomi",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-bedroom-scan.glb"},
-      "action": {"type": "spawn_item",
-              "pos": {"x": -8.8, "y":12.1, "z":-36.65},
-              "rot": {"x": 0, "y":0, "z":0},
-              "scale": {"x": 1, "y":1, "z":1}},
+      "name": "SCEN_MindLand",
+      "role":"naomi",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/MP2f2iz"},
       "trig": {"type": "button",
                "time": 0}
     },
     {
-      "name": "House_Kitchen_Scan",
-      "role": "naomi",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-kitchen-scan.glb"},
-      "action": {"type": "spawn_item",
-              "pos": {"x": -39.6, "y":3.95, "z":11.7},
-              "rot": {"x": 0, "y":0, "z":0},
-              "scale": {"x": 1, "y":1, "z":1}},
+      "name": "SCEN_Credits",
+      "role":"naomi",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://onboardxr.live/scenes/vdbpHuz"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+      {
+        "name": "AV_inv",
+        "role":"stgm",
+        "target": { },
+        "action": {"type": "change_avatar",
+                   "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+        "trig": {"type": "button",
+                 "time": 0}
+       },
+    {
+      "name": "SCEN_Intro",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/hbm5iws"},
       "trig": {"type": "button",
                "time": 0}
     },
     {
-      "name": "House_Parents_Bedroom_Scan",
-      "role": "naomi",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
-      "action": {"type": "spawn_item",
-              "pos": {"x": -32.6, "y":3.9, "z":16.5},
-              "rot": {"x": 0, "y":0, "z":0},
-              "scale": {"x": 1, "y":1, "z":1}},
+      "name": "SCEN_MindLand",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/aCePFFM"},
       "trig": {"type": "button",
                "time": 0}
     },
     {
-      "name": "House_Smidge_Bedroom_Scan",
-      "role": "naomi",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-smidge-scan.glb"},
-      "action": {"type": "spawn_item",
-              "pos": {"x": -27.335, "y":3.85, "z":12.725},
-              "rot": {"x": 0, "y":0, "z":0},
-              "scale": {"x": 1, "y":1, "z":1}},
+      "name": "SCEN_Credits",
+      "role":"stgm",
+      "target": { },
+      "action": {"type": "change_scene",
+                 "link":"https://xrtheater.live/scenes/qhAfVE3"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+      {
+      "name": "GHOST_to_spawn",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "ghost_to_spawn",
+                   "target": { "role": "ghost" },
+                   "action": { "type": "hop_to_spawn_point"}
+                }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+       {
+         "name": "ROFF_stgm",
+         "role": "stgm",
+         "target": { },
+         "action": {"type": "call_method_from_object",
+                    "object_name": "sockSys",
+                    "function_name": "cueSocket",
+                    "_cue": { 
+                      "name": "test_change_rolloff",
+                      "target": { "role": "general" },
+                      "action": { "type": "change_rolloff",
+                       "names": ["stgm"],
+                       "rolloff": 0.2,
+                       "refDistance": 1
+                       }
+                   }
+                   },
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+      {
+      "name": "AV_big",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AV_big",
+                   "target": {"role" : "individual", "name" : "naomi", "aspect" : "scale"},
+                   "action": { "type": "manipulate_avatar", "attr": "object3D",
+                     "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 1.3, "y": 1.3, "z": 1.3}
+                      ]
+                    }
+                  }
+                },
       "trig": {"type": "button",
                "time": 0}
     },
     {
-      "name": "camera",
-      "role": "demz",
-      "target": { "type": "webcam",
-                  "dest": "url",
-                  "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_jackDaniel.glb"},
-      "action": {"type": "spawn_item",
-              "pos": {"x": 0, "y":0, "z":0},
-              "rot": {"x": 0, "y":0, "z":0},
-              "scale": {"x": 1, "y":1, "z":1}},
+      "name": "AV_small",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "AV_big",
+                   "target": {"role" : "individual", "name" : "naomi", "aspect" : "scale"},
+                   "action": { "type": "manipulate_avatar", "attr": "object3D",
+                     "anime": {
+                      "targets": "",
+                      "delay" : 0,
+                      "loop": false,
+                      "autoplay": false,
+                      "easing": "easeInOutSine",
+                      "duration": 0
+                      },
+                      "timelines" : [
+                        { "x": 1, "y": 1, "z": 1}
+                      ]
+                    }
+                  }
+                },
       "trig": {"type": "button",
                "time": 0}
- },
+    },
+   {
+         "name": "ROFF_naomi",
+         "role": "stgm",
+         "target": { },
+         "action": {"type": "call_method_from_object",
+                    "object_name": "sockSys",
+                    "function_name": "cueSocket",
+                    "_cue": { 
+                      "name": "test_change_rolloff",
+                      "target": { "role": "general" },
+                      "action": { "type": "change_rolloff",
+                       "names": ["naomi"],
+                       "rolloff": 0.2,
+                       "refDistance": 1
+                       }
+                   }
+                   },
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+       "name": "NewCaravan",
+       "role": "stgm",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://onboardxr.github.io/onboard_json/object/Caravan.glb"},
+        "action": {"type": "spawn_item",
+                "pos": {"x": -23.5, "y":1.19, "z":21.12},
+                "rot": {"x": 0, "y":-214.50000000000003, "z":0},
+                "scale": {"x": 2.1, "y":2.1, "z":2.1}},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+         {
+       "name": "Laundry",
+       "role": "stgm",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://onboardxr.github.io/onboard_json/object/Laundry.glb"},
+        "action": {"type": "spawn_item",
+                "pos": {"x": -32, "y":1.48, "z":9.5},
+                "rot": {"x": 0, "y":-32, "z":0},
+                "scale": {"x": 2.1, "y":2.1, "z":2.1}},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+       {
+       "name": "Yurt",
+       "role": "stgm",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://onboardxr.github.io/onboard_json/object/Yurt.glb"},
+        "action": {"type": "spawn_item",
+                "pos": {"x": -11, "y":2.8, "z":3.5},
+                "rot": {"x": 0, "y":180, "z":0},
+                "scale": {"x": 2.1, "y":2.1, "z":2.1}},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+       {
+       "name": "Birch",
+       "role": "stgm",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://onboardxr.github.io/onboard_json/object/Birch.glb"},
+        "action": {"type": "spawn_item",
+                "pos": {"x": -33, "y":1.49, "z":7},
+                "rot": {"x": 0, "y":46, "z":0},
+                "scale": {"x": 1.8, "y":1.8, "z":1.8}},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+       {
+       "name": "Bedroom",
+       "role": "stgm",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://onboardxr.github.io/onboard_json/object/Bedroom.glb"},
+        "action": {"type": "spawn_item",
+                "pos": {"x": -37, "y":1.6, "z":13},
+                "rot": {"x": 0, "y":46, "z":0},
+                "scale": {"x": 2.1, "y":2.1, "z":2.1}},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+      {
+       "name": "Kitchen",
+       "role": "stgm",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://onboardxr.github.io/onboard_json/object/Kitchen.glb"},
+        "action": {"type": "spawn_item",
+                "pos": {"x": -32.5, "y":1.5, "z":7.5},
+                "rot": {"x": 0, "y":143, "z":0},
+                "scale": {"x": 1.9, "y":2.2, "z":1.5}},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
+       {
+         "name": "STUD_Party",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-party-scan-c.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -7.3, "y":5.674, "z":-36.2},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": 7000},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "STUD_Bedroom",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_student-house-bedroom-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -8.8, "y":12.1, "z":-36.65},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": 7000},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "HOUS_Kitchen",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-kitchen-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -39.6, "y":3.95, "z":11.7},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": 7000},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "HOUS_Parents_Bedroom",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-parents-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -32.6, "y":3.9, "z":16.5},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": 7000},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "HOUS_Smidge_Bedroom",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_house-smidge-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -27.335, "y":3.85, "z":12.725},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": 7000},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+       {
+         "name": "CARA_van",
+         "role": "stgm",
+         "target": { "type": "glb",
+                     "dest": "url",
+                     "src":  "https://jigsawhubs.github.io/Jigsaw_data/object/NAOMI_caravan-scan.glb"},
+         "action": {"type": "spawn_item",
+                 "pos": {"x": -24.358, "y":3.7, "z":20.8},
+                 "rot": {"x": 0, "y":0, "z":0},
+                 "scale": {"x": 1, "y":1, "z":1},
+                 "pin_it": 7000},
+         "trig": {"type": "button",
+                  "time": 0}
+       },
+    {
+      "name": "REC_rooftop",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "rooftop",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "REC_stu_party",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "student_party",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "REC_house",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "house",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "REC_cave",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "cave",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "REC_graveyard",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "graveyard",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "REC_caravan",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "caravan",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "REC_club",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "club",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "REC_treehouse",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "treehouse",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "REC_beach",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                   "name": "test_lock_waypoint",
+                   "target": { "role": "general" },
+                   "action": { "type" : "recall_audience",
+                     "waypoint" : "beach",
+                     "recallAud" : true,
+                     "maxDist" : 3,
+                     "anime" : {
+                      "targets": "",
+                      "delay" : 1000,
+                      "loop": false,
+                      "autoplay": true,
+                      "easing": "easeOutSine",
+                      "duration": 1000
+                      }
+                    }
+                  }
+                },
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_rooftop",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"rooftop"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_stu_party",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"student_party"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_house",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"house"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_cave",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"cave"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_graveyard",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"graveyard"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_caravan",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"caravan"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_club",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"club"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_treehouse",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"treehouse"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "WP_beach",
+      "role": "stgm",
+      "target": { },
+      "action": {"type": "jump_to_waypoint",
+                 "anchor":"beach"},
+      "trig": {"type": "button",
+               "time": 0}
+    }     
+       
+       
+       
+       ,
  {
   "name": "BTB_1",
   "role": "stagemanager",
@@ -1436,15 +2060,6 @@
     "trig": {"type": "button",
              "time": 0}
   }
-        ],
-        "listBeam": [
-          {
-            "name": "XRTheatertoARIO",
-            "room": "xrtheater",
-            "pos": {"x": 4.167244051164868, "y": 1.1999999999999735, "z": -6.071215669311094},
-            "radius": 2,
-            "link": "https://activereplica.io/"
-          }
         ]
   }
   
