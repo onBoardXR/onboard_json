@@ -8,11 +8,11 @@
             "link": "https://onboardxr.live"
           },
             {
-              "name": "test",
-              "room": "testDEACTIVATE",
-              "pos": { "x": 1, "y": 1, "z": 1 },
-              "radius": 0.001,
-              "link": "https://onboardxr.live"
+              "name": "XRTheattoARIO",
+              "room": "xrtheater",
+              "pos": {"x": 4.144450152870114, "y": 1.199999999999994, "z": -6.109428237451945},
+              "radius": 1.5,
+              "link": "https://activereplica.io"
             }
         ],
     
