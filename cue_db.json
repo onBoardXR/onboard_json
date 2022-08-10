@@ -1044,7 +1044,7 @@
       "role":"naomi",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://onboardxr.live/scenes/MP2f2iz"},
+                 "link":"https://xrtheater.live/scenes/rmY9SZ9"},
       "trig": {"type": "button",
                "time": 0}
     },
@@ -1080,7 +1080,7 @@
       "role":"stgm",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/aCePFFM"},
+                 "link":"https://xrtheater.live/scenes/rmY9SZ9"},
       "trig": {"type": "button",
                "time": 0}
     },
