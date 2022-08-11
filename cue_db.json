@@ -1226,7 +1226,7 @@
                     "src":  "https://onboardxr.github.io/onboard_json/object/Laundry.glb"},
         "action": {"type": "spawn_item",
                 "pos": {"x": -32, "y":4, "z":9.5},
-                "rot": {"x": 0, "y":-10, "z":0},
+                "rot": {"x": 0, "y":-1.5, "z":0},
                 "scale": {"x": 2.1, "y":2.1, "z":2.1}},
         "trig": {"type": "button",
                  "time": 0}
@@ -1238,8 +1238,8 @@
                     "dest": "url",
                     "src":  "https://onboardxr.github.io/onboard_json/object/Yurt.glb"},
         "action": {"type": "spawn_item",
-                "pos": {"x": -11, "y":5.6, "z":3.5},
-                "rot": {"x": 0, "y":180, "z":0},
+                "pos": {"x": -5, "y":5.6, "z":3.5},
+                "rot": {"x": 0, "y":3.14, "z":0},
                 "scale": {"x": 2.1, "y":2.1, "z":2.1}},
         "trig": {"type": "button",
                  "time": 0}
