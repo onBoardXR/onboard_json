@@ -1213,7 +1213,7 @@
                     "src":  "https://onboardxr.github.io/onboard_json/object/Caravan.glb"},
         "action": {"type": "spawn_item",
                 "pos": {"x": -24.358, "y":4, "z":20.8},
-                "rot": {"x": 0, "y":1.75, "z":0},
+                "rot": {"x": 0, "y":1.67, "z":0},
                 "scale": {"x": 2.1, "y":2.1, "z":2.1}},
         "trig": {"type": "button",
                  "time": 0}
