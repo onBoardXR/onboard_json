@@ -1044,7 +1044,7 @@
       "role":"naomi",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/rmY9SZ9"},
+                 "link":"https://xrtheater.live/scenes/aCePFFM"},
       "trig": {"type": "button",
                "time": 0}
     },
