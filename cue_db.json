@@ -1071,7 +1071,7 @@
       "role":"stgm",
       "target": { },
       "action": {"type": "change_scene",
-                 "link":"https://xrtheater.live/scenes/hbm5iws"},
+                 "link":"https://xrtheater.live/scenes/ToUJMK7"},
       "trig": {"type": "button",
                "time": 0}
     },
