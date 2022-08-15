@@ -65,5 +65,6 @@
   "mikePXR":{"name":"Michael", "role":"mikePXR"},
   "dsha":{"name":"Daaarrrsha", "role":"housemanager"},
    "aud": {"name": "Audience","role":"guest"},
-  "newRole": {"name": "newRole","role":"newRole"}
+  "newRole": {"name": "newRole","role":"newRole"},
+  "ari": {"name": "Ari","role":"ari"}
  }
