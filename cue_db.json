@@ -2073,7 +2073,7 @@
                 "src":  "https://xrtheater-assets.xrtheater.live/files/2ebe35aa-e8d7-4663-a119-0c59677bf1ce.glb"},
     "action": {"type": "spawn_item",
                "pos": {"x": -13.80, "y":-22.90, "z":17.90},
-               "rot": {"x": -180.00, "y":8, "z":-180.00},
+               "rot": {"x": 0, "y":8, "z":0},
                "scale": {"x": 10.00, "y":10.00, "z":10.00}},
     "trig": {"type": "button",
              "time": 0}
@@ -2084,8 +2084,8 @@
                 "dest": "url",
                 "src":  "https://xrtheater-assets.xrtheater.live/files/9afcb8dd-45b3-443f-80a0-34fccd21bc0a.glb"},
     "action": {"type": "spawn_item",
-               "pos": {"x": -13.80, "y":-27.90, "z":19.00},
-               "rot": {"x": -180.00, "y":13, "z":-180.00},
+               "pos": {"x": -14.40, "y":-22.986, "z":19.5},
+               "rot": {"x": 0, "y":166.254, "z":0},
                "scale": {"x": 10.00, "y":10.00, "z":10.00}},
     "trig": {"type": "button",
              "time": 0}
