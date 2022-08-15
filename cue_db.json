@@ -2066,7 +2066,7 @@
     "trig": {"type": "button",
              "time": 0}
   }, {
-    "name": "SM1",
+    "name": "FG1",
     "role": "ari",
     "target": { "type": "glb",
                 "dest": "url",
@@ -2078,7 +2078,7 @@
     "trig": {"type": "button",
              "time": 0}
   }, {
-    "name": "SM2",
+    "name": "FG2",
     "role": "ari",
     "target": { "type": "glb",
                 "dest": "url",
@@ -2089,6 +2089,30 @@
                "scale": {"x": 10.00, "y":10.00, "z":10.00}},
     "trig": {"type": "button",
              "time": 0}
+    }, {
+    "name": "S1",
+    "role": "ari",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/3442b613-7824-44f6-ab2c-e82dadebe54f.glb"},
+    "action": {"type": "spawn_item",
+                "pos": {"x": -25.40, "y":-29.90, "z":18.90},
+                "rot": {"x": 0, "y":0, "z":0},
+                "scale": {"x": 5.00, "y":5.00, "z":5.00}},
+    "trig": {"type": "button",
+              "time": 0}
+  }, {
+    "name": "S2",
+    "role": "ari",
+    "target": { "type": "glb",
+                "dest": "url",
+                "src":  "https://xrtheater-assets.xrtheater.live/files/5029dab2-b1c5-4ca7-a21f-e896640b1a86.glb"},
+    "action": {"type": "spawn_item",
+                "pos": {"x": -25.10, "y":-52.00, "z":19.00},
+                "rot": {"x": 0, "y":0, "z":0},
+                "scale": {"x": 0.10, "y":0.10, "z":0.10}},
+    "trig": {"type": "button",
+              "time": 0}
   }
         ]
   }
