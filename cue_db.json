@@ -1978,6 +1978,24 @@
            "time": 0}
 },
 {
+  "name": "A1",
+  "role":"ari",
+  "target": { },
+  "action": {"type": "change_avatar",
+             "link":"https://onboardxr.github.io/onboard_json/avatar/Rider.glb"},
+  "trig": {"type": "button",
+           "time": 0}
+},
+{
+  "name": "A2",
+  "role":"ari",
+  "target": { },
+  "action": {"type": "change_avatar",
+             "link":"https://onboardxr.github.io/onboard_json/avatar/Wizard.glb"},
+  "trig": {"type": "button",
+           "time": 0}
+},
+{
   "name": "M1",
   "role": "ari",
   "target": { "type": "glb",
