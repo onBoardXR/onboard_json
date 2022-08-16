@@ -1977,31 +1977,21 @@
           "groupChain" : "groupWHLoadLiver",
            "time": 0}
 },
-  {
-    "name": "M1A",
-    "role": "ari",
-    "target": { "type": "glb",
-                "dest": "local",
-                "src": "M1"},
-    "action": {"type": "move",
-              "duration": 15000.00,
-              "loop": false,
-              "pos": {"x": -56.30, "y":-32.10, "z":28.60},
-              "rot": {"x": -180.00, "y":80.00, "z":-180.00},
-              "scale": {"x": 7.0, "y":3.0, "z":3.0}},
-    "trig": {"type": "button",
-            "time": 0}
-  },
-  {
-      "name": "M1D",
-      "role": "ari",
-            "target": { "type": "glb",
-                "dest": "local",
-                "src": "M1"},
-            "action": {"type": "delete"},
-    "trig": {"type": "button",
-            "time": 0}
-  },
+{
+  "name": "M1",
+  "role": "ari",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://xrtheater-assets.xrtheater.live/files/cb7bbe01-84d9-4fde-8ad1-4280da089d70.mp3"},
+  "action": {"type": "spawn_item",
+            "duration": 15000.00,
+            "loop": false,
+            "pos": {"x": 10.60, "y":-23.90, "z":33.60},
+            "rot": {"x": 0, "y":0, "z":-0},
+            "scale": {"x": 1.0, "y":1.0, "z":1.0}},
+  "trig": {"type": "button",
+           "time": 0}
+},
   {
     "name": "WP1",
     "role": "ari",
@@ -2038,7 +2028,7 @@
                 "time": 0}
     },
     {
-      "name": "S5 - Fox",
+      "name": "S9",
       "role": "ari",
       "target": { "type": "glb",
                   "dest": "url",
@@ -2063,29 +2053,19 @@
               "time": 0}
     },
     {
-      "name": "M2A",
+      "name": "M2",
       "role": "ari",
       "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "M2"},
-      "action": {"type": "move",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/5582dd40-45ba-44e3-9af8-b3f69408474f.mp3"},
+      "action": {"type": "spawn_item",
                 "duration": 15000.00,
                 "loop": false,
                 "pos": {"x": -56.30, "y":-32.10, "z":28.60},
                 "rot": {"x": -180.00, "y":80.00, "z":-180.00},
                 "scale": {"x": 7.0, "y":3.0, "z":3.0}},
       "trig": {"type": "button",
-              "time": 0}
-    },
-    {
-        "name": "M2D",
-        "role": "ari",
-              "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "M2"},
-              "action": {"type": "delete"},
-      "trig": {"type": "button",
-              "time": 0}
+               "time": 0}
     },
     {
       "name": "S5",
@@ -2117,7 +2097,7 @@
       "role": "ari",
       "target": { },
       "action": {"type": "jump_to_waypoint",
-                "anchor":"#ari2"},
+                "anchor":"#W2AriEndingPoint"},
       "trig": {"type": "button",
               "time": 0}
     }, {
@@ -2146,40 +2126,30 @@
                 "time": 0}
     },
     {
-      "name": "M3A",
+      "name": "M3",
       "role": "ari",
       "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "M3"},
-      "action": {"type": "move",
+                  "dest": "url",
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/daa5b9b3-79c5-4a3c-96e4-eed78755ff28.mp3"},
+      "action": {"type": "spawn_item",
                 "duration": 15000.00,
                 "loop": false,
-                "pos": {"x": -56.30, "y":-32.10, "z":28.60},
-                "rot": {"x": -180.00, "y":80.00, "z":-180.00},
-                "scale": {"x": 7.0, "y":3.0, "z":3.0}},
+                "pos": {"x": -39.00, "y":-30.50, "z":18.70},
+                "rot": {"x": 0, "y":0, "z":0},
+                "scale": {"x": 1.0, "y":1.0, "z":1.0}},
       "trig": {"type": "button",
-              "time": 0}
-    },
-    {
-        "name": "M3D",
-        "role": "ari",
-              "target": { "type": "glb",
-                  "dest": "local",
-                  "src": "M3"},
-              "action": {"type": "delete"},
-      "trig": {"type": "button",
-              "time": 0}
+               "time": 0}
     },
     {
       "name": "S3",
       "role": "ari",
       "target": { "type": "glb",
                   "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/da6e27f4-e179-4bc0-b551-9de612c325d0.glb"},
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/cff94cbe-1597-4a12-b485-9d96c38bb369.glb"},
       "action": {"type": "spawn_item",
-                "pos": {"x": -13.80, "y":-22.90, "z":17.90},
-                "rot": {"x": 0, "y":8, "z":0},
-                "scale": {"x": 10.00, "y":10.00, "z":10.00}},
+                "pos": {"x": -27.00, "y":-27.216, "z":18.50},
+                "rot": {"x": 0, "y":0, "z":0},
+                "scale": {"x": 1.40, "y":1.40, "z":1.0}},
       "trig": {"type": "button",
               "time": 0}
     }, {
@@ -2189,24 +2159,9 @@
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/da6e27f4-e179-4bc0-b551-9de612c325d0.glb"},
       "action": {"type": "spawn_item",
-                "pos": {"x": -14.40, "y":-22.986, "z":19.5},
-                "rot": {"x": 0, "y":166.254, "z":0},
-                "scale": {"x": 10.00, "y":10.00, "z":10.00}},
-      "trig": {"type": "button",
-              "time": 0}
-    },
-    {
-      "name": "M3",
-      "role": "ari",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src": "https://xrtheater-assets.xrtheater.live/files/daa5b9b3-79c5-4a3c-96e4-eed78755ff28.mp3"},
-      "action": {"type": "move",
-                "duration": 15000.00,
-                "loop": false,
-                "pos": {"x": -39.00, "y":-30.50, "z":18.70},
+                "pos": {"x": -48.90, "y":-30.60, "z":21.10},
                 "rot": {"x": 0, "y":0, "z":0},
-                "scale": {"x": 1.0, "y":1.0, "z":1.0}},
+                "scale": {"x": 3.00, "y":3.00, "z":3.00}},
       "trig": {"type": "button",
               "time": 0}
     },
