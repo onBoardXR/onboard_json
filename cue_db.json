@@ -1982,7 +1982,7 @@
   "role":"ari",
   "target": { },
   "action": {"type": "change_avatar",
-             "link":"https://onboardxr.github.io/onboard_json/avatar/Rider.glb"},
+             "link":"https://xrtheater.live/api/v1/avatars/TEucpWe/avatar.gltf"},
   "trig": {"type": "button",
            "time": 0}
 },
@@ -1991,7 +1991,7 @@
   "role":"ari",
   "target": { },
   "action": {"type": "change_avatar",
-             "link":"https://onboardxr.github.io/onboard_json/avatar/Wizard.glb"},
+             "link":"https://xrtheater.live/api/v1/avatars/KNFqSGd/avatar.gltf"},
   "trig": {"type": "button",
            "time": 0}
 },
