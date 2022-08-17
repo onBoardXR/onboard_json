@@ -1982,7 +1982,7 @@
   "role":"ari",
   "target": { },
   "action": {"type": "change_avatar",
-             "link":"https://xrtheater.live/api/v1/avatars/TEucpWe/avatar.gltf"},
+             "link":"https://xrtheater-assets.xrtheater.live/files/1b1ac52a-0383-4061-b705-f8d9a43a335d.glb"},
   "trig": {"type": "button",
            "time": 0}
 },
@@ -1991,7 +1991,16 @@
   "role":"ari",
   "target": { },
   "action": {"type": "change_avatar",
-             "link":"https://xrtheater.live/api/v1/avatars/KNFqSGd/avatar.gltf"},
+             "link":"https://xrtheater-assets.xrtheater.live/files/52ce911c-abf4-4d65-b517-d9d0ae2444f9.glb"},
+  "trig": {"type": "button",
+           "time": 0}
+},
+{
+  "name": "A3",
+  "role":"ari",
+  "target": { },
+  "action": {"type": "change_avatar",
+             "link":"https://xrtheater-assets.xrtheater.live/files/448b3a74-e685-426a-83dc-bf10d298d8a5.glb"},
   "trig": {"type": "button",
            "time": 0}
 },
@@ -2183,7 +2192,7 @@
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/5029dab2-b1c5-4ca7-a21f-e896640b1a86.glb"},
       "action": {"type": "spawn_item",
-                  "pos": {"x": -25.10, "y":-52.00, "z":19.00},
+                  "pos": {"x": -25.10, "y":-22.00, "z":19.00},
                   "rot": {"x": 0, "y":0, "z":0},
                   "scale": {"x": 0.10, "y":0.10, "z":0.10}},
       "trig": {"type": "button",
