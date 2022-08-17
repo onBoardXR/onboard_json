@@ -2101,7 +2101,11 @@
                   "dest": "url",
                   "src":  "https://xrtheater-assets.xrtheater.live/files/5029dab2-b1c5-4ca7-a21f-e896640b1a86.glb"},
       "action": {"type": "spawn_item",
-                  "pos": {"x": -25.10, "y":-22.00, "z":19.00},
+                  "pos": {
+                    "x": -25.61863899230957,
+                    "y": 4.545613765716553,
+                    "z": 15.494940757751465
+                },
                   "rot": {"x": 0, "y":0, "z":0},
                   "scale": {"x": 0.10, "y":0.10, "z":0.10}},
       "trig": {"type": "button",
