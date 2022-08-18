@@ -2071,7 +2071,7 @@
   "role": "ari",
   "target": { "type": "glb",
             "dest": "url",
-            "src": "https://xrtheater-assets.xrtheater.live/files/89e71cd8-8ca3-4501-86c2-9194bc19acdc.mp3"},
+            "src": "https://xrtheater-assets.xrtheater.live/files/6a12c5b4-93ec-4df8-8046-744dbe22056e.mp3"},
   "action": {"type": "spawn_item",
               "pos": {
                 "x": -39.00,
