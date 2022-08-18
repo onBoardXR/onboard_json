@@ -2007,7 +2007,7 @@
 {
   "name": "M1",
   "role": "ari",
-  "target": { "type": "glb",
+  "target": { "type": "audio",
             "dest": "url",
             "src": "https://xrtheater-assets.xrtheater.live/files/a732ade0-1c95-439d-b8ad-5b0139021595.mp3"},
   "action": {"type": "spawn_item",
@@ -2028,8 +2028,8 @@
             },
             "volume":1,
             "distanceModel": "linear",
-            "rolloffFactor":0.6,
-            "refDistance":1,
+            "rolloffFactor":0,
+            "refDistance":1000,
             "maxDistance":10000},
   "trig": {"type": "button",
             "time": 0}
@@ -2037,7 +2037,7 @@
 {
   "name": "M1",
   "role": "ari",
-  "target": { "type": "glb",
+  "target": { "type": "audio",
               "dest": "local",
               "src": "M1"},
   "action": {"type": "move",
@@ -2056,7 +2056,7 @@
 {
   "name": "M2",
   "role": "ari",
-  "target": { "type": "glb",
+  "target": { "type": "audio",
               "dest": "url",
               "src": "https://xrtheater-assets.xrtheater.live/files/89e71cd8-8ca3-4501-86c2-9194bc19acdc.mp3"},
   "action": {"type": "spawn_item",
@@ -2086,7 +2086,7 @@
 {
   "name": "M2",
   "role": "ari",
-  "target": { "type": "glb",
+  "target": { "type": "audio",
               "dest": "local",
               "src": "M2"},
   "action": {"type": "move",
@@ -2105,7 +2105,7 @@
 {
   "name": "M3",
   "role": "ari",
-  "target": { "type": "glb",
+  "target": { "type": "audio",
             "dest": "url",
             "src": "https://xrtheater-assets.xrtheater.live/files/daa5b9b3-79c5-4a3c-96e4-eed78755ff28.mp3"},
   "action": {"type": "spawn_item",
@@ -2136,7 +2136,7 @@
 {
   "name": "M3",
   "role": "ari",
-  "target": { "type": "glb",
+  "target": { "type": "audio",
               "dest": "local",
               "src": "M3"},
   "action": {"type": "move",
@@ -2248,7 +2248,7 @@
       "role": "ari",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src":  "S1"},
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/3442b613-7824-44f6-ab2c-e82dadebe54f.glb"},
       "action": {"type": "move",
                  "duration": 1000,
                  "loop": false,
@@ -2292,7 +2292,7 @@
       "role": "ari",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src":  "S2"},
+                  "src":  "https://xrtheater-assets.xrtheater.live/files/5029dab2-b1c5-4ca7-a21f-e896640b1a86.glb"},
       "action": {"type": "move",
                 "duration": 1000,
                  "loop": false,
