@@ -2005,6 +2005,50 @@
            "time": 0}
 },
 {
+  "name": "M1",
+  "role": "ari",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://xrtheater-assets.xrtheater.live/files/cb7bbe01-84d9-4fde-8ad1-4280da089d70.mp3"},
+  "action": {"type": "spawn_item",
+              "pos": {
+                "x": 10.00,
+                "y": -23000.00,
+                "z": 39.00
+            },
+              "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }},
+  "trig": {"type": "button",
+            "time": 0}
+},
+{
+  "name": "M1",
+  "role": "ari",
+  "target": { "type": "glb",
+              "dest": "local",
+              "src": "M1"},
+  "action": {"type": "move",
+             "duration": 100,
+             "loop": false,
+             "pos": {
+              "x": 10.00,
+              "y": -23.00,
+              "z": 39.00
+             },
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+           "time": 0}
+},
+{
   "name": "M2",
   "role": "ari",
   "target": { "type": "glb",
@@ -2013,7 +2057,7 @@
   "action": {"type": "spawn_item",
               "pos": {
                 "x": -39.00,
-                "y": -31.50,
+                "y": -31000.50,
                 "z": 22.00
             },
               "rot": {
@@ -2048,13 +2092,47 @@
   "trig": {"type": "button",
            "time": 0}
 },
- {
-    "name": "M2",
-    "role": "ari",
-          "target": { "type": "glb",
+{
+  "name": "M3",
+  "role": "ari",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://xrtheater-assets.xrtheater.live/files/daa5b9b3-79c5-4a3c-96e4-eed78755ff28.mp3"},
+  "action": {"type": "spawn_item",
+              "pos": {
+                "x": -39.00,
+                "y": -31000.50,
+                "z": 18.70
+            },
+              "rot": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+              "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }},
+  "trig": {"type": "button",
+            "time": 0}
+},
+{
+  "name": "M3",
+  "role": "ari",
+  "target": { "type": "glb",
               "dest": "local",
               "src": "M2"},
-          "action": {"type": "delete"},
+  "action": {"type": "move",
+             "duration": 1000,
+             "loop": false,
+             "pos": {
+              "x": -39.00,
+              "y": -31.50,
+              "z": 18.70
+             },
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
   "trig": {"type": "button",
            "time": 0}
 },
@@ -2132,9 +2210,9 @@
                   "src":  "https://xrtheater-assets.xrtheater.live/files/3442b613-7824-44f6-ab2c-e82dadebe54f.glb"},
       "action": {"type": "spawn_item",
                   "pos": {
-                    "x": -35.538,
-                    "y": -19.961,
-                    "z": 19.881
+                    "x": -40.70,
+                    "y": -27.70,
+                    "z": 11.33
                 },
                   "rot": {
                     "x": 0,
@@ -2243,29 +2321,6 @@
                 "scale": {"x": 15.00, "y":15.00, "z":15.00}},
       "trig": {"type": "button",
               "time": 0}
-    },
-    {
-      "name": "S5",
-      "role": "ari",
-      "target": { "type": "glb",
-                  "dest": "url",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/2ebe35aa-e8d7-4663-a119-0c59677bf1ce.glb"},
-      "action": {"type": "move",
-                 "duration": 1000,
-                 "loop": false,
-                 "pos": {
-                  "x": -23.01892852783203,
-                  "y": -21.624073028564453,
-                  "z": 20.10572624206543
-              },
-                "rot": {
-                  "x": 0.0045379098153056786,
-                  "y": -2.9167369775636454,
-                  "z": 0.0010251394901822162
-                },
-                "scale": {"x": 150.00, "y":150.00, "z":150.00}},
-      "trig": {"type": "button",
-               "time": 0}
     },
     {
       "name": "S6",
