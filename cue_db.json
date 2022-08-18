@@ -2007,13 +2007,13 @@
 {
   "name": "M1",
   "role": "ari",
-  "target": { "type": "audio",
+  "target": { "type": "glb",
             "dest": "url",
             "src": "https://xrtheater-assets.xrtheater.live/files/a732ade0-1c95-439d-b8ad-5b0139021595.mp3"},
   "action": {"type": "spawn_item",
               "pos": {
                 "x": 10.00,
-                "y": -23000.00,
+                "y": -23.00,
                 "z": 39.00
             },
               "rot": {
@@ -2026,6 +2026,7 @@
                 "y": 1,
                 "z": 1
             },
+            "loop": false,
             "volume":1,
             "distanceModel": "linear",
             "rolloffFactor":0,
@@ -2035,34 +2036,15 @@
             "time": 0}
 },
 {
-  "name": "M1",
-  "role": "ari",
-  "target": { "type": "audio",
-              "dest": "local",
-              "src": "M1"},
-  "action": {"type": "move",
-             "duration": 100,
-             "loop": false,
-             "pos": {
-              "x": 10.00,
-              "y": -23.00,
-              "z": 39.00
-             },
-             "rot": {"x": 0, "y":0, "z":0},
-             "scale": {"x": 1, "y":1, "z":1}},
-  "trig": {"type": "button",
-           "time": 0}
-},
-{
   "name": "M2",
   "role": "ari",
-  "target": { "type": "audio",
-              "dest": "url",
-              "src": "https://xrtheater-assets.xrtheater.live/files/89e71cd8-8ca3-4501-86c2-9194bc19acdc.mp3"},
+  "target": { "type": "glb",
+            "dest": "url",
+            "src": "https://xrtheater-assets.xrtheater.live/files/89e71cd8-8ca3-4501-86c2-9194bc19acdc.mp3"},
   "action": {"type": "spawn_item",
               "pos": {
                 "x": -39.00,
-                "y": -31000.50,
+                "y": -15.50,
                 "z": 22.00
             },
               "rot": {
@@ -2075,44 +2057,26 @@
                 "y": 1,
                 "z": 1
             },
+            "loop": false,
             "volume":1,
             "distanceModel": "linear",
-            "rolloffFactor":0.6,
-            "refDistance":1,
+            "rolloffFactor":0,
+            "refDistance":1000,
             "maxDistance":10000},
   "trig": {"type": "button",
             "time": 0}
 },
 {
-  "name": "M2",
-  "role": "ari",
-  "target": { "type": "audio",
-              "dest": "local",
-              "src": "M2"},
-  "action": {"type": "move",
-             "duration": 1000,
-             "loop": false,
-             "pos": {
-              "x": -39.00,
-              "y": -15.50,
-              "z": 22.00
-             },
-             "rot": {"x": 0, "y":0, "z":0},
-             "scale": {"x": 1, "y":1, "z":1}},
-  "trig": {"type": "button",
-           "time": 0}
-},
-{
   "name": "M3",
   "role": "ari",
-  "target": { "type": "audio",
+  "target": { "type": "glb",
             "dest": "url",
-            "src": "https://xrtheater-assets.xrtheater.live/files/daa5b9b3-79c5-4a3c-96e4-eed78755ff28.mp3"},
+            "src": "https://xrtheater-assets.xrtheater.live/files/89e71cd8-8ca3-4501-86c2-9194bc19acdc.mp3"},
   "action": {"type": "spawn_item",
               "pos": {
                 "x": -39.00,
-                "y": -31000.50,
-                "z": 18.70
+                "y": -15.50,
+                "z": 22.00
             },
               "rot": {
                 "x": 0,
@@ -2124,33 +2088,14 @@
                 "y": 1,
                 "z": 1
             },
+            "loop": false,
             "volume":1,
             "distanceModel": "linear",
-            "rolloffFactor":0.6,
-            "refDistance":1,
-            "maxDistance":10000
-          },
+            "rolloffFactor":0,
+            "refDistance":1000,
+            "maxDistance":10000},
   "trig": {"type": "button",
             "time": 0}
-},
-{
-  "name": "M3",
-  "role": "ari",
-  "target": { "type": "audio",
-              "dest": "local",
-              "src": "M3"},
-  "action": {"type": "move",
-             "duration": 1000,
-             "loop": false,
-             "pos": {
-              "x": -39.00,
-              "y": -31.50,
-              "z": 18.70
-             },
-             "rot": {"x": 0, "y":0, "z":0},
-             "scale": {"x": 1, "y":1, "z":1}},
-  "trig": {"type": "button",
-           "time": 0}
 },
   {
     "name": "WP1",
