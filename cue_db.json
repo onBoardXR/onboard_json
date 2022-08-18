@@ -2248,9 +2248,9 @@
       "role": "ari",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/3442b613-7824-44f6-ab2c-e82dadebe54f.glb"},
+                  "src":  "S1"},
       "action": {"type": "move",
-                 "duration": 1000,
+                 "duration": 10000,
                  "loop": false,
                  "pos": {
                   "x": -35.538,
@@ -2292,9 +2292,9 @@
       "role": "ari",
       "target": { "type": "glb",
                   "dest": "local",
-                  "src":  "https://xrtheater-assets.xrtheater.live/files/5029dab2-b1c5-4ca7-a21f-e896640b1a86.glb"},
+                  "src":  "S2"},
       "action": {"type": "move",
-                "duration": 1000,
+                "duration": 10000,
                  "loop": false,
                   "pos": {
                     "x": -25.61863899230957,
