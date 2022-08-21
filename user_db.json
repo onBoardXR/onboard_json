@@ -66,5 +66,6 @@
   "dsha":{"name":"Daaarrrsha", "role":"housemanager"},
    "aud": {"name": "Audience","role":"guest"},
   "newRole": {"name": "newRole","role":"newRole"},
-  "ari": {"name": "Ari","role":"ari"}
+  "ari": {"name": "Ari","role":"ari"},
+  "listener": {"name": "NPCGuest","role":"listener"}
  }
