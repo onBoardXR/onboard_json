@@ -67,5 +67,5 @@
    "aud": {"name": "Audience","role":"guest"},
   "newRole": {"name": "newRole","role":"newRole"},
   "ari": {"name": "Ari","role":"ari"},
-  "listener": {"name": "NPCGuest","role":"listener"}
+  "listening": {"name": "NPCGuest","role":"listening"}
  }
