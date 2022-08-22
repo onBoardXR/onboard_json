@@ -2461,7 +2461,9 @@
                        },
                        "timelines" : [
                         {"x": 0, "y":0, "z":0, "duration": 3000, "delay": 0, "easing": "easeInOutSine"},
-                        {"x": 0, "y":-0.4, "z":0, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"}
+                        {"x": 0, "y":-0.4, "z":0, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
+                        {"x": 0, "y":-2, "z":0, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
+                        {"x": 0, "y":-0.4, "z":0, "duration": 1500, "delay": 800, "easing": "easeInOutSine"}
                        ]
                      }
                    }
@@ -2560,7 +2562,7 @@
                              "duration": 1000
                              },
                              "timelines" : [
-                              {"x": -0.5, "y":1.9, "z":-6, "duration": 3000, "delay": 0, "easing": "easeInOutSine"}
+                              {"x": -0.5, "y":1.9, "z":-6, "duration": 1500, "delay": 0, "easing": "easeInOutSine"}
                              ]
                            }
                          }
@@ -2587,7 +2589,169 @@
                 "trig": {"type": "button",
                   "groupChain" : "Tutorial_1_group",
                          "time": 0}
-              }
+              },
+              {
+                "name": "Spawn_Turn_ToolTip",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": {
+                            "name": "Spawn_Turn_ToolTip",
+                            "sceneLink": "https://xrtheater.live/scenes/bzmLDGJ/onboardxr-7-npc",
+                            "target": { "role": "general",
+                            "src":  "https://xrtheater-assets.xrtheater.live/files/c2b0cc1c-9697-4763-9335-5eb334849c35.glb"},
+                            "action": {"type": "socket_spawn_object",
+                            "pos": {"x": -0.5, "y":0.5, "z":-6},
+                            "rot": {"x": 0, "y":0, "z":0},
+                            "scale": {"x": 0.001, "y":0.001, "z":0.001}}
+                          }
+                          },
+                "trig": {"type": "button",
+                "groupChain" : "Tutorial_1_group",
+                         "time": 0}
+              },
+              {
+                "name": "Move_NPC",
+                "role": "listening",
+                "target": { },
+                "action": {"type": "call_method_from_object",
+                           "object_name": "sockSys",
+                           "function_name": "cueSocket",
+                           "_cue": { 
+                            "name": "Move_NPC",
+                            "sceneLink": "https://xrtheater.live/scenes/bzmLDGJ/onboardxr-7-npc",
+                            "target": { "role": "general",
+                              "aspect" : "position" },
+                            "action": { "type": "socket_manipulate_object",
+                              "mapItem": "Spawn_NPC",
+                              "attr": "object3D",
+                              "anime": {
+                               "targets": "scale",
+                               "delay" : 1000,
+                               "loop": false,
+                               "autoplay": false,
+                               "easing": "easeInOutSine",
+                               "duration": 1000
+                               },
+                               "timelines" : [
+                                {"x": 0.5, "y":1.2, "z":-4.5, "duration": 2000, "delay": 0, "easing": "easeInOutSine"},
+                                {"x": -0.2, "y":1.2, "z":-4.3, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
+                                {"x": 0.5, "y":1.2, "z":-4.4, "duration": 1000, "delay": 0, "easing": "easeInSine"},
+                                {"x": 1.2, "y":1.2, "z":-4.3, "duration": 1000, "delay": 0, "easing": "easeOutSine"},
+                                {"x": 0.5, "y":1.2, "z":-4.5, "duration": 1500, "delay": 0, "easing": "easeInOutSine"}
+                               ]
+                             }
+                           }
+                          },
+                "trig": {"type": "button",
+                  "groupChain" : "Tutorial_1_group",
+                         "time": 0}
+                },
+                {
+                  "name": "Rotate_NPC",
+                  "role": "listening",
+                  "target": { },
+                  "action": {"type": "call_method_from_object",
+                             "object_name": "sockSys",
+                             "function_name": "cueSocket",
+                             "_cue": { 
+                              "name": "Rotate_NPC",
+                              "sceneLink": "https://xrtheater.live/scenes/bzmLDGJ/onboardxr-7-npc",
+                              "target": { "role": "general",
+                                "aspect" : "rotation" },
+                              "action": { "type": "socket_manipulate_object",
+                                "mapItem": "Spawn_NPC",
+                                "attr": "object3D",
+                                "anime": {
+                                 "targets": "scale",
+                                 "delay" : 1000,
+                                 "loop": false,
+                                 "autoplay": false,
+                                 "easing": "easeInOutSine",
+                                 "duration": 1000
+                                 },
+                                 "timelines" : [
+                                  {"x": 0, "y":0, "z":0, "duration": 2000, "delay": 0, "easing": "easeInOutSine"},
+                                  {"x": 0, "y":0.6, "z":0, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
+                                  {"x": 0, "y":0, "z":0, "duration": 1000, "delay": 0, "easing": "easeInSine"},
+                                  {"x": 0, "y":-0.6, "z":0, "duration": 1000, "delay": 0, "easing": "easeOutSine"},
+                                  {"x": 0, "y":0, "z":0, "duration": 1500, "delay": 0, "easing": "easeInOutSine"}
+                                 ]
+                               }
+                             }
+                            },
+                  "trig": {"type": "button",
+                    "groupChain" : "Tutorial_1_group",
+                           "time": 0}
+                  },
+                  {
+                    "name": "Scale_Audio_ToolTip",
+                    "role": "listening",
+                    "target": { },
+                    "action": {"type": "call_method_from_object",
+                               "object_name": "sockSys",
+                               "function_name": "cueSocket",
+                               "_cue": { 
+                                "name": "Scale_Audio_ToolTip",
+                                "sceneLink": "https://xrtheater.live/scenes/bzmLDGJ/onboardxr-7-npc",
+                                "target": { "role": "general",
+                                  "aspect" : "scale" },
+                                "action": { "type": "socket_manipulate_object",
+                                  "mapItem": "Spawn_Audio_ToolTip",
+                                  "attr": "object3D",
+                                  "anime": {
+                                   "targets": "scale",
+                                   "delay" : 1000,
+                                   "loop": false,
+                                   "autoplay": false,
+                                   "easing": "easeInOutSine",
+                                   "duration": 1000
+                                   },
+                                   "timelines" : [
+                                    {"x": 2.4, "y":2.4, "z":2.4, "duration": 1500, "delay": 0, "easing": "easeInOutElastic(1, 0.5)"}
+                                   ]
+                                 }
+                               }
+                              },
+                    "trig": {"type": "button",
+                      "groupChain" : "Tutorial_Start_group",
+                             "time": 8000}
+                    },
+                    {
+                      "name": "Move_Audio_ToolTip",
+                      "role": "listening",
+                      "target": { },
+                      "action": {"type": "call_method_from_object",
+                                 "object_name": "sockSys",
+                                 "function_name": "cueSocket",
+                                 "_cue": { 
+                                  "name": "Move_Audio_ToolTip",
+                                  "sceneLink": "https://xrtheater.live/scenes/bzmLDGJ/onboardxr-7-npc",
+                                  "target": { "role": "general",
+                                    "aspect" : "position" },
+                                  "action": { "type": "socket_manipulate_object",
+                                    "mapItem": "Spawn_Audio_ToolTip",
+                                    "attr": "object3D",
+                                    "anime": {
+                                     "targets": "scale",
+                                     "delay" : 1000,
+                                     "loop": false,
+                                     "autoplay": false,
+                                     "easing": "easeInOutSine",
+                                     "duration": 1000
+                                     },
+                                     "timelines" : [
+                                      {"x": -0.5, "y":1.9, "z":-6, "duration": 1500, "delay": 0, "easing": "easeInOutSine"}
+                                     ]
+                                   }
+                                 }
+                                },
+                      "trig": {"type": "button",
+                        "groupChain" : "Tutorial_Start_group",
+                               "time": 8000}
+                      }
   ]
 }
             
