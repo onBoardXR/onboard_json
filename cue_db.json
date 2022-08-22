@@ -2636,11 +2636,13 @@
                                "duration": 1000
                                },
                                "timelines" : [
-                                {"x": 0.5, "y":1.2, "z":-4.5, "duration": 2000, "delay": 0, "easing": "easeInOutSine"},
+                                {"x": 0.5, "y":1.2, "z":-4.5, "duration": 4000, "delay": 0, "easing": "easeInOutSine"},
                                 {"x": -0.2, "y":1.2, "z":-4.3, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
                                 {"x": 0.5, "y":1.2, "z":-4.4, "duration": 1000, "delay": 0, "easing": "easeInSine"},
                                 {"x": 1.2, "y":1.2, "z":-4.3, "duration": 1000, "delay": 0, "easing": "easeOutSine"},
-                                {"x": 0.5, "y":1.2, "z":-4.5, "duration": 1500, "delay": 0, "easing": "easeInOutSine"}
+                                {"x": 0.5, "y":1.2, "z":-4.5, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
+                                {"x": 1.8, "y":1.2, "z":-3, "duration": 1500, "delay": 1300, "easing": "easeInSine"},
+                                {"x": 1.8, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"}
                                ]
                              }
                            }
@@ -2673,11 +2675,14 @@
                                  "duration": 1000
                                  },
                                  "timelines" : [
-                                  {"x": 0, "y":0, "z":0, "duration": 2000, "delay": 0, "easing": "easeInOutSine"},
+                                  {"x": 0, "y":0, "z":0, "duration": 4000, "delay": 0, "easing": "easeInOutSine"},
                                   {"x": 0, "y":0.6, "z":0, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
                                   {"x": 0, "y":0, "z":0, "duration": 1000, "delay": 0, "easing": "easeInSine"},
                                   {"x": 0, "y":-0.6, "z":0, "duration": 1000, "delay": 0, "easing": "easeOutSine"},
-                                  {"x": 0, "y":0, "z":0, "duration": 1500, "delay": 0, "easing": "easeInOutSine"}
+                                  {"x": 0, "y":0, "z":0, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
+                                  {"x": 0, "y":0.6, "z":0, "duration": 500, "delay": 1000, "easing": "easeInOutSine"},
+                                  {"x": 0, "y":0, "z":0, "duration": 500, "delay": 1500, "easing": "easeInOutSine"},
+                                  {"x": 0, "y":-3.14, "z":0, "duration": 1000, "delay": 3300, "easing": "easeInOutSine"}
                                  ]
                                }
                              }
@@ -2717,7 +2722,7 @@
                               },
                     "trig": {"type": "button",
                       "groupChain" : "Tutorial_Start_group",
-                             "time": 8000}
+                             "time": 10000}
                     },
                     {
                       "name": "Move_Audio_ToolTip",
@@ -2750,7 +2755,7 @@
                                 },
                       "trig": {"type": "button",
                         "groupChain" : "Tutorial_Start_group",
-                               "time": 8000}
+                               "time": 10000}
                       }
   ]
 }
