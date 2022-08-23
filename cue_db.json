@@ -2905,13 +2905,69 @@
               "src":  "https://onboardxr.github.io/onboard_json/object/Windward-Shipwreck5.glb"},
   "action": {"type": "spawn_item",
              "pos": {"x": 11, "y":-5.5, "z":-10},
-             "rot": {"x": -45, "y":0, "z":0},
+             "rot": {"x": 45, "y":0, "z":0},
              "scale": {"x": 1, "y":1, "z":1}},
   "trig": {"type": "button",
           "groupChain" : "groupShipwreck",
            "time": 0} 
-}
+},
        
+  {
+  "name": "delete_shipwreck_1",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_1"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+},
+{
+  "name": "delete_shipwreck_2",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_2"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+},
+{
+  "name": "delete_shipwreck_3",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_3"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+},
+{
+  "name": "delete_shipwreck_4",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_4"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+}, 
+
+{
+  "name": "delete_shipwreck_5",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_5"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+}     
 
   ]
 }
