@@ -2785,7 +2785,18 @@
                       "trig": {"type": "button",
                         "groupChain" : "Tutorial_Start_group",
                                "time": 10000}
-                      }
+                      }, 
+       {
+      "name": "Delete_druid_knot",
+      "role": "kryn",
+      "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHdruidKnot.glb"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+               "time": 0}
+    }
+
   ]
 }
             
