@@ -2795,7 +2795,51 @@
       "action": {"type": "delete"},
       "trig": {"type": "button",
                "time": 0}
-    }
+    }, 
+       {
+  "name": "delete_liver_1",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHDeleteLiver",
+           "time": 0}
+},
+{
+  "name": "delete_liver_2",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHDeleteLiver",
+           "time": 0}
+},
+{
+  "name": "delete_liver_3",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHDeleteLiver",
+           "time": 0}
+},
+{
+  "name": "delete_liver_4",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/WHliver.glb"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHDeleteLiver",
+           "time": 0}
+}
 
   ]
 }
