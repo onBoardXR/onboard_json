@@ -18,15 +18,7 @@
     
     
     "listCue": [  
-      {
-        "name": "Change_to_NEMO",
-        "role":"nemo-qs",
-        "target": { },
-        "action": {"type": "change_scene",
-                   "link":"https://xrtheater.live/scenes/3EHH5Jp"},
-        "trig": {"type": "button",
-                 "time": 0}
-      },
+
           {
         "name": "Change_to_BEACH",
         "role":"nemo-qs",
@@ -43,8 +35,8 @@
                     "src":  "https://xrtheater-assets.xrtheater.live/files/4fedcf9f-65f7-4c11-8014-e4795402f21e.glb"},
         "action": {"type": "spawn_item",
                   "pin_it": true,
-                   "pos": {"x": 27, "y":-0.6, "z":22},
-                   "rot": {"x": 0, "y":-120, "z":0},
+                   "pos": {"x": 20, "y":-0.5, "z":40},
+                   "rot": {"x": 0, "y":-3, "z":0},
                    "scale": {"x": 4.6, "y":4.6, "z":4.6}},
         "trig": {"type": "button",
                  "time": 0} 
@@ -58,12 +50,21 @@
         "action": {"type": "move",
                    "duration": 15000,
                    "loop": false,
-                   "pos": {"x": 17, "y":0.15, "z":15},
-                   "rot": {"x": 0, "y":-120, "z":0},
+                   "pos": {"x": 16, "y":0.15, "z":15},
+                   "rot": {"x": 0, "y":-3, "z":0},
                    "scale": {"x": 5.8, "y":5.8, "z":5.8}},
         "trig": {"type": "button",
                  "time": 0}
       }, 
+      {
+        "name": "Change_to_NEMO",
+        "role":"nemo-qs",
+        "target": { },
+        "action": {"type": "change_scene",
+                   "link":"https://xrtheater.live/scenes/3EHH5Jp"},
+        "trig": {"type": "button",
+                 "time": 0}
+      },
       {
         "name": "nemo_actor_entrance",
         "role": "nemo-qs-SOCK",
