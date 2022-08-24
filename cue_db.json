@@ -3205,7 +3205,30 @@
   "trig": {"type": "button",
           "groupChain" : "groupDeleteBeachball",
            "time": 0}
-}     
+}, 
+       {
+  "name": "full_ship",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/avatar/ShipCentered.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": 0, "y":0, "z":0},
+             "rot": {"x": 0, "y":0, "z":0},
+             "scale": {"x": 0, "y":0, "z":0}},
+  "trig": {"type": "button",
+           "time": 0}
+},
+       {
+  "name": "delete_full_ship",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "full_ship"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+           "time": 0}
+}
 
   ]
 }
