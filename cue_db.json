@@ -2983,7 +2983,7 @@
               "dest": "url",
               "src":  "https://onboardxr.github.io/onboard_json/object/Windward-Shipwreck3-Centered.glb"},
   "action": {"type": "spawn_item",
-             "pos": {"x": 11, "y":2, "z":17},
+             "pos": {"x": -11, "y":2, "z":-17},
              "rot": {"x": 10, "y":0, "z":12},
              "scale": {"x": 1, "y":1, "z":1}},
   "trig": {"type": "button",
