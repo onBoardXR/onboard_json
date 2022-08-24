@@ -8,11 +8,74 @@
             "link": "https://onboardxr.live"
           },
             {
+              "name": "XRTheattoPXR",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": -6.37795522530294, "y": 1.2000000000000006, "z": -3.580772035345514},
+              "radius": 1.5,
+              "link": "https://activereplica.io/Y2rpxyr/pxr"
+            },
+            {
               "name": "XRTheattoARIO",
-              "room": "xrtheater",
-              "pos": {"x": 4.144450152870114, "y": 1.199999999999994, "z": -6.109428237451945},
+              "room": "https://xrtheater.live/",
+              "pos": {"x": -10.339757523366561, "y": 1.2000000000000006, "z": -10.553266067355446},
               "radius": 1.5,
               "link": "https://activereplica.io"
+            },
+            {
+              "name": "XRTheattoIndustry3",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": -5.826077192406425, "y": 1.2, "z": -21.109497588454822},
+              "radius": 1.5,
+              "link": "https://activereplica.io/hR7TPpx/opp-fair-3"
+            },
+            {
+              "name": "XRTheattoMozFest",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": 1.5914708390525993, "y": 1.0448918344809346, "z": -25.74770370442702},
+              "radius": 1.5,
+              "link": "https://hubs.mozillafestival.org/"
+            },
+            {
+              "name": "XRTheattoMAGID",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": 8.759157640509615, "y": 1.9600000000000004, "z": -18.1216028797861535},
+              "radius": 1,
+              "link": "https://xrtheater.live/fAN4Xgt/magid"
+            },
+            {
+              "name": "XRTheattoWWLP",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": 9.869623248219353, "y": 1.9600000000000015, "z": -20.844606565338275},
+              "radius": 1,
+              "link": "https://xrtheater.live/S4TjRBA/wayward-promo"
+            },
+            {
+              "name": "XRTheattoSpace",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": 11.080291480323064, "y": 2.1459273928858624, "z": -23.717470908635804},
+              "radius": 1,
+              "link": "https://xrtheater.live/R7bYQih/noteworthy-creamy-cosmos"
+            },
+            {
+              "name": "XRTheattoNemo",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": 11.80390527841053, "y": 2.3400000000000003, "z": -26.662980608493626},
+              "radius": 1,
+              "link": "https://xrtheater.live/9Bh43Bi/blissful-passionate-spot"
+            },
+            {
+              "name": "XRTheattoUW",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": 12.81842591212457, "y": 2.359972287299902, "z": -29.479883514597578},
+              "radius": 1,
+              "link": "https://xrtheater.live/C7xshiD/"
+            },
+            {
+              "name": "XRTheattoNPC",
+              "room": "https://xrtheater.live/",
+              "pos": {"x": 14.151245808178361, "y": 2.910000000000001, "z": -32.02253215061955},
+              "radius": 1,
+              "link": "https://xrtheater.live/AwJDuKj/kooky-grounded-outing/?k=listener"
             }
         ],
     
