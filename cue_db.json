@@ -13,6 +13,20 @@
               "pos": {"x": 4.144450152870114, "y": 1.199999999999994, "z": -6.109428237451945},
               "radius": 1.5,
               "link": "https://activereplica.io"
+            },
+            {
+              "name": "UWToXRTheat",
+              "room": "https://xrtheater.live/C7xshiD/",
+              "pos": {"x": 31.30, "y": 0.20, "z": 14.90},
+              "radius": 1.5,
+              "link": "https://xrtheater.live/"
+            },
+            {
+              "name": "UWToVideoAskShed",
+              "room": "https://xrtheater.live/C7xshiD/",
+              "pos": {"x": 33.2, "y": 0.4, "z": -30.40},
+              "radius": 1.5,
+              "link": "https://www.videoask.com/fgszt34q2"
             }
         ],
     
