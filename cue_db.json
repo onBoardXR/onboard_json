@@ -3131,6 +3131,51 @@
   "trig": {"type": "button",
           "groupChain" : "groupBeachball",
            "time": 0} 
+}, 
+
+{
+  "name": "delete_beachball_1",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "beachball_1"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteBeachball",
+           "time": 0}
+},
+{
+  "name": "delete_beachball_2",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "beachball_2"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteBeachball",
+           "time": 0}
+},
+{
+  "name": "delete_beachball_3",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "beachball_3"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteBeachball",
+           "time": 0}
+},
+{
+  "name": "delete_beachball_4",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "beachball_4"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteBeachball",
+           "time": 0}
 }     
 
   ]
