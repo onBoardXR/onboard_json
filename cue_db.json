@@ -983,19 +983,78 @@
         "trig": {"type": "button",
                  "time": 0}
       },
-      {
-        "name": "Nemo_shareCamera",
-        "role": "nemo-temp",
-        "target": { "type": "webcam" },
-        "action": { "type": "spawn_item",
-                    "pos": {"x": 25, "y":2, "z":-4},
-                    "rot": {"x": 0, "y":0, "z":0},
-                    "scale": {"x": 6, "y":3, "z":1}
-                  },
-        "trig": {"type": "button",
-                 "time": 0}
-      },
-      
+       {
+      "name": "codebeard_normal",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeard.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "codebeard_matrix",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeardmatrix.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "codebeard_sad",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARISadCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "codebeard_angry",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIAngryCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "codebeard_confused",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIConfusedCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "codebeard_smile",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARISmileCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },        
+    {
+      "name": "codebeard_neutral",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARINeutralCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "change_to_invis",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
   {
            "name": "AV_Presenter",
            "role":"naomi",
