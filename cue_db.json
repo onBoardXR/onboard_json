@@ -2997,7 +2997,7 @@
               "dest": "url",
               "src":  "https://onboardxr.github.io/onboard_json/object/Windward-Shipwreck4-Centered.glb"},
   "action": {"type": "spawn_item",
-             "pos": {"x": 16, "y":-1, "z":8},
+             "pos": {"x": -13.5, "y":-1, "z":1},
              "rot": {"x": 0, "y":0, "z":-12},
              "scale": {"x": 1, "y":1, "z":1}},
   "trig": {"type": "button",
