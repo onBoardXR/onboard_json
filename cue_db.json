@@ -96,17 +96,45 @@
     
     "listCue": [  
 
-          {
+           {
         "name": "Change_to_BEACH",
         "role":"nemo-qs",
         "target": { },
         "action": {"type": "change_scene",
-                   "link":"https://xrtheater.live/scenes/3EHH5Jp"},
+                   "link":"https://xrtheater.live/scenes/uuEVCuL"},
         "trig": {"type": "button",
                  "time": 0}
+      },  
+      {"name": "Beach_Sub",
+        "role": "nemo-qs",
+        "target": { "type": "glb",
+                    "dest": "url",
+                    "src":  "https://xrtheater-assets.xrtheater.live/files/4fedcf9f-65f7-4c11-8014-e4795402f21e.glb"},
+        "action": {"type": "spawn_item",
+                  "pin_it": true,
+                   "pos": {"x": 0, "y":-0.5, "z":54},
+                   "rot": {"x": 0, "y":2.5, "z":0},
+                   "scale": {"x": 4.6, "y":4.6, "z":4.6}},
+        "trig": {"type": "button",
+                 "time": 0} 
       },
-          {
-        "name": "Change_to_BEACH",
+         {
+        "name": "Sub_approach",
+        "role": "nemo-qs",
+        "target": { "type": "glb",
+                    "dest": "local",
+                    "src": "Beach_Sub"},
+        "action": {"type": "move",
+                   "duration": 18000,
+                   "loop": false,
+                   "pos": {"x": 16, "y":0.12, "z":15},
+                   "rot": {"x": 0, "y":3, "z":0},
+                   "scale": {"x": 5.6, "y":5.6, "z":5.6}},
+        "trig": {"type": "button",
+                 "time": 0}
+      }, 
+      {
+        "name": "Change_to_NEMO",
         "role":"nemo-qs",
         "target": { },
         "action": {"type": "change_scene",
