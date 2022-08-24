@@ -3211,7 +3211,7 @@
   "role": "kryn",
   "target": { "type": "glb",
               "dest": "url",
-              "src":  "https://onboardxr.github.io/onboard_json/avatar/ShipCentered.glb"},
+              "src":  "https://onboardxr.github.io/onboard_json/object/ShipCentered.glb"},
   "action": {"type": "spawn_item",
              "pos": {"x": 0, "y":0, "z":0},
              "rot": {"x": 0, "y":0, "z":0},
