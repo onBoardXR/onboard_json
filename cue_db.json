@@ -76,13 +76,28 @@
               "pos": {"x": 14.151245808178361, "y": 2.910000000000001, "z": -32.02253215061955},
               "radius": 1,
               "link": "https://xrtheater.live/AwJDuKj/kooky-grounded-outing/?k=listener"
+            },
+            {
+              "name": "UWToXRTheat",
+              "room": "https://xrtheater.live/C7xshiD/",
+              "pos": {"x": 31.30, "y": 0.20, "z": 14.90},
+              "radius": 1.5,
+              "link": "https://xrtheater.live/"
+            },
+            {
+              "name": "UWToVideoAskShed",
+              "room": "https://xrtheater.live/C7xshiD/",
+              "pos": {"x": 33.2, "y": 0.4, "z": -30.40},
+              "radius": 1.5,
+              "link": "https://www.videoask.com/fgszt34q2"
             }
         ],
     
     
     "listCue": [  
-      {
-        "name": "Change_to_NEMO",
+
+          {
+        "name": "Change_to_BEACH",
         "role":"nemo-qs",
         "target": { },
         "action": {"type": "change_scene",
@@ -95,10 +110,10 @@
         "role":"nemo-qs",
         "target": { },
         "action": {"type": "change_scene",
-                   "link":"https://xrtheater.live/scenes/uuEVCuL"},
+                   "link":"https://xrtheater.live/scenes/3EHH5Jp"},
         "trig": {"type": "button",
                  "time": 0}
-      },  
+      },
       {
         "name": "nemo_actor_entrance",
         "role": "nemo-qs-SOCK",
@@ -246,7 +261,7 @@
                     "src":  "https://xrtheater-assets.xrtheater.live/files/379689df-2684-46c6-a87f-76d73246fcb8.glb"},
         "action": {"type": "spawn_item",
                   "pin_it": true,
-                   "pos": {"x": 25.8, "y":-3, "z":8.5},
+                   "pos": {"x": 25.8, "y":-3.2, "z":8.5},
                    "rot": {"x": 0, "y":-1, "z":0},
                    "scale": {"x": 1, "y":1, "z":1}},
         "trig": {"type": "button",
@@ -260,7 +275,7 @@
                     "src":  "https://xrtheater-assets.xrtheater.live/files/bc51e117-f34c-4e26-bfbf-2d322340f0e3.glb"},
         "action": {"type": "spawn_item",
                   "pin_it": true,
-                   "pos": {"x": 25.8, "y":-3, "z":8.5},
+                   "pos": {"x": 25.8, "y":-3.2, "z":8.5},
                    "rot": {"x": 0, "y":-1, "z":0},
                    "scale": {"x": 1, "y":1, "z":1}},
         "trig": {"type": "button",
@@ -1017,19 +1032,78 @@
         "trig": {"type": "button",
                  "time": 0}
       },
-      {
-        "name": "Nemo_shareCamera",
-        "role": "nemo-temp",
-        "target": { "type": "webcam" },
-        "action": { "type": "spawn_item",
-                    "pos": {"x": 25, "y":2, "z":-4},
-                    "rot": {"x": 0, "y":0, "z":0},
-                    "scale": {"x": 6, "y":3, "z":1}
-                  },
-        "trig": {"type": "button",
-                 "time": 0}
-      },
-      
+       {
+      "name": "codebeard_normal",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeard.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "codebeard_matrix",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIcodebeardmatrix.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "codebeard_sad",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARISadCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "codebeard_angry",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIAngryCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+            {
+      "name": "codebeard_confused",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARIConfusedCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+    {
+      "name": "codebeard_smile",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARISmileCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },        
+    {
+      "name": "codebeard_neutral",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/ARINeutralCap.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
+        {
+      "name": "change_to_invis",
+      "role":"housemanager",
+      "target": { },
+      "action": {"type": "change_avatar",
+                 "link":"https://onboardxr.github.io/onboard_json/avatar/invisibleAv.glb"},
+      "trig": {"type": "button",
+               "time": 0}
+    },
   {
            "name": "AV_Presenter",
            "role":"naomi",
@@ -2819,7 +2893,190 @@
                       "trig": {"type": "button",
                         "groupChain" : "Tutorial_Start_group",
                                "time": 10000}
-                      }
+                      }, 
+       {
+      "name": "Delete_druid_knot",
+      "role": "kryn",
+      "target": { "type": "glb",
+              "dest": "url",
+              "src":  "druid_knot"},
+      "action": {"type": "delete"},
+      "trig": {"type": "button",
+               "time": 0}
+    }, 
+       {
+  "name": "delete_liver_1",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "liver_1"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHDeleteLiver",
+           "time": 0}
+},
+{
+  "name": "delete_liver_2",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "liver_2"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHDeleteLiver",
+           "time": 0}
+},
+{
+  "name": "delete_liver_3",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "liver_3"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHDeleteLiver",
+           "time": 0}
+},
+{
+  "name": "delete_liver_4",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "liver_4"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupWHDeleteLiver",
+           "time": 0}
+}, 
+       {
+  "name": "shipwreck_1",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/object/Windward-Shipwreck1.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": -5.5, "y":-5.5, "z":13},
+             "rot": {"x": -45, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupShipwreck",
+           "time": 0}
+},
+{
+  "name": "shipwreck_2",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/object/Windward-Shipwreck2.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": -16, "y":-1.5, "z":3},
+             "rot": {"x": 13, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupShipwreck",
+           "time": 0}
+},
+{
+  "name": "shipwreck_3",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/object/Windward-Shipwreck3.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": -10, "y":-1.5, "z":-17},
+             "rot": {"x": 10, "y":0, "z":12},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupShipwreck",
+           "time": 0}
+},
+{
+  "name": "shipwreck_4",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/object/Windward-Shipwreck4.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": 16.5, "y":-2.5, "z":11.5},
+             "rot": {"x": 0, "y":0, "z":12},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupShipwreck",
+           "time": 0} 
+},
+
+{
+  "name": "shipwreck_5",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "https://onboardxr.github.io/onboard_json/object/Windward-Shipwreck5.glb"},
+  "action": {"type": "spawn_item",
+             "pos": {"x": 11, "y":-5.5, "z":-10},
+             "rot": {"x": 45, "y":0, "z":0},
+             "scale": {"x": 1, "y":1, "z":1}},
+  "trig": {"type": "button",
+          "groupChain" : "groupShipwreck",
+           "time": 0} 
+},
+       
+  {
+  "name": "delete_shipwreck_1",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_1"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+},
+{
+  "name": "delete_shipwreck_2",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_2"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+},
+{
+  "name": "delete_shipwreck_3",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_3"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+},
+{
+  "name": "delete_shipwreck_4",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_4"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+}, 
+
+{
+  "name": "delete_shipwreck_5",
+  "role": "kryn",
+  "target": { "type": "glb",
+              "dest": "url",
+              "src":  "shipwreck_5"},
+  "action": {"type": "delete"},
+  "trig": {"type": "button",
+          "groupChain" : "groupDeleteShipwreck",
+           "time": 0}
+}     
+
   ]
 }
             
