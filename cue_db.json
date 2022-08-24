@@ -512,6 +512,7 @@
                     "dest": "url",
                     "src":  "https://xrtheater-assets.xrtheater.live/files/6a2849c2-abf3-4e06-bf53-37583050b3f8.glb"},
         "action": {"type": "spawn_item",
+                    "applyGravityOnSpawn": true,
                    "pos": {"x": 19.47, "y":1.35, "z":4.1},
                    "rot": {"x": 0, "y":1.39, "z":0},
                    "scale": {"x": 0.6, "y":0.6, "z":0.6}},
