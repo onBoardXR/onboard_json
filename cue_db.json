@@ -3786,6 +3786,27 @@
             },
   "trig": {"type": "button",
            "time": 0}
+},
+{
+  "name": "Teleport_mandy",
+  "role": "mand",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": {
+              "name": "Teleport_mandy",
+              "role": "brnd",
+              "target": { "role": "individual",
+                "name": "Max"},
+              "action": {"type": "jump_to_waypoint",
+                         "anchor":"#mandwaypoint"},
+              "trig": {"type": "button",
+                       "time": 0}
+            }
+            },
+  "trig": {"type": "button",
+           "time": 0}
 }
   ]
 }
