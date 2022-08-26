@@ -17,8 +17,7 @@
   "kristia":{"name":"kristia", "role":"kristia"},
   "kmac":{"name":"kmac", "role":"kmac"},
   "ming":{"name":"Mingna", "role":"ming"},
-  "nell":{"name":"Nelly", "role":"nell"},
-  "mand":{"name":"Angie", "role":"mand"},
+  "nell":{"name":"Nelly", "role":"nell"},  
   "avin":{"name":"Avin", "role":"avin"},
   "mikeob4":{"name":"___", "role":"stagemanager"},
   "itlSM" : {"name":"Jason", "role":"itlSM"},
@@ -69,5 +68,6 @@
   "ari": {"name": "Ari","role":"ari"},
   "listening": {"name": "NPCGuest","role":"listening"},
   "listener": {"name": "NPCGuest","role":"listener"},
-  "spaceholderSM": {"name": "spaceholderSM","role":"spaceholderSM"}
+  "spaceholderSM": {"name": "spaceholderSM","role":"spaceholderSM"},
+  "mand":{"name":"Max", "role":"mand"}
  }
