@@ -68,5 +68,6 @@
   "newRole": {"name": "newRole","role":"newRole"},
   "ari": {"name": "Ari","role":"ari"},
   "listening": {"name": "NPCGuest","role":"listening"},
-  "listener": {"name": "NPCGuest","role":"listener"}
+  "listener": {"name": "NPCGuest","role":"listener"},
+  "spaceholderSM": {"name": "spaceholderSM","role":"spaceholderSM"}
  }
