@@ -3773,55 +3773,16 @@
   "action": {"type": "call_method_from_object",
              "object_name": "sockSys",
              "function_name": "cueSocket",
-             "_cue": { 
+             "_cue": {
               "name": "Teleport_mandy",
-              "target": { "role" : ["individual"], "name": "Max",
-                "aspect" : "scale" },
-              "action": { "type": "manipulate_avatar",
-                "attr": "object3D",
-                "anime": {
-                 "targets": "",
-                 "delay" : 0,
-                 "loop": false,
-                 "autoplay": false,
-                 "easing": "linear",
-                 "duration": 1
-                 },
-                 "timelines" : [
-                  {"x": 22.176707252348294, "y": 0.15791229493440762, "z": 5.147174957064821, "delay": 0, "duration": 0, "easing": "linear"}
-                 ]
-               }
-             }
-            },
-  "trig": {"type": "button",
-           "time": 0}
-},
-{
-  "name": "Teleport_mandy",
-  "role": "mand",
-  "target": { },
-  "action": {"type": "call_method_from_object",
-             "object_name": "sockSys",
-             "function_name": "cueSocket",
-             "_cue": { 
-              "name": "Teleport_mandy",
-              "target": { "role" : ["individual"], "name": "Max",
-                "aspect" : "scale" },
-              "action": { "type": "manipulate_avatar",
-                "attr": "object3D",
-                "anime": {
-                 "targets": "",
-                 "delay" : 0,
-                 "loop": false,
-                 "autoplay": false,
-                 "easing": "linear",
-                 "duration": 1
-                 },
-                 "timelines" : [
-                  {"x": 22.176707252348294, "y": 0.15791229493440762, "z": 5.147174957064821, "delay": 0, "duration": 0, "easing": "linear"}
-                 ]
-               }
-             }
+              "role": "brnd",
+              "target": { "role": "individual",
+                "name": "Max"},
+              "action": {"type": "jump_to_waypoint",
+                         "anchor":"#mandwaypoint"},
+              "trig": {"type": "button",
+                       "time": 0}
+            }
             },
   "trig": {"type": "button",
            "time": 0}
