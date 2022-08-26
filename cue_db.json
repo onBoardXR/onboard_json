@@ -3512,7 +3512,7 @@
   "role": "spaceholderSM",
   "target": { "type": "glb",
               "dest": "url",
-              "src":  "https://xrtheater-assets.xrtheater.live/files/b26059a1-952d-4ebf-b748-df471f2106ec.mp3"},
+              "src":  "https://xrtheater-assets.xrtheater.live/files/a11a0fec-7192-477d-a919-54ab7d4eb75b.mp3"},
   "action": {"type": "spawn_item",
   "pos": {"x": 7.14809513092041, "y": -1, "z": 1.1726019382476807},
   "rot": {"x": 0, "y":0, "z":0},
