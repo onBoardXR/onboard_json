@@ -3807,7 +3807,805 @@
             },
   "trig": {"type": "button",
            "time": 0}
-}
+},
+{
+  "name": "Spawn_NPC",
+  "role": "listening",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": {
+              "name": "Spawn_NPC",
+              "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+              "target": { "role": "general",
+              "src":  "https://xrtheater-assets.xrtheater.live/files/3514e0a2-41f5-498f-84da-b174b761f5db.glb"},
+              "action": {"type": "socket_spawn_object",
+                "pos": {"x": 0.2, "y":-5, "z":-20},
+                "rot": {"x": 0, "y":3.14, "z":0},
+                "scale": {"x": 2, "y":2, "z":2}}
+            }
+            },
+  "trig": {"type": "button",
+  "groupChain" : "Tutorial_Start_group",
+           "time": 0}
+},
+{
+  "name": "Spawn_Audio_1",
+  "role": "listening",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": {
+              "name": "Spawn_Audio_1",
+              "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+              "target": { "role": "general",
+              "src":  "https://xrtheater-assets.xrtheater.live/files/72edcba7-33d6-4cd6-8194-33b832d59b14.mp3"},
+              "action": {"type": "socket_spawn_object",
+                "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
+                "rot": {"x": 0, "y":3.14, "z":0},
+                "scale": {"x": 1, "y":1, "z":1}}
+            }
+            },
+  "trig": {"type": "button",
+  "groupChain" : "Tutorial_Start_group",
+           "time": 0}
+},
+{
+  "name": "Spawn_Audio_2",
+  "role": "listening",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": {
+              "name": "Spawn_Audio_2",
+              "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+              "target": { "role": "general",
+              "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/c704b2f4-6182-49b2-b330-28bbd9eb05fc.mp3"},
+              "action": {"type": "socket_spawn_object",
+                "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
+                "rot": {"x": 0, "y":3.14, "z":0},
+                "scale": {"x": 1, "y":1, "z":1}}
+            }
+            },
+  "trig": {"type": "button",
+  "groupChain" : "Tutorial_Start_group",
+           "time": 11000}
+},
+{
+  "name": "Spawn_Audio_ToolTip",
+  "role": "listening",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": {
+              "name": "Spawn_Audio_ToolTip",
+              "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+              "target": { "role": "general",
+              "src":  "https://xrtheater-assets.xrtheater.live/files/c2b0cc1c-9697-4763-9335-5eb334849c35.glb"},
+              "action": {"type": "socket_spawn_object",
+              "pos": {"x": -0.5, "y":0.5, "z":-6},
+              "rot": {"x": 0, "y":0, "z":0},
+              "scale": {"x": 0.001, "y":0.001, "z":0.001}}
+            }
+            },
+  "trig": {"type": "button",
+  "groupChain" : "Tutorial_Start_group",
+           "time": 0}
+},
+{
+  "name": "Move_NPC",
+  "role": "listening",
+  "target": { },
+  "action": {"type": "call_method_from_object",
+             "object_name": "sockSys",
+             "function_name": "cueSocket",
+             "_cue": { 
+              "name": "Move_NPC",
+              "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+              "target": { "role": "general",
+                "aspect" : "position" },
+              "action": { "type": "socket_manipulate_object",
+                "mapItem": "Spawn_NPC",
+                "attr": "object3D",
+                "anime": {
+                 "targets": "scale",
+                 "delay" : 1000,
+                 "loop": false,
+                 "autoplay": false,
+                 "easing": "easeInOutSine",
+                 "duration": 1000
+                 },
+                 "timelines" : [
+                  {"x": 0.2, "y":1.5, "z":-20, "duration": 3000, "delay": 0, "easing": "easeInOutSine"},
+                  {"x": 1, "y":1.2, "z":-5, "duration": 5000, "delay": 3000, "easing": "easeInOutSine"}
+                 ]
+               }
+             }
+            },
+  "trig": {"type": "button",
+    "groupChain" : "Tutorial_Start_group",
+           "time": 1500}
+  },
+  {
+    "name": "Rotate_NPC",
+    "role": "listening",
+    "target": { },
+    "action": {"type": "call_method_from_object",
+               "object_name": "sockSys",
+               "function_name": "cueSocket",
+               "_cue": { 
+                "name": "Rotate_NPC",
+                "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                "target": { "role": "general",
+                  "aspect" : "rotation" },
+                "action": { "type": "socket_manipulate_object",
+                  "mapItem": "Spawn_NPC",
+                  "attr": "object3D",
+                  "anime": {
+                   "targets": "scale",
+                   "delay" : 1000,
+                   "loop": false,
+                   "autoplay": false,
+                   "easing": "easeInOutSine",
+                   "duration": 1000
+                   },
+                   "timelines" : [
+                    {"x": 0, "y":0, "z":0, "duration": 3000, "delay": 0, "easing": "easeInOutSine"},
+                    {"x": 0, "y":-0.4, "z":0, "duration": 1500, "delay": 3500, "easing": "easeInOutSine"},
+                    {"x": 0, "y":-2, "z":0, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
+                    {"x": 0, "y":-0.4, "z":0, "duration": 1500, "delay": 800, "easing": "easeInOutSine"}
+                   ]
+                 }
+               }
+              },
+    "trig": {"type": "button",
+      "groupChain" : "Tutorial_Start_group",
+             "time": 4500}
+    },
+    {
+      "name": "Scale_NPC",
+      "role": "listening",
+      "target": { },
+      "action": {"type": "call_method_from_object",
+                 "object_name": "sockSys",
+                 "function_name": "cueSocket",
+                 "_cue": { 
+                  "name": "Scale_NPC",
+                  "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                  "target": { "role": "general",
+                    "aspect" : "scale" },
+                  "action": { "type": "socket_manipulate_object",
+                    "mapItem": "Spawn_NPC",
+                    "attr": "object3D",
+                    "anime": {
+                     "targets": "scale",
+                     "delay" : 1000,
+                     "loop": false,
+                     "autoplay": false,
+                     "easing": "easeInOutSine",
+                     "duration": 1000
+                     },
+                     "timelines" : [
+                      {"x": 1.2, "y":1.2, "z":1.2, "duration": 5000, "delay": 0, "easing": "easeInOutSine"}
+                     ]
+                   }
+                 }
+                },
+      "trig": {"type": "button",
+        "groupChain" : "Tutorial_Start_group",
+               "time": 7500}
+      },
+      {
+        "name": "Scale_Audio_ToolTip",
+        "role": "listening",
+        "target": { },
+        "action": {"type": "call_method_from_object",
+                   "object_name": "sockSys",
+                   "function_name": "cueSocket",
+                   "_cue": { 
+                    "name": "Scale_Audio_ToolTip",
+                    "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                    "target": { "role": "general",
+                      "aspect" : "scale" },
+                    "action": { "type": "socket_manipulate_object",
+                      "mapItem": "Spawn_Audio_ToolTip",
+                      "attr": "object3D",
+                      "anime": {
+                       "targets": "scale",
+                       "delay" : 1000,
+                       "loop": false,
+                       "autoplay": false,
+                       "easing": "easeInOutSine",
+                       "duration": 1000
+                       },
+                       "timelines" : [
+                        {"x": 2.4, "y":2.4, "z":2.4, "duration": 1500, "delay": 0, "easing": "easeInOutElastic(1, 0.5)"}
+                       ]
+                     }
+                   }
+                  },
+        "trig": {"type": "button",
+          "groupChain" : "Tutorial_Start_group",
+                 "time": 11500}
+        },
+        {
+          "name": "Move_Audio_ToolTip",
+          "role": "listening",
+          "target": { },
+          "action": {"type": "call_method_from_object",
+                     "object_name": "sockSys",
+                     "function_name": "cueSocket",
+                     "_cue": { 
+                      "name": "Move_Audio_ToolTip",
+                      "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                      "target": { "role": "general",
+                        "aspect" : "position" },
+                      "action": { "type": "socket_manipulate_object",
+                        "mapItem": "Spawn_Audio_ToolTip",
+                        "attr": "object3D",
+                        "anime": {
+                         "targets": "scale",
+                         "delay" : 1000,
+                         "loop": false,
+                         "autoplay": false,
+                         "easing": "easeInOutSine",
+                         "duration": 1000
+                         },
+                         "timelines" : [
+                          {"x": -0.5, "y":1.9, "z":-6, "duration": 1500, "delay": 0, "easing": "easeInOutSine"}
+                         ]
+                       }
+                     }
+                    },
+          "trig": {"type": "button",
+            "groupChain" : "Tutorial_Start_group",
+                   "time": 11500}
+          },
+          {
+            "name": "Delete_Audio_1",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_1",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_1"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_Start_group",
+                     "time": 11000}
+          },
+          {
+            "name": "Delete_Audio_2",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_2",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_2"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_Start_group",
+                     "time": 22000}
+          },
+          {
+            "name": "Spawn_Audio_3",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": {
+                        "name": "Spawn_Audio_3",
+                        "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                        "target": { "role": "general",
+                        "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/58b5a797-f4ac-461d-834a-3937fc7c730b.mp3"},
+                        "action": {"type": "socket_spawn_object",
+                          "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
+                          "rot": {"x": 0, "y":3.14, "z":0},
+                          "scale": {"x": 1, "y":1, "z":1}}
+                      }
+                      },
+            "trig": {"type": "button",
+            "groupChain" : "Tutorial_1_group",
+                     "time": 0}
+          },
+          {
+            "name": "Spawn_Audio_4",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": {
+                        "name": "Spawn_Audio_4",
+                        "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                        "target": { "role": "general",
+                        "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/0500025d-dbd0-4924-afa0-d3d702652aa9.mp3"},
+                        "action": {"type": "socket_spawn_object",
+                          "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
+                          "rot": {"x": 0, "y":3.14, "z":0},
+                          "scale": {"x": 1, "y":1, "z":1}}
+                      }
+                      },
+            "trig": {"type": "button",
+            "groupChain" : "Tutorial_1_group",
+                     "time": 10500}
+          },
+          {
+            "name": "Spawn_Audio_5",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": {
+                        "name": "Spawn_Audio_5",
+                        "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                        "target": { "role": "general",
+                        "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/51fa3967-7718-435f-9530-39ededcd43ed.mp3"},
+                        "action": {"type": "socket_spawn_object",
+                          "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
+                          "rot": {"x": 0, "y":3.14, "z":0},
+                          "scale": {"x": 1, "y":1, "z":1}}
+                      }
+                      },
+            "trig": {"type": "button",
+            "groupChain" : "Tutorial_1_group",
+                     "time": 18500}
+          },
+          {
+            "name": "Spawn_Audio_6",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": {
+                        "name": "Spawn_Audio_6",
+                        "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                        "target": { "role": "general",
+                        "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/2c9fcea4-17ff-4f77-aca0-659da46bc3ba.mp3"},
+                        "action": {"type": "socket_spawn_object",
+                          "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
+                          "rot": {"x": 0, "y":3.14, "z":0},
+                          "scale": {"x": 1, "y":1, "z":1}}
+                      }
+                      },
+            "trig": {"type": "button",
+            "groupChain" : "Tutorial_1_group",
+                     "time": 27000}
+          },
+          {
+            "name": "Delete_Audio_1",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_1",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_1"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_1_group",
+                     "time": 0}
+          },
+          {
+            "name": "Delete_Audio_2",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_2",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_2"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_1_group",
+                     "time": 0}
+          },
+          {
+            "name": "Delete_Audio_3",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_3",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_3"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_1_group",
+                     "time": 10500}
+          },
+          {
+            "name": "Delete_Audio_4",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_4",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_4"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_1_group",
+                     "time": 16500}
+          },
+          {
+            "name": "Delete_Audio_5",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_5",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_5"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_1_group",
+                     "time": 27000}
+          },
+          {
+            "name": "Delete_Audio_6",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_6",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_6"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_1_group",
+                     "time": 39500}
+          },
+          {
+            "name": "Delete_Audio_ToolTip",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                         "name": "Delete_Audio_ToolTip",
+                         "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                         "target": { "role": "general"},
+                         "action": { "type": "delete",
+                          "src" : "Spawn_Audio_ToolTip"
+                        }
+                        }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_1_group",
+                     "time": 0}
+          },
+          {
+            "name": "Spawn_Turn_ToolTip",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": {
+                        "name": "Spawn_Turn_ToolTip",
+                        "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                        "target": { "role": "general",
+                        "src":  "https://xrtheater-assets.xrtheater.live/files/c2b0cc1c-9697-4763-9335-5eb334849c35.glb"},
+                        "action": {"type": "socket_spawn_object",
+                        "pos": {"x": -0.5, "y":0.5, "z":-6},
+                        "rot": {"x": 0, "y":0, "z":0},
+                        "scale": {"x": 0.001, "y":0.001, "z":0.001}}
+                      }
+                      },
+            "trig": {"type": "button",
+            "groupChain" : "Tutorial_1_group",
+                     "time": 0}
+          },
+          {
+            "name": "Move_NPC",
+            "role": "listening",
+            "target": { },
+            "action": {"type": "call_method_from_object",
+                       "object_name": "sockSys",
+                       "function_name": "cueSocket",
+                       "_cue": { 
+                        "name": "Move_NPC",
+                        "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                        "target": { "role": "general",
+                          "aspect" : "position" },
+                        "action": { "type": "socket_manipulate_object",
+                          "mapItem": "Spawn_NPC",
+                          "attr": "object3D",
+                          "anime": {
+                           "targets": "scale",
+                           "delay" : 1000,
+                           "loop": false,
+                           "autoplay": false,
+                           "easing": "easeInOutSine",
+                           "duration": 1000
+                           },
+                           "timelines" : [
+                            {"x": 0.5, "y":1.2, "z":-4.5, "duration": 4000, "delay": 0, "easing": "easeInOutSine"},
+                            {"x": -0.2, "y":1.2, "z":-4.3, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
+                            {"x": 0.5, "y":1.2, "z":-4.4, "duration": 1000, "delay": 0, "easing": "easeInSine"},
+                            {"x": 1.2, "y":1.2, "z":-4.3, "duration": 1000, "delay": 0, "easing": "easeOutSine"},
+                            {"x": 0.5, "y":1.2, "z":-4.5, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
+                            {"x": 1.8, "y":1.2, "z":-3, "duration": 1500, "delay": 1300, "easing": "easeInSine"},
+                            {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"},
+                            {"x": 0, "y":0.7, "z":4, "duration": 500, "delay": 14200, "easing": "easeOutSine"}
+                           ]
+                         }
+                       }
+                      },
+            "trig": {"type": "button",
+              "groupChain" : "Tutorial_1_group",
+                     "time": 0}
+            },
+            {
+              "name": "Rotate_NPC",
+              "role": "listening",
+              "target": { },
+              "action": {"type": "call_method_from_object",
+                         "object_name": "sockSys",
+                         "function_name": "cueSocket",
+                         "_cue": { 
+                          "name": "Rotate_NPC",
+                          "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                          "target": { "role": "general",
+                            "aspect" : "rotation" },
+                          "action": { "type": "socket_manipulate_object",
+                            "mapItem": "Spawn_NPC",
+                            "attr": "object3D",
+                            "anime": {
+                             "targets": "scale",
+                             "delay" : 1000,
+                             "loop": false,
+                             "autoplay": false,
+                             "easing": "easeInOutSine",
+                             "duration": 1000
+                             },
+                             "timelines" : [
+                              {"x": 0, "y":0, "z":0, "duration": 4000, "delay": 0, "easing": "easeInOutSine"},
+                              {"x": 0, "y":0.6, "z":0, "duration": 1500, "delay": 1500, "easing": "easeInOutSine"},
+                              {"x": 0, "y":0, "z":0, "duration": 1000, "delay": 0, "easing": "easeInSine"},
+                              {"x": 0, "y":-0.6, "z":0, "duration": 1000, "delay": 0, "easing": "easeOutSine"},
+                              {"x": 0, "y":0, "z":0, "duration": 1500, "delay": 0, "easing": "easeInOutSine"},
+                              {"x": 0, "y":0.6, "z":0, "duration": 500, "delay": 1000, "easing": "easeInOutSine"},
+                              {"x": 0, "y":-0.4, "z":0, "duration": 500, "delay": 1500, "easing": "easeInOutSine"},
+                              {"x": 0, "y":-3.14, "z":0, "duration": 1000, "delay": 3300, "easing": "easeInOutSine"}
+                             ]
+                           }
+                         }
+                        },
+              "trig": {"type": "button",
+                "groupChain" : "Tutorial_1_group",
+                       "time": 0}
+              },
+                  {
+                    "name": "Spawn_Boulder",
+                    "role": "listening",
+                    "target": { "type": "glb",
+                                "dest": "url",
+                                "src":  "https://xrtheater-assets.xrtheater.live/files/e0d03189-9182-44f1-b8b4-1295733fa7d5.glb"},
+                    "action": {"type": "spawn_item",
+                               "pos": {"x": 0, "y":10, "z":4},
+                               "rot": {"x": 0, "y":0, "z":0.9},
+                               "scale": {"x": 2, "y":2, "z":2}},
+                    "trig": {"type": "button",
+                    "groupChain" : "Tutorial_1_group",
+                             "time": 0}
+                  },
+                  {
+                    "name": "Move_Boulder",
+                    "role": "listening",
+                    "target": { "type": "glb",
+                                "dest": "local",
+                                "src": "Spawn_Boulder"},
+                    "action": {"type": "move",
+                               "duration": 2000,
+                               "loop": false,
+                               "pos": {"x": 0, "y":2.2, "z":4},
+                               "rot": {"x": 0, "y":0, "z":0},
+                               "scale": {"x": 2, "y":2, "z":2}},
+                    "trig": {"type": "button",
+                    "groupChain" : "Tutorial_1_group",
+                             "time": 30000}
+                  },
+                  {
+                    "name": "Scale_NPC",
+                    "role": "listening",
+                    "target": { },
+                    "action": {"type": "call_method_from_object",
+                               "object_name": "sockSys",
+                               "function_name": "cueSocket",
+                               "_cue": { 
+                                "name": "Scale_NPC",
+                                "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                "target": { "role": "general",
+                                  "aspect" : "scale" },
+                                "action": { "type": "socket_manipulate_object",
+                                  "mapItem": "Spawn_NPC",
+                                  "attr": "object3D",
+                                  "anime": {
+                                   "targets": "scale",
+                                   "delay" : 1000,
+                                   "loop": false,
+                                   "autoplay": false,
+                                   "easing": "easeInOutSine",
+                                   "duration": 1000
+                                   },
+                                   "timelines" : [
+                                    {"x": 1.2, "y":0.6, "z":1.2, "duration": 500, "delay": 0, "easing": "easeInOutSine"}
+                                   ]
+                                 }
+                               }
+                              },
+                    "trig": {"type": "button",
+                      "groupChain" : "Tutorial_1_group",
+                             "time": 31200}
+                    },
+                    {
+                      "name": "Spawn_Audio_7",
+                      "role": "listening",
+                      "target": { },
+                      "action": {"type": "call_method_from_object",
+                                 "object_name": "sockSys",
+                                 "function_name": "cueSocket",
+                                 "_cue": {
+                                  "name": "Spawn_Audio_7",
+                                  "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                  "target": { "role": "general",
+                                  "src":  "https://jigsawhubs-1-assets.onboardxr.live/files/f37c6e0e-c828-4ec7-bc30-95c65aefdc77.mp3"},
+                                  "action": {"type": "socket_spawn_object",
+                                    "pos": {"x": 0.04831861695428292, "y": -14, "z": -3.4674272971388915},
+                                    "rot": {"x": 0, "y":3.14, "z":0},
+                                    "scale": {"x": 1, "y":1, "z":1}}
+                                }
+                                },
+                      "trig": {"type": "button",
+                      "groupChain" : "Tutorial_2_group",
+                               "time": 0}
+                    },
+                    {
+                      "name": "Scale_NPC",
+                      "role": "listening",
+                      "target": { },
+                      "action": {"type": "call_method_from_object",
+                                 "object_name": "sockSys",
+                                 "function_name": "cueSocket",
+                                 "_cue": { 
+                                  "name": "Scale_NPC",
+                                  "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                  "target": { "role": "general",
+                                    "aspect" : "scale" },
+                                  "action": { "type": "socket_manipulate_object",
+                                    "mapItem": "Spawn_NPC",
+                                    "attr": "object3D",
+                                    "anime": {
+                                     "targets": "scale",
+                                     "delay" : 1000,
+                                     "loop": false,
+                                     "autoplay": false,
+                                     "easing": "easeInOutSine",
+                                     "duration": 1000
+                                     },
+                                     "timelines" : [
+                                      {"x": 1.2, "y":1.2, "z":1.2, "duration": 4000, "delay": 0, "easing": "easeInOutSine"}
+                                     ]
+                                   }
+                                 }
+                                },
+                      "trig": {"type": "button",
+                        "groupChain" : "Tutorial_2_group",
+                               "time": 4000}
+                      },
+                      {
+                        "name": "Move_NPC",
+                        "role": "listening",
+                        "target": { },
+                        "action": {"type": "call_method_from_object",
+                                   "object_name": "sockSys",
+                                   "function_name": "cueSocket",
+                                   "_cue": { 
+                                    "name": "Move_NPC",
+                                    "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                    "target": { "role": "general",
+                                      "aspect" : "position" },
+                                    "action": { "type": "socket_manipulate_object",
+                                      "mapItem": "Spawn_NPC",
+                                      "attr": "object3D",
+                                      "anime": {
+                                       "targets": "scale",
+                                       "delay" : 1000,
+                                       "loop": false,
+                                       "autoplay": false,
+                                       "easing": "easeInOutSine",
+                                       "duration": 1000
+                                       },
+                                       "timelines" : [
+                                        {"x": 0, "y":1.2, "z":4, "duration": 4000, "delay": 0, "easing": "easeOutSine"}
+                                       ]
+                                     }
+                                   }
+                                  },
+                        "trig": {"type": "button",
+                          "groupChain" : "Tutorial_2_group",
+                                 "time": 4000}
+                        },
+                        {
+                          "name": "Delete_Audio_7",
+                          "role": "listening",
+                          "target": { },
+                          "action": {"type": "call_method_from_object",
+                                     "object_name": "sockSys",
+                                     "function_name": "cueSocket",
+                                     "_cue": { 
+                                       "name": "Delete_Audio_7",
+                                       "sceneLink": "https://onboardxr.live/scenes/SPiyDoi/onboardxr-7-npc",
+                                       "target": { "role": "general"},
+                                       "action": { "type": "delete",
+                                        "src" : "Spawn_Audio_7"
+                                      }
+                                      }
+                                    },
+                          "trig": {"type": "button",
+                            "groupChain" : "Tutorial_2_group",
+                                   "time": 30500}
+                        }
   ]
 }
             
